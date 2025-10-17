@@ -1,971 +1,698 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>My New Hugo Site</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>an I Still Happy with my Big Monitor</title>
-      <link>http://localhost:1313/posts/2025/an-i-still-happy-with-my-big-monitor/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/an-i-still-happy-with-my-big-monitor/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Yes and no — I love the big monitor. I even took the smaller monitor off the side of my desk for it. But I don’t like it as much as I thought I would. It’s large, and while that’s great in some ways, many of its features would honestly work better if they were split into separate devices for a variety of reasons.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;kvm&#34;&gt;KVM&lt;/h3&gt;
-&lt;p&gt;To start with, the KVM (keyboard, video, mouse) switch setup is a bit of a hassle. It requires a USB and a display cable for each connected device, and there’s no easy way to manage those cables cleanly. Power is on one side of the monitor, while data and video inputs are on the other, making cable management awkward. Also, if one of your systems is powered off or sleeping, the USB ports on the monitor won’t stay active — so you can’t use them to wake the system up.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Yes and no — I love the big monitor. I even took the smaller monitor off the side of my desk for it. But I don’t like it as much as I thought I would. It’s large, and while that’s great in some ways, many of its features would honestly work better if they were split into separate devices for a variety of reasons.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;kvm&#34;&gt;KVM&lt;/h3&gt;
-&lt;p&gt;To start with, the KVM (keyboard, video, mouse) switch setup is a bit of a hassle. It requires a USB and a display cable for each connected device, and there’s no easy way to manage those cables cleanly. Power is on one side of the monitor, while data and video inputs are on the other, making cable management awkward. Also, if one of your systems is powered off or sleeping, the USB ports on the monitor won’t stay active — so you can’t use them to wake the system up.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;pbp--pip&#34;&gt;PBP &amp;amp; PIP&lt;/h3&gt;
-&lt;p&gt;I haven’t really used the PIP (Picture-in-Picture) or PBP (Picture-by-Picture) modes because they’re not very practical. The screen is too big to use PIP in any meaningful way — it just takes up valuable space from the main source underneath. As for PBP, it splits the screen in half, basically turning the display into two 24-inch monitors sitting side by side. That might sound good, but in portrait mode, it feels awkward and disjointed. Plus, the KVM gets disabled in PBP mode, so you can’t just switch inputs easily. In everyday use, portrait mode isn’t all that useful — it’s mostly good for reading text documents or writing.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h3&gt;
-&lt;p&gt;The monitor is great for editing videos, working with images, and multitasking — especially if you’re using a tiling window manager or similar setup. Honestly, though, two 24-inch monitors might be more practical for most people. That said, the large monitor &lt;em&gt;is&lt;/em&gt; excellent for gaming, video editing, and 3D work. I just don’t find it useful for &lt;em&gt;everything&lt;/em&gt;, all the time. so i can’t recommend it if it is your primary display for everyday life but i can if it is for a pacific prepose.&lt;/p&gt;
-&lt;h1 id=&#34;links&#34;&gt;links&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=95V3vZH0HHU&#34;&gt;unboxing video&lt;/a&gt;&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Building an Overkill Home NAS SAN</title>
-      <link>http://localhost:1313/posts/2025/building-an-overkill-home-nas-san/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/building-an-overkill-home-nas-san/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Buying large storage for each machine is expensive and less secure. A centralized storage solution made much more sense.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;nas-vs-san-the-basics&#34;&gt;NAS vs. SAN: The Basics&lt;/h2&gt;
-&lt;p&gt;When you think of network storage, you’re probably thinking of a NAS, since that’s what most YouTubers show off. But there are actually two different types of network storage:&lt;/p&gt;
-&lt;h3 id=&#34;nas-network-attached-storage&#34;&gt;NAS (Network Attached Storage)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;File-based storage.&lt;/li&gt;
-&lt;li&gt;Uses protocols like &lt;strong&gt;SMB&lt;/strong&gt; or &lt;strong&gt;NFS&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Most people and companies rely on &lt;strong&gt;SMB&lt;/strong&gt; because it works across Windows, macOS, and Linux.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;san-storage-area-network&#34;&gt;SAN (Storage Area Network)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Block-level storage for direct connections over the local network.&lt;/li&gt;
-&lt;li&gt;Typically uses &lt;strong&gt;iSCSI&lt;/strong&gt; over Ethernet or Fiber.&lt;/li&gt;
-&lt;li&gt;Not designed for multi-machine file sharing the way SMB is.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;my-requirements&#34;&gt;My Requirements&lt;/h2&gt;
-&lt;p&gt;I wanted my system to be:&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Buying large storage for each machine is expensive and less secure. A centralized storage solution made much more sense.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;nas-vs-san-the-basics&#34;&gt;NAS vs. SAN: The Basics&lt;/h2&gt;
-&lt;p&gt;When you think of network storage, you’re probably thinking of a NAS, since that’s what most YouTubers show off. But there are actually two different types of network storage:&lt;/p&gt;
-&lt;h3 id=&#34;nas-network-attached-storage&#34;&gt;NAS (Network Attached Storage)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;File-based storage.&lt;/li&gt;
-&lt;li&gt;Uses protocols like &lt;strong&gt;SMB&lt;/strong&gt; or &lt;strong&gt;NFS&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Most people and companies rely on &lt;strong&gt;SMB&lt;/strong&gt; because it works across Windows, macOS, and Linux.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;san-storage-area-network&#34;&gt;SAN (Storage Area Network)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Block-level storage for direct connections over the local network.&lt;/li&gt;
-&lt;li&gt;Typically uses &lt;strong&gt;iSCSI&lt;/strong&gt; over Ethernet or Fiber.&lt;/li&gt;
-&lt;li&gt;Not designed for multi-machine file sharing the way SMB is.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;my-requirements&#34;&gt;My Requirements&lt;/h2&gt;
-&lt;p&gt;I wanted my system to be:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Fast&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Energy-efficient&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Because of this, I decided to use &lt;strong&gt;SSDs&lt;/strong&gt;. While they aren’t ideal for bulk storage, they work well as supplemental storage for my Proxmox server, which hosts my media library. I also set up an iSCSI connection for VM storage.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;my-hardware-setup&#34;&gt;My Hardware Setup&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;CPU:&lt;/strong&gt; Ryzen 5 3600 (stock cooler)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;RAM:&lt;/strong&gt; 36GB Silicon Power Value Gaming&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Storage:&lt;/strong&gt; 4 × 2TB TEAMGROUP SSDs&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Boot Disk:&lt;/strong&gt; Crucial P3 Plus 500GB SSD&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Motherboard:&lt;/strong&gt; ASRock B450M PRO4&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Storage Enclosure:&lt;/strong&gt; ICY DOCK 6-Bay 2.5” SATA HDD/SSD&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Case:&lt;/strong&gt; RackChoice 2U Micro ATX Compact Rackmount (2 × 5.25” bays)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The system runs &lt;strong&gt;ZFS&lt;/strong&gt;, a powerful, scalable file system with built-in redundancy.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;raid-setup&#34;&gt;RAID Setup&lt;/h2&gt;
-&lt;p&gt;ZFS uses RAID to stripe or mirror data across drives. A few RAID levels worth noting:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;RAID 0:&lt;/strong&gt; Stripes data for maximum speed, but lose one drive and you lose everything.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;RAID 1:&lt;/strong&gt; Mirrors data on two drives for redundancy.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;RAID 5:&lt;/strong&gt; Uses one drive for parity; can survive one drive failure.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;RAID 6:&lt;/strong&gt; Similar to RAID 5, but can survive two drive failures.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I actually bought five SSDs, but one is a &lt;strong&gt;cold spare&lt;/strong&gt;—ready to replace a failed drive immediately.&lt;/p&gt;
-&lt;p&gt;⚠️ Important reminder: &lt;strong&gt;RAID is not a backup&lt;/strong&gt;. It’s only redundancy until you can swap in a new drive and rebuild.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;movie-myth-busting&#34;&gt;Movie Myth Busting&lt;/h2&gt;
-&lt;p&gt;In movies, the bad guys often grab hard drives and throw them in a bag. In reality:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Hard drive platters can be scratched easily, destroying the data.&lt;/li&gt;
-&lt;li&gt;If the drives are part of a RAID, they need to stay in the same group (and often the same order) to work.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;future-plans&#34;&gt;Future Plans&lt;/h2&gt;
-&lt;p&gt;For the future, I plan to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Add a &lt;strong&gt;dual-port 10GbE NIC&lt;/strong&gt; for faster speeds.&lt;/li&gt;
-&lt;li&gt;Install another SSD bay.&lt;/li&gt;
-&lt;li&gt;Expand with &lt;strong&gt;4 × 8TB HDDs&lt;/strong&gt; for bulk storage.&lt;/li&gt;
-&lt;li&gt;Enable &lt;strong&gt;network booting&lt;/strong&gt; for my PC.&lt;/li&gt;
-&lt;li&gt;Eventually move to &lt;strong&gt;LTO tape&lt;/strong&gt; for long-term archival storage.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
-&lt;p&gt;This NAS/SAN setup is my personal overkill solution for storage, virtualization, and media. It’s been a huge step toward making my lab more reliable and flexible.&lt;/p&gt;
-&lt;p&gt;If you’ve built your own NAS or SAN, I’d love to hear how you set yours up!&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Captain America brave New world  review</title>
-      <link>http://localhost:1313/posts/2025/captain-america-brave-new-world--review/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/captain-america-brave-new-world--review/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;&lt;strong&gt;Rating:&lt;/strong&gt; ⭐⭐⭐⭐⭐⭐⭐⭐☆☆ (8/10)&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;Captain America: Brave New World&lt;/em&gt; was exactly what I expected from a Marvel movie. It wasn’t overly flashy, but it still managed to push the story forward — and that’s exactly what I was hoping for. I’m not an MCU fanboy, but I thought it was very good, and I’d recommend it to others.&lt;/p&gt;
-&lt;p&gt;I wasn’t nitpicking the details of its quality. Instead, I just enjoyed it for what it was: a solid Marvel film that told its story well.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;&lt;strong&gt;Rating:&lt;/strong&gt; ⭐⭐⭐⭐⭐⭐⭐⭐☆☆ (8/10)&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;Captain America: Brave New World&lt;/em&gt; was exactly what I expected from a Marvel movie. It wasn’t overly flashy, but it still managed to push the story forward — and that’s exactly what I was hoping for. I’m not an MCU fanboy, but I thought it was very good, and I’d recommend it to others.&lt;/p&gt;
-&lt;p&gt;I wasn’t nitpicking the details of its quality. Instead, I just enjoyed it for what it was: a solid Marvel film that told its story well.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;story-and-characters&#34;&gt;Story and Characters&lt;/h2&gt;
-&lt;p&gt;What I liked most was that the story focused primarily on &lt;strong&gt;one main character&lt;/strong&gt; instead of splitting the spotlight across a team of two or three. Yes, there were other important characters, but the film didn’t feel like an ensemble piece. The focus stayed on Sam, and it made the story stronger.&lt;/p&gt;
-&lt;p&gt;Story-wise, it didn’t disappoint. Sam was portrayed in a thoughtful, respectful way. It wasn’t just the usual formula of “bad guy shows up, big fight, we win.” There was more care and depth behind the storytelling.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;visual-effects&#34;&gt;Visual Effects&lt;/h2&gt;
-&lt;p&gt;The VFX were present, but not overwhelming. They supported the story instead of dominating it. Unlike &lt;em&gt;Ant-Man and the Wasp: Quantumania&lt;/em&gt;—a film I skipped because the trailers made it look like it was drowning in effects—&lt;em&gt;Brave New World&lt;/em&gt; kept things grounded.&lt;/p&gt;
-&lt;p&gt;There were plenty of visual effects, but they blended naturally into the narrative rather than distracting from it.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;final-verdict&#34;&gt;Final Verdict&lt;/h2&gt;
-&lt;p&gt;Overall, &lt;em&gt;Captain America: Brave New World&lt;/em&gt; delivered exactly what I wanted: a good story, strong character focus, and visuals that enhanced rather than overshadowed.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Final Rating: 8/10&lt;/strong&gt;&lt;br&gt;
-&lt;strong&gt;Recommended for:&lt;/strong&gt; Marvel fans who enjoy a grounded story with balanced action and character development.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Control Your Govee Devices with Govee2MQTT (As of 7-16-25)</title>
-      <link>http://localhost:1313/posts/2025/control-your-govee-devices-with-govee2mqtt-as-of-7-16-25/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/control-your-govee-devices-with-govee2mqtt-as-of-7-16-25/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;h3 id=&#34;steps-to-set-it-up&#34;&gt;Steps to Set It Up&lt;/h3&gt;
-&lt;p&gt;Step 1: Install MQTT (if it’s not already installed).&lt;/p&gt;
-&lt;p&gt;Step 2: Install mactomqtt.&lt;/p&gt;
-&lt;p&gt;Step 3: Go to Settings in Home Assistant and enable Advanced Mode (you&amp;rsquo;ll find this under your user profile).&lt;/p&gt;
-&lt;p&gt;Step 4: Visit the Govee2MQTT GitHub page and copy the repository URL.&lt;/p&gt;
-&lt;p&gt;Step 5: In Home Assistant, go to Settings &amp;gt; Add-ons &amp;gt; Add-on Store, click the three-dot menu in the top right, and select Repositories. Paste in the Govee2MQTT URL.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;h3 id=&#34;steps-to-set-it-up&#34;&gt;Steps to Set It Up&lt;/h3&gt;
-&lt;p&gt;Step 1: Install MQTT (if it’s not already installed).&lt;/p&gt;
-&lt;p&gt;Step 2: Install mactomqtt.&lt;/p&gt;
-&lt;p&gt;Step 3: Go to Settings in Home Assistant and enable Advanced Mode (you&amp;rsquo;ll find this under your user profile).&lt;/p&gt;
-&lt;p&gt;Step 4: Visit the Govee2MQTT GitHub page and copy the repository URL.&lt;/p&gt;
-&lt;p&gt;Step 5: In Home Assistant, go to Settings &amp;gt; Add-ons &amp;gt; Add-on Store, click the three-dot menu in the top right, and select Repositories. Paste in the Govee2MQTT URL.&lt;/p&gt;
-&lt;p&gt;Step 6: After adding the repository, install the Govee2MQTT add-on. You’ll need to enter your email, password, and API key.&lt;/p&gt;
-&lt;p&gt;💡 To get your API key: Open the Govee app, go to Account &amp;gt; Settings, then look for something like “API Key.” Tap it, give a reason (e.g., &amp;ldquo;Home Assistant&amp;rdquo;), and you’ll get your key.&lt;/p&gt;
-&lt;p&gt;Step 7: Press Start on the add-on. Wait a few minutes—it might take some time if you have a lot of Govee devices.&lt;/p&gt;
-&lt;p&gt;I know Matter is out, and if your device supports it you can add it to Home Assistant, but Matter is not out and mass and you might not be able to control the effects of your device. Matter might take me few more years to replace something like Home Assistant so here is your guide on how to install govee2mqtt.&lt;/p&gt;
-&lt;p&gt;**&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>cool tech in q3 of 2025 less than $50</title>
-      <link>http://localhost:1313/posts/2025/cool-tech-in-q3-of-2025-less-than-50/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/cool-tech-in-q3-of-2025-less-than-50/</guid>
-      <description>&lt;h1 id=&#34;cool-tech-in-q3-of-2025-less-than-50&#34;&gt;cool tech in q3 of 2025 less than $50&lt;/h1&gt;
-&lt;p&gt;August 8, 2025 :: Casey Robinson&lt;/p&gt;
-&lt;p&gt;#tech&lt;/p&gt;
-&lt;hr&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Sometimes it’s the little things that make life easier. Here are a few small purchases I’ve made recently that have been surprisingly useful in my day-to-day.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-esr-magsafe-car-mount--27&#34;&gt;🚗 ESR MagSafe Car Mount – $27&lt;/h2&gt;
-&lt;p&gt;I’ve been looking for a simple, reliable way to keep my phone in place in my 2008 car, and this ESR MagSafe mount nails it. I’ve always loved the Apple MagSafe system—even though I use an Android phone with a MagSafe case. (No, it doesn’t mean I dislike Apple or the iPhone. I just stick with what I know.) The mount holds my phone securely and makes navigation so much more convenient.
-&lt;img src=&#34;https://m.media-amazon.com/images/I/71iTcfL9vWL._AC_SL1500_.jpg&#34; alt=&#34;Image description&#34;&gt;&lt;/p&gt;</description>
-      <content>&lt;h1 id=&#34;cool-tech-in-q3-of-2025-less-than-50&#34;&gt;cool tech in q3 of 2025 less than $50&lt;/h1&gt;
-&lt;p&gt;August 8, 2025 :: Casey Robinson&lt;/p&gt;
-&lt;p&gt;#tech&lt;/p&gt;
-&lt;hr&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Sometimes it’s the little things that make life easier. Here are a few small purchases I’ve made recently that have been surprisingly useful in my day-to-day.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-esr-magsafe-car-mount--27&#34;&gt;🚗 ESR MagSafe Car Mount – $27&lt;/h2&gt;
-&lt;p&gt;I’ve been looking for a simple, reliable way to keep my phone in place in my 2008 car, and this ESR MagSafe mount nails it. I’ve always loved the Apple MagSafe system—even though I use an Android phone with a MagSafe case. (No, it doesn’t mean I dislike Apple or the iPhone. I just stick with what I know.) The mount holds my phone securely and makes navigation so much more convenient.
-&lt;img src=&#34;https://m.media-amazon.com/images/I/71iTcfL9vWL._AC_SL1500_.jpg&#34; alt=&#34;Image description&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-simple-cooking-timer--14&#34;&gt;⏱ Simple Cooking Timer – $14&lt;/h2&gt;
-&lt;p&gt;This little timer has become a productivity tool for me, not just a kitchen gadget. It’s perfect for the Pomodoro technique—work for a set time, then take a break. I’ve been using it for 5-minute breaks after rearranging my study cards or tabs to help me remember key points before an exam. Sometimes analog tools are still the best.
-&lt;img src=&#34;https://m.media-amazon.com/images/I/51ovBdqiPEL._AC_.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;-mini-blender-bottle--14&#34;&gt;🥤 Mini Blender Bottle – $14&lt;/h2&gt;
-&lt;p&gt;I wanted something quick and easy for making protein shakes without dragging out my stick blender and a separate mixing cup. This small blender bottle does exactly that—shake, mix, and it’s ready. It’s a small upgrade, but it makes my daily routine smoother.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;These are all inexpensive items, but each one has made a noticeable difference for me—whether it’s keeping my phone handy in the car, staying focused while studying, or making my shakes without the extra mess.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>High School DxD manga review</title>
-      <link>http://localhost:1313/posts/2025/high-school-dxd-manga-review/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/high-school-dxd-manga-review/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;High School DxD&lt;/em&gt; is a manga adaptation of the popular anime series. To my knowledge, it doesn’t fully complete the first season’s story arc, but it still makes for a pretty enjoyable read.&lt;/p&gt;
-&lt;p&gt;The series follows the anime closely in the beginning but tapers off slightly toward the end. Thankfully, the changes aren’t major, so it doesn’t feel jarring if you’re reading the manga after watching the anime.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;High School DxD&lt;/em&gt; is a manga adaptation of the popular anime series. To my knowledge, it doesn’t fully complete the first season’s story arc, but it still makes for a pretty enjoyable read.&lt;/p&gt;
-&lt;p&gt;The series follows the anime closely in the beginning but tapers off slightly toward the end. Thankfully, the changes aren’t major, so it doesn’t feel jarring if you’re reading the manga after watching the anime.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;content-and-themes&#34;&gt;Content and Themes&lt;/h2&gt;
-&lt;p&gt;This series is rated &lt;strong&gt;TV-MA&lt;/strong&gt; for its heavy use of fan service, ecchi elements, and mature humor. Alongside the comedy, it mixes in:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Action and Adventure&lt;/strong&gt; – classic shōnen battles and supernatural fights.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fantasy and Sci-Fi&lt;/strong&gt; – demons, angels, and otherworldly powers.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Slice of Life &amp;amp; Comedy&lt;/strong&gt; – lighthearted moments and school setting antics.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fan Service&lt;/strong&gt; – a major part of the series’ identity.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;my-thoughts&#34;&gt;My Thoughts&lt;/h2&gt;
-&lt;p&gt;I gave this manga a &lt;strong&gt;7/10&lt;/strong&gt;. It’s genuinely funny, with strong comedy elements and over-the-top scenarios. However, there were times I didn’t feel like reading it, which is why I gave it a lower score. That’s more about my personal taste in humor than the quality of the manga itself.&lt;/p&gt;
-&lt;p&gt;If you enjoy the anime, the manga is worth checking out. It expands on the story and characters while keeping the same mix of comedy, action, and fan service.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;final-verdict&#34;&gt;Final Verdict&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;High School DxD&lt;/em&gt; manga is an entertaining read, especially for fans of the anime or the ecchi-comedy genre. It’s not perfect, but it delivers what it promises: fun battles, outrageous comedy, and plenty of fan service.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Recommended for:&lt;/strong&gt; Fans of supernatural comedy with a mix of action and ecchi.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>How to neurodivergent need to learn how to study</title>
-      <link>http://localhost:1313/posts/2025/how-to-neurodivergent-need-to-learn-how-to-study/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/how-to-neurodivergent-need-to-learn-how-to-study/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;This is not a one-size-fits-all guide. Instead, these are suggestions you can try, because everyone learns differently.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;flashcards&#34;&gt;Flashcards&lt;/h2&gt;
-&lt;p&gt;For tests, you often need to memorize information by heart. Flashcards are one of the best tools for this.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Spaced Repetition:&lt;/strong&gt; Flashcards can be used with systems like Anki or Quizlet, which show you the cards you don’t know more often and the ones you do know less frequently. This way, you spend time where it matters most.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Efficiency:&lt;/strong&gt; Instead of trying to memorize a whole book, you break it into small, testable chunks.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Visuals:&lt;/strong&gt; Adding images to your flashcards can make the information easier to remember.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;note-taking&#34;&gt;Note-Taking&lt;/h2&gt;
-&lt;p&gt;Taking notes is essential, but how you take them matters.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;This is not a one-size-fits-all guide. Instead, these are suggestions you can try, because everyone learns differently.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;flashcards&#34;&gt;Flashcards&lt;/h2&gt;
-&lt;p&gt;For tests, you often need to memorize information by heart. Flashcards are one of the best tools for this.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Spaced Repetition:&lt;/strong&gt; Flashcards can be used with systems like Anki or Quizlet, which show you the cards you don’t know more often and the ones you do know less frequently. This way, you spend time where it matters most.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Efficiency:&lt;/strong&gt; Instead of trying to memorize a whole book, you break it into small, testable chunks.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Visuals:&lt;/strong&gt; Adding images to your flashcards can make the information easier to remember.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;note-taking&#34;&gt;Note-Taking&lt;/h2&gt;
-&lt;p&gt;Taking notes is essential, but how you take them matters.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Handwrite First:&lt;/strong&gt; Studies show handwriting notes can increase retention by about 25% compared to typing. When you write, you process the information more deeply.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Type Later:&lt;/strong&gt; After class, type your notes into a digital system. This second pass through the material reinforces it in your memory.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Second Brain:&lt;/strong&gt; Store your notes in a system (like Obsidian, Notion, or OneNote) so you can organize and reference them later for school, work, or personal life.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;different-note-taking-methods&#34;&gt;Different Note-Taking Methods&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Mind Maps:&lt;/strong&gt; Useful for visualizing concepts, brainstorming essays, or connecting story ideas.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cornell Method:&lt;/strong&gt; Structured notes divided into cues, notes, and summaries.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Outline Method:&lt;/strong&gt; Organized hierarchically with bullet points.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Learning Cards:&lt;/strong&gt; Questions and answers written like mini flashcards based on lectures.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Experiment to see what works best for you. For example, mind maps might help in English or history, while outlines could be better for math or science.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;using-ai-carefully&#34;&gt;Using AI (Carefully)&lt;/h2&gt;
-&lt;p&gt;AI can be helpful, but don’t rely on it to do your work.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;What Not to Do:&lt;/strong&gt; Copying full assignments from AI. You won’t learn anything and it can get you in trouble.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;What to Try:&lt;/strong&gt; Have AI reword difficult concepts, explain ideas in simpler language, or make connections you didn’t think of yourself.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;AI should be a tool to &lt;em&gt;support&lt;/em&gt; your learning, not replace it.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;staying-on-task&#34;&gt;Staying on Task&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Make a Schedule:&lt;/strong&gt; Use time-blocking or the Pomodoro method (25 minutes of study, 5 minutes break).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Set Goals:&lt;/strong&gt; Be specific—say “learn 10 flashcards on World War II causes” instead of just “study history.”&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Be Flexible:&lt;/strong&gt; If a method isn’t working, switch it up. Everyone’s brain works differently.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;✅ &lt;strong&gt;Key Point:&lt;/strong&gt; There’s no single “right” way to study. The best method is the one that keeps you engaged, helps you remember, and works with how &lt;em&gt;your&lt;/em&gt; brain learns.&lt;br&gt;
-``&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Manga Show Case: Eighty-Six – Operation High School</title>
-      <link>http://localhost:1313/posts/2025/manga-show-case-eighty-six---operation-high-school/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/manga-show-case-eighty-six---operation-high-school/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;&lt;strong&gt;Author:&lt;/strong&gt; Asato Asato&lt;br&gt;
-&lt;strong&gt;Artist:&lt;/strong&gt; Suzume Somemiya&lt;br&gt;
-&lt;strong&gt;Genres:&lt;/strong&gt; Romance, Slice of Life&lt;br&gt;
-&lt;strong&gt;TV Rating:&lt;/strong&gt; PG&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-story--pacing&#34;&gt;🧭 Story &amp;amp; Pacing&lt;/h2&gt;
-&lt;p&gt;This is a fun alternate take on the &lt;em&gt;86&lt;/em&gt; characters, placing them in a typical Japanese high school setting. It doesn’t connect to the main series canon, but all the character quirks and charm are still present. It&amp;rsquo;s a standalone volume, self-contained with 16 chapters and a character list at the end. The pace is light and easy, with a comfortable slice-of-life flow.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;&lt;strong&gt;Author:&lt;/strong&gt; Asato Asato&lt;br&gt;
-&lt;strong&gt;Artist:&lt;/strong&gt; Suzume Somemiya&lt;br&gt;
-&lt;strong&gt;Genres:&lt;/strong&gt; Romance, Slice of Life&lt;br&gt;
-&lt;strong&gt;TV Rating:&lt;/strong&gt; PG&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-story--pacing&#34;&gt;🧭 Story &amp;amp; Pacing&lt;/h2&gt;
-&lt;p&gt;This is a fun alternate take on the &lt;em&gt;86&lt;/em&gt; characters, placing them in a typical Japanese high school setting. It doesn’t connect to the main series canon, but all the character quirks and charm are still present. It&amp;rsquo;s a standalone volume, self-contained with 16 chapters and a character list at the end. The pace is light and easy, with a comfortable slice-of-life flow.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-characters&#34;&gt;👥 Characters&lt;/h2&gt;
-&lt;p&gt;The main focus is on:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Lena&lt;/strong&gt; – Student Council President&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Shin&lt;/strong&gt; – Quiet but reliable&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The story builds on the developing bond between Lena and Shin, leaning into sweet and subtle romantic moments. Other familiar characters make appearances too.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-art--paneling&#34;&gt;🎨 Art &amp;amp; Paneling&lt;/h2&gt;
-&lt;p&gt;The art follows a clean, standard manga style. It’s easy to follow with good panel flow and expressive characters, sticking to classic shoujo/slice-of-life visuals.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-themes--tone&#34;&gt;🎭 Themes &amp;amp; Tone&lt;/h2&gt;
-&lt;p&gt;The manga reimagines the core &lt;em&gt;86&lt;/em&gt; cast in a lighthearted school setting. The tone is playful and romantic, with no war or politics—just uniforms, student council meetings, and teenage awkwardness.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-personal-thoughts&#34;&gt;💭 Personal Thoughts&lt;/h2&gt;
-&lt;p&gt;It’s an easy, enjoyable read with no complex plotlines. I’d love to see more volumes like this in the future—it’s a great &amp;ldquo;what if&amp;rdquo; side story.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-final-rating&#34;&gt;⭐️ Final Rating&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Rating:&lt;/strong&gt; ★★★★☆ (7/10)&lt;br&gt;
-&lt;strong&gt;Recommended for:&lt;/strong&gt; ★★★★★★★★☆☆ (8/10)&lt;br&gt;
-&lt;strong&gt;Similar To:&lt;/strong&gt; &lt;em&gt;I Had That Same Dream Again&lt;/em&gt;&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Manga Showcase: Our Last Crusade or the Rise of the New World</title>
-      <link>http://localhost:1313/posts/2025/manga-showcase-our-last-crusade-or-the-rise-of-the-new-world/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/manga-showcase-our-last-crusade-or-the-rise-of-the-new-world/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;This manga takes place in a fantasy, sci-fi world where magic exists. The protagonist, Iska, is a soldier from the Empire, which has been at war with the Sovereignty, a nation ruled by mages, for over a century. Iska dreams of a future where humans and mages can coexist in peace instead of being enemies.&lt;/p&gt;
-&lt;h3 id=&#34;plot-summary&#34;&gt;Plot Summary&lt;/h3&gt;
-&lt;p&gt;Iska is imprisoned after freeing a mage (who later returns in the story). Upon his release, he is given a new mission: defeat the Ice Calamity Witch, a powerful mage from the opposing side. Along the way, he reunites with his old squad and faces numerous challenges.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;This manga takes place in a fantasy, sci-fi world where magic exists. The protagonist, Iska, is a soldier from the Empire, which has been at war with the Sovereignty, a nation ruled by mages, for over a century. Iska dreams of a future where humans and mages can coexist in peace instead of being enemies.&lt;/p&gt;
-&lt;h3 id=&#34;plot-summary&#34;&gt;Plot Summary&lt;/h3&gt;
-&lt;p&gt;Iska is imprisoned after freeing a mage (who later returns in the story). Upon his release, he is given a new mission: defeat the Ice Calamity Witch, a powerful mage from the opposing side. Along the way, he reunites with his old squad and faces numerous challenges.&lt;/p&gt;
-&lt;p&gt;During his journey, Iska falls in love with Aliceliese, the Ice Calamity Witch. Their battles always end in a draw, yet they continue to encounter each other by chance. Over time, they realize they share an appreciation for art and food and, more importantly, the same dream of peace between humans and mages.&lt;/p&gt;
-&lt;p&gt;Later in the story, it is revealed that the mage Iska saved was Sisbell, the third princess of the Sovereignty. Due to her astral power, which allows her to see into the past, members of her own homeland want her dead. Iska and his team meet her in a neutral city, where she asks him to become her knight, as she no longer trusts the mages in the palace.&lt;/p&gt;
-&lt;p&gt;As events unfold, Iska&amp;rsquo;s commander turns into a mage, forcing the squad to find bandages that suppress magic energy. Eventually, Iska meets Elletear, the eldest princess, who enjoys playing mind games with him and his team. She invites them to the summer palace, where instead of battles, awkward romantic moments unfold.&lt;/p&gt;
-&lt;p&gt;At one point, Aliceliese walks in on Iska holding her underwear, as Sisbell was teasing him. In his defense, he was simply holding a pile of clothes, trying to return them. Later, Elletear invites him to her room, seeking his attention just like her sisters. Somehow, Iska ends up sharing a bed with the princesses.&lt;/p&gt;
-&lt;h3 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h3&gt;
-&lt;p&gt;This is just an overview of the story. If you want to experience more, you can watch the anime, although it doesn’t cover the last two volumes. You can also read the manga for the full story. Speaking of the anime, it remains incomplete, and I hope they continue it in the future.&lt;/p&gt;
-&lt;p&gt;Genre: Action, Adventure, Romance, Sci-Fi, Fantasy
-Rating: PG-13&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Manga showcases tales of beresria</title>
-      <link>http://localhost:1313/posts/2025/manga-showcases-tales-of-beresria/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/manga-showcases-tales-of-beresria/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;The manga came out from October 22, 2016, to September 27, 2018, and there are 3 volumes to the manga series.&lt;/p&gt;
-&lt;p&gt;Velvet, the main protagonist, was in a village with her sick younger brother and one day her friend took her brother to make a sacrifice, and in the process of strength. She became a demon to get her revenge on her brother&amp;rsquo;s killer. The manga takes you through her journey to get strength so she can kill her brother&amp;rsquo;s murderer. On her journey, she finds fellow demons and people who will help her on her crusade. This story has a sad ending to it.**&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;The manga came out from October 22, 2016, to September 27, 2018, and there are 3 volumes to the manga series.&lt;/p&gt;
-&lt;p&gt;Velvet, the main protagonist, was in a village with her sick younger brother and one day her friend took her brother to make a sacrifice, and in the process of strength. She became a demon to get her revenge on her brother&amp;rsquo;s killer. The manga takes you through her journey to get strength so she can kill her brother&amp;rsquo;s murderer. On her journey, she finds fellow demons and people who will help her on her crusade. This story has a sad ending to it.**&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Movie Showcase Belle</title>
-      <link>http://localhost:1313/posts/2025/movie-showcase-belle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/movie-showcase-belle/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;story-overview&#34;&gt;Story Overview&lt;/h2&gt;
-&lt;p&gt;The main character is &lt;strong&gt;Sophie&lt;/strong&gt;. When she was young, her mother tragically died in a raging river while saving another girl. Although the girl was rescued, Sophie was left with the trauma of losing her mother. After the accident, she closed herself off from her family and lost the will to sing in front of people.&lt;/p&gt;
-&lt;p&gt;Later, Sophie discovers a &lt;strong&gt;VR world called “U.”&lt;/strong&gt; After creating her avatar, she joins the game, and one of the first things she does is sing. Her voice immediately captures attention, and she quickly rises to become one of the top idols within the virtual world.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;story-overview&#34;&gt;Story Overview&lt;/h2&gt;
-&lt;p&gt;The main character is &lt;strong&gt;Sophie&lt;/strong&gt;. When she was young, her mother tragically died in a raging river while saving another girl. Although the girl was rescued, Sophie was left with the trauma of losing her mother. After the accident, she closed herself off from her family and lost the will to sing in front of people.&lt;/p&gt;
-&lt;p&gt;Later, Sophie discovers a &lt;strong&gt;VR world called “U.”&lt;/strong&gt; After creating her avatar, she joins the game, and one of the first things she does is sing. Her voice immediately captures attention, and she quickly rises to become one of the top idols within the virtual world.&lt;/p&gt;
-&lt;p&gt;During one of her concerts, a &lt;strong&gt;mysterious Beast&lt;/strong&gt; crashes the stage, pursued by players dressed like superheroes. He fights them off and flees. Curious about him, Sophie and her friends begin searching for the Beast’s true identity, hoping to uncover who he really is.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;my-opinion&#34;&gt;My Opinion&lt;/h2&gt;
-&lt;p&gt;To me, the story feels like a &lt;strong&gt;modern retelling of &lt;em&gt;Beauty and the Beast&lt;/em&gt;&lt;/strong&gt;, but with a VR twist. This was my second time watching it, and it still holds up well.&lt;/p&gt;
-&lt;p&gt;The world of &lt;em&gt;U&lt;/em&gt; reminded me a lot of &lt;strong&gt;VRChat&lt;/strong&gt;, with its mix of avatars, virtual performance, and community. The narrative is refreshing — it doesn’t wrap up like a typical Disney movie, and that makes it more memorable.&lt;/p&gt;
-&lt;p&gt;The animation is beautiful, the music is powerful, and the emotional weight of Sophie’s journey gives the story depth.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Rating:&lt;/strong&gt; ⭐⭐⭐⭐☆ (4/5)&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
-&lt;p&gt;If you enjoy stories that mix technology, music, and heartfelt drama, &lt;em&gt;Belle&lt;/em&gt; is worth watching. It captures both the magic of fairy tales and the challenges of modern digital life.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>my review of the game called Transistor</title>
-      <link>http://localhost:1313/posts/2025/my-review-of-the-game-called-transistor/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/my-review-of-the-game-called-transistor/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;It takes you through a famous singer who lost her voice from the Evil group. The Eagle groups unleash monsters on the city and the only way is to use the sword the transistor. So you fight the monsters that took over the city and defeat them, finding out that there are clauses throwing terminals around the city. &lt;/p&gt;
-&lt;p&gt;The game is dubbed with a voice that entranced you into the story with voice diaries and the sword has a will of its own. The game is sad with a sad ending that made me want to cry. All so the music is sad as well&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;It takes you through a famous singer who lost her voice from the Evil group. The Eagle groups unleash monsters on the city and the only way is to use the sword the transistor. So you fight the monsters that took over the city and defeat them, finding out that there are clauses throwing terminals around the city. &lt;/p&gt;
-&lt;p&gt;The game is dubbed with a voice that entranced you into the story with voice diaries and the sword has a will of its own. The game is sad with a sad ending that made me want to cry. All so the music is sad as well&lt;/p&gt;
-&lt;p&gt;The game is on the Epic Game Store, Steam, Nintendo Switch, and for PS4.&lt;/p&gt;
-&lt;h3 id=&#34;source-site&#34;&gt;Source site&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://store.steampowered.com/app/237930/Transistor/&#34;&gt;steam&lt;/a&gt;&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>people are building smart homes wrong</title>
-      <link>http://localhost:1313/posts/2025/people-are-building-smart-homes-wrong/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/people-are-building-smart-homes-wrong/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;h1 id=&#34;people-are-building-smart-homes-wrong&#34;&gt;people are building smart homes wrong&lt;/h1&gt;
-&lt;p&gt;August 17, 2025 :: Casey Robinson&lt;/p&gt;
-&lt;p&gt;#Productivity&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-&lt;p&gt;people are making there smart home wrong because we gave them the wrong ideas. why i say that it is because we have marked it as a smart speaker that dose it all. that we will have a JARVIS that will make it all work like what we see in iron man. that idea is not bad but we are doing something that is not going to work for the long jevery but fast and not a hastel. but i shoud be clear that i am not a expert in a smart home but i do know that we see it as wee speak to a google home or a Alexa. with that is not the ancer becasuse of 2 reations.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;h1 id=&#34;people-are-building-smart-homes-wrong&#34;&gt;people are building smart homes wrong&lt;/h1&gt;
-&lt;p&gt;August 17, 2025 :: Casey Robinson&lt;/p&gt;
-&lt;p&gt;#Productivity&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-&lt;p&gt;people are making there smart home wrong because we gave them the wrong ideas. why i say that it is because we have marked it as a smart speaker that dose it all. that we will have a JARVIS that will make it all work like what we see in iron man. that idea is not bad but we are doing something that is not going to work for the long jevery but fast and not a hastel. but i shoud be clear that i am not a expert in a smart home but i do know that we see it as wee speak to a google home or a Alexa. with that is not the ancer becasuse of 2 reations.&lt;/p&gt;
-&lt;h1 id=&#34;reson-one-we-are-to-lazy-and-or-cant-talk&#34;&gt;reson one we are to lazy and/ or can&amp;rsquo;t talk&lt;/h1&gt;
-&lt;p&gt;the reson is that we don&amp;rsquo;t like saying &amp;ldquo;hay voice thing trun on lights &amp;quot; all the time like trying to say something to a baby that will anoy it. it is a repetdevme take that will get turing to do every single time you do it.&lt;/p&gt;
-&lt;p&gt;the ather reason is that there is a time and place to use your voice and when it is at the meddle of the knight with your partner right beside you is proble not one of them.  to you want it to be able to do athing with your voice it should for one off idem that will be hard to asing a button or some ather sencer to it but it is not worth trying to figer it out.&lt;/p&gt;
-&lt;h1 id=&#34;the-secont-reason-is-that-it-is-akword&#34;&gt;the secont reason is that it is akword&lt;/h1&gt;
-&lt;p&gt;to speak out loud is akword to people then to add it to a voice assistant that people are going to look at you weard for. yes i do see what i can do with my voice assistant but it still make it weard where a peoson is looking at you case you wanted to change the lights in your houce.&lt;/p&gt;
-&lt;h2 id=&#34;dont-get-me-started-on-the-apps-that-you-need-to-use&#34;&gt;dont get me started on the apps that you need to use&lt;/h2&gt;
-&lt;p&gt;the apps that you need to install a light bulb or a another device is ovsern so and thet there is no sorce of turth to the. so where are the automations going to be. non of them talk to each athure and mater is a joke it is not yet a voible product that a device that talks to the network and set up a ;ocal conmication. it is a fance local api that we had in some smart home produts like the shellys. yes it is sopoce to use the same comands but they don&amp;rsquo;t haft to. or beable to usdthem aquase plat form to begen with.&lt;/p&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;that is why we dare building are smart homes wrong and i am not the all seeing peorson. so i cant give the ancer to it but this is my insted from my experance of buildimy my smart home.&lt;/p&gt;
-&lt;hr&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Troubleshooting Steps That Gave Me an Idea on How to Solve Problems</title>
-      <link>http://localhost:1313/posts/2025/troubleshooting-steps-that-gave-me-an-idea-on-how-to-solve-problems/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/troubleshooting-steps-that-gave-me-an-idea-on-how-to-solve-problems/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Here are the seven troubleshooting steps:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Identify the problem&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Come up with a theory&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Test the theory&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Come up with a plan&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Implement the plan&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Test for functionality&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Document the process&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Depending on the problem, these steps don’t always happen in strict order — sometimes they overlap, or you combine them together. But the structure is powerful.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;applying-troubleshooting-outside-of-it&#34;&gt;Applying Troubleshooting Outside of IT&lt;/h2&gt;
-&lt;p&gt;To show how flexible this process is, let me walk through an example: &lt;strong&gt;learning how to draw&lt;/strong&gt;.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Here are the seven troubleshooting steps:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Identify the problem&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Come up with a theory&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Test the theory&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Come up with a plan&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Implement the plan&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Test for functionality&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Document the process&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Depending on the problem, these steps don’t always happen in strict order — sometimes they overlap, or you combine them together. But the structure is powerful.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;applying-troubleshooting-outside-of-it&#34;&gt;Applying Troubleshooting Outside of IT&lt;/h2&gt;
-&lt;p&gt;To show how flexible this process is, let me walk through an example: &lt;strong&gt;learning how to draw&lt;/strong&gt;.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Identify the problem&lt;/strong&gt;&lt;br&gt;
-→ &lt;em&gt;“I can’t draw well.”&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Come up with a theory&lt;/strong&gt;&lt;br&gt;
-→ &lt;em&gt;“Maybe I don’t actually know the fundamentals of drawing.”&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Test the theory&lt;/strong&gt;&lt;br&gt;
-→ Try doodling something simple. (This could also be part of step 5.)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Come up with a plan&lt;/strong&gt;&lt;br&gt;
-→ &lt;em&gt;“I’ll practice drawing for 1 hour a day for 30 days while using art books or online tutorials.”&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Implement the plan&lt;/strong&gt;&lt;br&gt;
-→ Begin the 30-day drawing challenge.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Test for functionality&lt;/strong&gt;&lt;br&gt;
-→ Compare your first doodle to your 30th-day drawing. Look for improvement.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Document the process&lt;/strong&gt;&lt;br&gt;
-→ Save your drawings and write down how you felt, what you learned, and where you still want to grow.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;By documenting, you keep your ideas and progress in a “second brain.” You can look back at them for encouragement and even use the same process to tackle other challenges.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;beyond-it-and-art&#34;&gt;Beyond IT and Art&lt;/h2&gt;
-&lt;p&gt;This troubleshooting mindset can apply to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Relationships&lt;/li&gt;
-&lt;li&gt;Car maintenance&lt;/li&gt;
-&lt;li&gt;Workplace challenges&lt;/li&gt;
-&lt;li&gt;Management decisions&lt;/li&gt;
-&lt;li&gt;Even government or large-scale problems&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;It’s not just for fixing servers or Linux systems — it’s a universal way of approaching challenges.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
-&lt;p&gt;Coming across this framework was an eye-opener for me. I haven’t implemented it fully outside of IT yet, but I see its potential everywhere.&lt;/p&gt;
-&lt;p&gt;The next time you hit a roadblock — whether in technology, life, or creativity — try applying the troubleshooting steps. You might be surprised how effective they are.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>What is a tech pouch?</title>
-      <link>http://localhost:1313/posts/2025/what-is-a-tech-pouch/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/what-is-a-tech-pouch/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Why have a tech pouch The first reason is organizing and cleanness it is because you know what you have and where it is, and it is in one place. The cables and briks are in one organized place where you don’t have to spend time finding stuff. For traveling, it is small and compact and when you get to the TSA security check, you can take out the pouch for the X-ray to see it easly then have cables just shoved in the bag, and they think it is a bome.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Why have a tech pouch The first reason is organizing and cleanness it is because you know what you have and where it is, and it is in one place. The cables and briks are in one organized place where you don’t have to spend time finding stuff. For traveling, it is small and compact and when you get to the TSA security check, you can take out the pouch for the X-ray to see it easly then have cables just shoved in the bag, and they think it is a bome.&lt;/p&gt;
-&lt;p&gt;So why do I have two tech pouches?&lt;/p&gt;
-&lt;p&gt;I have a full-size one for out of town, where I don’t have all the cables to charge my iPad and phone at the same time, also with my watch and earbuds too. But why is the second one in a pencil pouch? I carry my pens with a calculator, a 65W charging brick, and a c to c cable. I only have the one 65W charger for my laptop. My other tech pouch only has a 15W charger.&lt;/p&gt;
-&lt;p&gt;What Is a Tech Pouch (And Why You Probably Need One)&lt;/p&gt;
-&lt;p&gt;A tech pouch is basically a makeup bag for your electronics. It holds all your essential gadgets and accessories—cables, earbuds, charging bricks, and adapters like a USB-C to 3.5mm jack. Whether you’re traveling, working in IT, or just want to stay organized in everyday life, a tech pouch helps you keep your gear in one place and easy to grab when you need it.&lt;/p&gt;
-&lt;p&gt;Why I Use a Tech Pouch&lt;/p&gt;
-&lt;p&gt;The main reason? Organization. Instead of digging through your bag looking for a charger or cable, everything is packed neatly in one spot. No mess, no stress.&lt;/p&gt;
-&lt;p&gt;And if you travel, a tech pouch is a game-changer. It’s compact, easy to carry, and super handy during airport security. When you get to TSA, you can just pull out your pouch and toss it in the bin—way better than having a nest of wires scattered in your bag. Loose cables can look suspicious on the X-ray (sometimes even like a bomb), so having everything visible and tidy saves time and avoids weird looks.&lt;/p&gt;
-&lt;p&gt;Why I Have Two Tech Pouches&lt;/p&gt;
-&lt;p&gt;Yep, I carry two tech pouches—because one just doesn’t cover everything.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Full-Size Tech Pouch (for travel): This one’s for when I’m out of town. It holds all the essentials: enough cables and chargers to power my iPad, phone, watch, and earbuds—sometimes all at once. It’s the &amp;ldquo;everything&amp;rdquo; kit.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Everyday Tech Pouch (in a pencil case): This is my daily carry. I use a simple pencil pouch that holds a few pens, a calculator, a powerful 65W USB-C charging brick, and a USB-C to USB-C cable. It&amp;rsquo;s all I need for my laptop or quick charges throughout the day. My larger pouch only has a 15W charger, so this smaller one fills the gap when I need more power.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h3&gt;
-&lt;p&gt;If you’ve ever wasted time untangling cables or forgotten an adapter at home, a tech pouch might just be your new best friend. It keeps your gear clean, compact, and ready to go—whether you&amp;rsquo;re commuting, flying, or just heading to class. Start with one, and like me, you might find yourself building a system that fits your tech lifestyle perfectly.&lt;/p&gt;
-&lt;p&gt;**&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Why I Don’t Recommend the Sanpyl Numeric Keypad with TrackpadUntitled</title>
-      <link>http://localhost:1313/posts/2025/why-i-dont-recommend-the-sanpyl-numeric-keypad-with-trackpaduntitled/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/why-i-dont-recommend-the-sanpyl-numeric-keypad-with-trackpaduntitled/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Unfortunately, it was a major disappointment.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;what-i-wanted&#34;&gt;What I Wanted&lt;/h2&gt;
-&lt;p&gt;My goal was simple:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A number pad for occasional numeric input&lt;/li&gt;
-&lt;li&gt;A trackpad to swipe between virtual desktops (as I do on macOS)&lt;/li&gt;
-&lt;li&gt;Something compact to sit on the left side of my keyboard&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I originally had my eye on another product, but it was no longer being sold. So I settled on the Sanpyl. Here&amp;rsquo;s how that turned out.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Unfortunately, it was a major disappointment.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;what-i-wanted&#34;&gt;What I Wanted&lt;/h2&gt;
-&lt;p&gt;My goal was simple:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A number pad for occasional numeric input&lt;/li&gt;
-&lt;li&gt;A trackpad to swipe between virtual desktops (as I do on macOS)&lt;/li&gt;
-&lt;li&gt;Something compact to sit on the left side of my keyboard&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I originally had my eye on another product, but it was no longer being sold. So I settled on the Sanpyl. Here&amp;rsquo;s how that turned out.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;what-went-wrong&#34;&gt;What Went Wrong&lt;/h2&gt;
-&lt;h3 id=&#34;1-tiny-mushy-keys&#34;&gt;1. Tiny, Mushy Keys&lt;/h3&gt;
-&lt;p&gt;The keys are much too small and soft. Typing on them feels imprecise and sluggish—definitely not something you&amp;rsquo;d want to use regularly.&lt;/p&gt;
-&lt;h3 id=&#34;2-frustrating-trackpad-experience&#34;&gt;2. Frustrating Trackpad Experience&lt;/h3&gt;
-&lt;p&gt;The trackpad is the biggest letdown:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;It’s far too small, especially if you’re using a large display (mine is 42 inches).&lt;/li&gt;
-&lt;li&gt;It doesn’t support switching between desktops in Windows.&lt;/li&gt;
-&lt;li&gt;Gesture recognition is inconsistent—you can switch between applications, but it’s unreliable and uncomfortable due to the size.&lt;/li&gt;
-&lt;li&gt;Windows trackpad settings have no effect on its behavior.&lt;/li&gt;
-&lt;li&gt;It goes to sleep frequently, and waking it takes a few seconds of swiping and button pressing.&lt;/li&gt;
-&lt;li&gt;It often loses finger tracking mid-swipe, forcing you to lift your finger and start over.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;3-build-quality-isnt-enough&#34;&gt;3. Build Quality Isn’t Enough&lt;/h3&gt;
-&lt;p&gt;Yes, it has an aluminum body and uses USB-C for charging. But what’s the point of good materials if the user experience is frustrating?&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;final-verdict&#34;&gt;Final Verdict&lt;/h2&gt;
-&lt;p&gt;At &lt;strong&gt;$52.66&lt;/strong&gt;, the Sanpyl Numeric Keypad just isn’t worth the price. It’s slow, unresponsive, and clunky to use. I’ve ended up ignoring it completely—even though it sits right next to my keyboard.&lt;/p&gt;
-&lt;p&gt;If all you need is a number pad, I strongly suggest picking up a dedicated one instead. And if you&amp;rsquo;re looking for a trackpad, you&amp;rsquo;re better off saving up for a high-quality standalone model. Don’t expect this 2-in-1 to do either job well.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Why I Got Into Blogging</title>
-      <link>http://localhost:1313/posts/2025/why-i-got-into-blogging/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/why-i-got-into-blogging/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;h2 id=&#34;1-a-living-résumé-and-cv&#34;&gt;1. A Living Résumé and CV&lt;/h2&gt;
-&lt;p&gt;Blogging gives me a way to showcase my personality, creativity, and technical skills in a format that’s always available. Instead of just handing someone a résumé, I can point them to my website where they see my projects, writing style, and interests. It’s proof of what I can do, not just a list of jobs.&lt;/p&gt;
-&lt;h2 id=&#34;2-inspiration-from-others&#34;&gt;2. Inspiration From Others&lt;/h2&gt;
-&lt;p&gt;I was influenced by creators like &lt;a href=&#34;https://www.youtube.com/watch?v=gwUz3E9AW0w&#34;&gt;NetworkChuck&lt;/a&gt; and &lt;a href=&#34;https://www.youtube.com/watch?v=EXfFBEuCAr0&#34;&gt;Ali Abdaal&lt;/a&gt;, who both recommend starting a blog or personal website right now. Some of their videos that helped push me are:&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;h2 id=&#34;1-a-living-résumé-and-cv&#34;&gt;1. A Living Résumé and CV&lt;/h2&gt;
-&lt;p&gt;Blogging gives me a way to showcase my personality, creativity, and technical skills in a format that’s always available. Instead of just handing someone a résumé, I can point them to my website where they see my projects, writing style, and interests. It’s proof of what I can do, not just a list of jobs.&lt;/p&gt;
-&lt;h2 id=&#34;2-inspiration-from-others&#34;&gt;2. Inspiration From Others&lt;/h2&gt;
-&lt;p&gt;I was influenced by creators like &lt;a href=&#34;https://www.youtube.com/watch?v=gwUz3E9AW0w&#34;&gt;NetworkChuck&lt;/a&gt; and &lt;a href=&#34;https://www.youtube.com/watch?v=EXfFBEuCAr0&#34;&gt;Ali Abdaal&lt;/a&gt;, who both recommend starting a blog or personal website right now. Some of their videos that helped push me are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=gwUz3E9AW0w&#34;&gt;You need a website RIGHT NOW!! (create a website for FREE)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=EXfFBEuCAr0&#34;&gt;You STILL need a website RIGHT NOW!! (yes, even in 2025)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=dnE7c0ELEH8&#34;&gt;I started a blog&amp;hellip;..in 2024 (why you should too)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=NWfIrmIgaCU&#34;&gt;Why Everyone Needs a Personal Website&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;On top of that, I stumbled across another blogger while searching for manga reviews that ChatGPT couldn’t help me find. His site, &lt;a href=&#34;https://countzeroor.com/&#34;&gt;Count Zero Or&lt;/a&gt;, quickly became one of my favorites—I even added it to my RSS feed. He writes about movies, books, TV shows, manga, and anime, going into deeper dives than I usually do. He never really explained why he started his blog (at least that I’ve seen), but I respect his approach and recommend checking him out if you enjoy thoughtful reviews.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Why I Got Into Building Gunpla</title>
-      <link>http://localhost:1313/posts/2025/why-i-got-into-building-gunpla/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/why-i-got-into-building-gunpla/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;My very first kit was the &lt;strong&gt;Barbatos Lupus Rex&lt;/strong&gt;, followed by the &lt;strong&gt;Kimarus Vidar&lt;/strong&gt;. Since then, I’ve built over ten kits—and I even have a backlog (though nothing compared to my friend’s backlog of over 40 kits!). For me, Gunpla is a creative outlet. I build, paint, and even add LEDs whenever I can.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;my-first-painted-kit&#34;&gt;My First Painted Kit&lt;/h2&gt;
-&lt;p&gt;The first kit I painted was the &lt;strong&gt;Landman Rodi&lt;/strong&gt;, which is basically the Rodi with an add-on kit to turn it into the Landman version. Before painting it, I spent a few days learning how to paint and practicing techniques to get a decent finish. I used a lot of scrap plastic spoons as practice pieces (and still do). That practice gave me confidence before painting my kit for real.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;My very first kit was the &lt;strong&gt;Barbatos Lupus Rex&lt;/strong&gt;, followed by the &lt;strong&gt;Kimarus Vidar&lt;/strong&gt;. Since then, I’ve built over ten kits—and I even have a backlog (though nothing compared to my friend’s backlog of over 40 kits!). For me, Gunpla is a creative outlet. I build, paint, and even add LEDs whenever I can.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;my-first-painted-kit&#34;&gt;My First Painted Kit&lt;/h2&gt;
-&lt;p&gt;The first kit I painted was the &lt;strong&gt;Landman Rodi&lt;/strong&gt;, which is basically the Rodi with an add-on kit to turn it into the Landman version. Before painting it, I spent a few days learning how to paint and practicing techniques to get a decent finish. I used a lot of scrap plastic spoons as practice pieces (and still do). That practice gave me confidence before painting my kit for real.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;adding-leds&#34;&gt;Adding LEDs&lt;/h2&gt;
-&lt;p&gt;Adding LEDs to my builds is a more recent hobby. I started with two SD kits, then moved on to a High Grade where I installed LEDs but haven’t fully wired them together yet. Instead of using batteries, I install &lt;strong&gt;DC barrel jacks&lt;/strong&gt; so I can power the kits directly. This way, I don’t have to constantly change batteries, and I can turn the lights off when I go to bed.&lt;/p&gt;
-&lt;p&gt;I tried wireless LEDs once, and while they work well for Master Grades, I prefer running small wired LEDs through my kits. It gives me more control and reliability.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;other-builds&#34;&gt;Other Builds&lt;/h2&gt;
-&lt;p&gt;Not all of my builds are about LEDs or paint. For example, I once built a &lt;strong&gt;bug-themed kit&lt;/strong&gt; without any LEDs or fancy paint. Even though it was simpler, it was still a fun project. Parts have started falling off over time, so I’d like to rebuild it one day. At the end of the day, I’m a Gunpla builder first—not a car modeler or anything else. Gunpla gives me both the challenge and the creativity I enjoy.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Why i have a smart home</title>
-      <link>http://localhost:1313/posts/2025/why-i-have-a-smart-home/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/why-i-have-a-smart-home/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;I have a smart home for a few reasons, but they mainly come down to &lt;strong&gt;creativity&lt;/strong&gt; and &lt;strong&gt;being hands-off&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;To be honest, I don’t see someone owning an Alexa or another smart speaker as truly having a smart home—that’s just a fancy light switch. And apps aren’t the full answer either.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;being-creative&#34;&gt;Being Creative&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;I enjoy building &lt;strong&gt;cool automation&lt;/strong&gt;, like having my lights change to random colors or using a web-hook from my notes app to start my kettle.&lt;/li&gt;
-&lt;li&gt;It’s fun for me as a consumer to buy interesting gadgets that give me new possibilities for automation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;being-hands-off&#34;&gt;Being Hands-Off&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Improving efficiency&lt;/strong&gt; so the human element doesn’t forget: for example, my AC automatically switches from 64°F at night to 72°F when I open the door in the morning.&lt;/li&gt;
-&lt;li&gt;Eliminating unnecessary &lt;strong&gt;context switching&lt;/strong&gt;—I don’t have to stop what I’m doing to handle small tasks.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Improving family living&lt;/strong&gt; by having lights turn on automatically so people can see where they’re going and avoid touching light switches, which also reduces germ spread.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Do I &lt;em&gt;need&lt;/em&gt; a smart home? No—plenty of people live without one.&lt;br&gt;
-But as a nerd who values productivity and the ease of walking into a room without doing anything, I’m a power user. I self-host my own system with &lt;strong&gt;Home Assistant&lt;/strong&gt;, which makes my setup both hands-off in daily use and hands-on when it comes to building and maintaining it.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;I have a smart home for a few reasons, but they mainly come down to &lt;strong&gt;creativity&lt;/strong&gt; and &lt;strong&gt;being hands-off&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;To be honest, I don’t see someone owning an Alexa or another smart speaker as truly having a smart home—that’s just a fancy light switch. And apps aren’t the full answer either.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;being-creative&#34;&gt;Being Creative&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;I enjoy building &lt;strong&gt;cool automation&lt;/strong&gt;, like having my lights change to random colors or using a web-hook from my notes app to start my kettle.&lt;/li&gt;
-&lt;li&gt;It’s fun for me as a consumer to buy interesting gadgets that give me new possibilities for automation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;being-hands-off&#34;&gt;Being Hands-Off&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Improving efficiency&lt;/strong&gt; so the human element doesn’t forget: for example, my AC automatically switches from 64°F at night to 72°F when I open the door in the morning.&lt;/li&gt;
-&lt;li&gt;Eliminating unnecessary &lt;strong&gt;context switching&lt;/strong&gt;—I don’t have to stop what I’m doing to handle small tasks.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Improving family living&lt;/strong&gt; by having lights turn on automatically so people can see where they’re going and avoid touching light switches, which also reduces germ spread.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Do I &lt;em&gt;need&lt;/em&gt; a smart home? No—plenty of people live without one.&lt;br&gt;
-But as a nerd who values productivity and the ease of walking into a room without doing anything, I’m a power user. I self-host my own system with &lt;strong&gt;Home Assistant&lt;/strong&gt;, which makes my setup both hands-off in daily use and hands-on when it comes to building and maintaining it.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Why I’m Stepping Away from NixOS (For Now)</title>
-      <link>http://localhost:1313/posts/2025/why-im-stepping-away-from-nixos-for-now/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/why-im-stepping-away-from-nixos-for-now/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;But ironically, the same thing I love about NixOS is also why I’m stepping away from it—for now.&lt;/p&gt;
-&lt;h2 id=&#34;the-struggle-programming-with-nixos&#34;&gt;The Struggle: Programming with NixOS&lt;/h2&gt;
-&lt;p&gt;When I sit down to write or run a script, I often hit a wall: missing dependencies.&lt;/p&gt;
-&lt;p&gt;Since NixOS doesn’t rely on a global package manager in the traditional sense, I need to explicitly declare everything I need in a nix-shell, a flake, or in the system configuration. This becomes a friction point, especially when I’m trying to experiment, learn, or prototype.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;But ironically, the same thing I love about NixOS is also why I’m stepping away from it—for now.&lt;/p&gt;
-&lt;h2 id=&#34;the-struggle-programming-with-nixos&#34;&gt;The Struggle: Programming with NixOS&lt;/h2&gt;
-&lt;p&gt;When I sit down to write or run a script, I often hit a wall: missing dependencies.&lt;/p&gt;
-&lt;p&gt;Since NixOS doesn’t rely on a global package manager in the traditional sense, I need to explicitly declare everything I need in a nix-shell, a flake, or in the system configuration. This becomes a friction point, especially when I’m trying to experiment, learn, or prototype.&lt;/p&gt;
-&lt;p&gt;I’m not a professional developer at the time of this writing. I’m still learning and growing in my coding journey. But I find myself spending more time configuring the environment than actually writing code. I forget which packages I need, I have to dig through documentation, and sometimes even rebuild the whole system just to get a program running.&lt;/p&gt;
-&lt;p&gt;It’s not NixOS’s fault. That’s the tradeoff you make for a reproducible, clean system. But for someone like me, it’s frustrating when I just want to get in and code.&lt;/p&gt;
-&lt;h2 id=&#34;what-im-switching-to&#34;&gt;What I&amp;rsquo;m Switching To&lt;/h2&gt;
-&lt;p&gt;For my next Linux desktop, I’m probably going with something more traditional—most likely Debian or Arch. Both offer simpler, more familiar workflows for development. If I need a library or tool, I can install it instantly with apt or pacman. No rebuilding the whole system, no worrying about nix expressions or shell environments.&lt;/p&gt;
-&lt;p&gt;Right now, I want something that gets out of my way so I can focus on learning and building. I’ll likely come back to NixOS down the road, but for now, I need to reduce friction.&lt;/p&gt;
-&lt;h2 id=&#34;where-nixos-still-wins-servers-and-family-systems&#34;&gt;Where NixOS Still Wins: Servers and Family Systems&lt;/h2&gt;
-&lt;p&gt;That said, I still love NixOS for servers. It’s perfect for creating repeatable environments, which makes it ideal for infrastructure. I plan to continue using it for my home servers—especially when combined with tools like Ansible, SNMP, webhooks, and auto-deploy scripts. Once I have my configs dialed in, I can push the same setup across multiple machines and know they’ll behave exactly the same.&lt;/p&gt;
-&lt;p&gt;I also plan to use NixOS for computers I manage for family members. As the designated “IT person” in my immediate family, I want their systems to be stable and predictable. NixOS lets me lock down everything, easily redeploy configurations, and keep things running smoothly with minimal support needs.&lt;/p&gt;
-&lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
-&lt;p&gt;NixOS is a brilliant system. It’s ideal for:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Sysadmins&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Infrastructure engineers&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;People who love full control over their systems&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Developers who want reproducible, sandboxed environments&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;But for new or intermediate programmers—especially those who just want to open a terminal and start building—it can feel like a wall. The need to manage environments explicitly and the learning curve around the Nix language can get in the way of momentum.&lt;/p&gt;
-&lt;p&gt;I’m not saying goodbye forever. NixOS is still part of my long-term toolset. But for right now, I need a desktop experience that supports my creative flow rather than interrupts it.&lt;/p&gt;
-&lt;p&gt;And when I’m ready to come back, NixOS will be right there waiting—reproducible as ever.&lt;/p&gt;
-&lt;p&gt;**&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>why people are building smart homes wrong</title>
-      <link>http://localhost:1313/posts/2025/why-people-are-building-smart-homes-wrong/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/why-people-are-building-smart-homes-wrong/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;From my perspective, there are &lt;strong&gt;three big problems&lt;/strong&gt; holding smart homes back—and unless these are fixed, the term “smart home” will remain misleading.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;1-the-hub-madness&#34;&gt;1. The Hub Madness&lt;/h3&gt;
-&lt;p&gt;Walk into a typical smart home setup, and you’ll probably find a shelf full of hubs: a Philips Hue hub, a SmartThings hub, maybe a Lutron hub, a Zigbee stick, and so on.&lt;/p&gt;
-&lt;p&gt;The problem? None of these hubs speak the same “language.” That means:&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;From my perspective, there are &lt;strong&gt;three big problems&lt;/strong&gt; holding smart homes back—and unless these are fixed, the term “smart home” will remain misleading.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;1-the-hub-madness&#34;&gt;1. The Hub Madness&lt;/h3&gt;
-&lt;p&gt;Walk into a typical smart home setup, and you’ll probably find a shelf full of hubs: a Philips Hue hub, a SmartThings hub, maybe a Lutron hub, a Zigbee stick, and so on.&lt;/p&gt;
-&lt;p&gt;The problem? None of these hubs speak the same “language.” That means:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Sensor A can’t trigger bulb B&lt;/strong&gt; if they’re on different platforms.&lt;/li&gt;
-&lt;li&gt;Devices often live on separate networks (Zigbee, Z-Wave, Wi-Fi, Thread), which don’t always talk to each other.&lt;/li&gt;
-&lt;li&gt;You get &lt;strong&gt;signal duplication and interference&lt;/strong&gt; from too many protocols running in parallel.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A true smart home shouldn’t require juggling five different hubs just to make a motion sensor turn on a light.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;2-voice-assistants-arent-real-hubs&#34;&gt;2. Voice Assistants Aren’t Real Hubs&lt;/h3&gt;
-&lt;p&gt;Voice assistants like Alexa, Google Assistant, or Siri have been marketed as the “brain” of the smart home. But in reality, they’re just &lt;strong&gt;fancy voice-operated switches&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Here’s why:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Most automations depend on the &lt;strong&gt;cloud&lt;/strong&gt;, which introduces delays.&lt;/li&gt;
-&lt;li&gt;Some assistants can do limited local automations (like “motion turns on light ”), but they’re often inconsistent.&lt;/li&gt;
-&lt;li&gt;Relying on your voice to control everything isn’t “smart”—it’s just manual control with extra steps.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A truly smart home should &lt;strong&gt;anticipate your needs&lt;/strong&gt; and act automatically. For example: lights that turn on when you walk in, HVAC that adjusts when a window opens, or routines that adapt based on your schedule. That’s real intelligence—not just voice commands.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;3-matter-the-promise-and-the-mess&#34;&gt;3. Matter: The Promise and the Mess&lt;/h3&gt;
-&lt;p&gt;Matter was supposed to fix everything. Marketed as the “universal smart home standard,” it promised to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Allow devices from different brands to work seamlessly.&lt;/li&gt;
-&lt;li&gt;Run locally, without cloud dependence.&lt;/li&gt;
-&lt;li&gt;Let a simple action—like pressing Button A—toggle Bulb B, regardless of brand.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;But in practice, Matter has stumbled:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Not all Matter devices support the same features.&lt;/li&gt;
-&lt;li&gt;Some manufacturers implement only partial functionality.&lt;/li&gt;
-&lt;li&gt;Ecosystem support is inconsistenbetween sunset and sunriset, so consumers are still stuck with compatibility headaches.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Matter could still deliver on its promise, but only if manufacturers &lt;strong&gt;take it seriously and implement it fully&lt;/strong&gt;. Right now, it feels like another layer of fragmentation.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;what-a-smart-home-should-look-like&#34;&gt;What a Smart Home &lt;em&gt;Should&lt;/em&gt; Look Like&lt;/h3&gt;
-&lt;p&gt;If we step back, a smart home should follow three principles:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Unified Control&lt;/strong&gt; – one central platform (local-first) that works across all devices.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;True Automation&lt;/strong&gt; – events happen automatically, not only by voice command.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Interoperability First&lt;/strong&gt; – every device should be able to communicate, no matter who made it.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Projects like &lt;strong&gt;Home Assistant&lt;/strong&gt;, &lt;strong&gt;openHAB&lt;/strong&gt;, or &lt;strong&gt;Hubitat&lt;/strong&gt; get closer to this vision than most consumer-grade systems because they prioritize &lt;strong&gt;local control&lt;/strong&gt; and &lt;strong&gt;cross-brand interoperability&lt;/strong&gt;.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;final-thought&#34;&gt;Final Thought&lt;/h3&gt;
-&lt;p&gt;Right now, consumer smart homes are mostly “connected” homes—not truly “smart.” Until hubs are unified, voice assistants move beyond being glorified remotes, and Matter delivers on its promise, we’ll still be living in a fragmented, unreliable future.&lt;/p&gt;
-&lt;p&gt;A truly smart home shouldn’t just listen to you—it should think with you.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Why Productivity Is Snake Oil</title>
-      <link>http://localhost:1313/posts/2025/why-productivity-is-snake-oil/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/why-productivity-is-snake-oil/</guid>
-      <description>&lt;p&gt;The definition of productivity (such as time, labor, or materials) is to produce a desired outcome, output, or result. But why do I say it&amp;rsquo;s snake oil?&lt;/p&gt;
-&lt;p&gt;It’s unmeasured and undefined. What most people call productivity is really just busywork. We measure it in quantity before quality—and there’s a big difference.&lt;/p&gt;
-&lt;p&gt;There’s a quote: &lt;strong&gt;&amp;ldquo;Bite off more than you can chew.&amp;rdquo;&lt;/strong&gt; That’s what people are doing in the pursuit of productivity. So we end up turning in half-hearted work, which we sometimes have to redo, just to say we got more done. It&amp;rsquo;s not attainable—there&amp;rsquo;s always more to do. So we rush, repeat, and burn out.&lt;/p&gt;</description>
-      <content>&lt;p&gt;The definition of productivity (such as time, labor, or materials) is to produce a desired outcome, output, or result. But why do I say it&amp;rsquo;s snake oil?&lt;/p&gt;
-&lt;p&gt;It’s unmeasured and undefined. What most people call productivity is really just busywork. We measure it in quantity before quality—and there’s a big difference.&lt;/p&gt;
-&lt;p&gt;There’s a quote: &lt;strong&gt;&amp;ldquo;Bite off more than you can chew.&amp;rdquo;&lt;/strong&gt; That’s what people are doing in the pursuit of productivity. So we end up turning in half-hearted work, which we sometimes have to redo, just to say we got more done. It&amp;rsquo;s not attainable—there&amp;rsquo;s always more to do. So we rush, repeat, and burn out.&lt;/p&gt;
-&lt;p&gt;It’s not your fault. It’s the system you were pushed into. And that same system burns out people in similar professions—like software engineers—over and over again.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;lets-talk-about-ai&#34;&gt;Let’s Talk About AI&lt;/h2&gt;
-&lt;p&gt;Now we’re in the age of AI, and yeah, maybe I’m being a little dramatic, but it’s true: AI is going to change the way we work. It might not take your job outright, but it will make you feel more detached from your work—and maybe even from your passion.&lt;/p&gt;
-&lt;p&gt;We won’t grow as a society if we let AI do everything for us. If you use AI just to get more work done faster, you’ll be expected to do even &lt;em&gt;more&lt;/em&gt;, and then burnout will hit even harder.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;im-not-against-self-help-or-tools&#34;&gt;I&amp;rsquo;m Not Against Self-Help or Tools&lt;/h2&gt;
-&lt;p&gt;Yes, I like reading self-help books. I’m currently reading &lt;em&gt;How to Build a Second Brain&lt;/em&gt; by Tiago Forte. The intention behind it is to get better at my craft—to capture and reference things like my coffee setup, water temp, grind size, and not forget them.&lt;/p&gt;
-&lt;p&gt;So I’m not against productivity tools.&lt;/p&gt;
-&lt;p&gt;But I’m also not for being so obsessed with work that I lose all passion for it.&lt;/p&gt;
-&lt;hr&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Why You Don’t Want Too Many Wireless Signals in Your Home</title>
-      <link>http://localhost:1313/posts/2025/why-you-dont-want-too-many-wireless-signals-in-your-home/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/why-you-dont-want-too-many-wireless-signals-in-your-home/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Even the Wi-Fi from your neighbors can interfere with your own. And if you have a smart home, you’ve probably heard of protocols like &lt;strong&gt;Thread&lt;/strong&gt; or &lt;strong&gt;Zigbee&lt;/strong&gt;, which add even more signals into the mix.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;common-wireless-protocols-in-a-smart-home&#34;&gt;Common Wireless Protocols in a Smart Home&lt;/h2&gt;
-&lt;p&gt;Here are some of the most common wireless protocols you’ll find in smart homes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Zigbee&lt;/strong&gt; – Operates in the 2.4 GHz range. Used for buttons, door sensors, motion sensors, and other small smart gadgets.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Z-Wave&lt;/strong&gt; – Operates in the 800–900 MHz range. Often used in smart homes and businesses, with built-in encryption for secure communication.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Bluetooth&lt;/strong&gt; – Operates in the 2.4 GHz range. Commonly used for speakers, headphones, and short-range connections.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Thread&lt;/strong&gt; – Also uses the 2.4 GHz range. Similar to Zigbee, often used in new smart home devices for low-power, reliable connections.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LoRa&lt;/strong&gt; – Operates in the 902–928 MHz range. Designed for long-range, low-power communication such as outdoor sensors.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wi-Fi&lt;/strong&gt; – Operates in the 2.4 GHz and 5 GHz ranges (and now Wi-Fi 6/6E in 6 GHz). Used for almost everything, including smart home devices.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;the-problem-with-too-many-signals&#34;&gt;The Problem With Too Many Signals&lt;/h2&gt;
-&lt;p&gt;When you start adding more devices, these signals can &lt;strong&gt;become congested&lt;/strong&gt;. Even if they aren’t sending the same information, they may “talk over” each other. This causes interference, slows down communication, and can even cause devices to miss messages entirely.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;Even the Wi-Fi from your neighbors can interfere with your own. And if you have a smart home, you’ve probably heard of protocols like &lt;strong&gt;Thread&lt;/strong&gt; or &lt;strong&gt;Zigbee&lt;/strong&gt;, which add even more signals into the mix.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;common-wireless-protocols-in-a-smart-home&#34;&gt;Common Wireless Protocols in a Smart Home&lt;/h2&gt;
-&lt;p&gt;Here are some of the most common wireless protocols you’ll find in smart homes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Zigbee&lt;/strong&gt; – Operates in the 2.4 GHz range. Used for buttons, door sensors, motion sensors, and other small smart gadgets.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Z-Wave&lt;/strong&gt; – Operates in the 800–900 MHz range. Often used in smart homes and businesses, with built-in encryption for secure communication.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Bluetooth&lt;/strong&gt; – Operates in the 2.4 GHz range. Commonly used for speakers, headphones, and short-range connections.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Thread&lt;/strong&gt; – Also uses the 2.4 GHz range. Similar to Zigbee, often used in new smart home devices for low-power, reliable connections.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LoRa&lt;/strong&gt; – Operates in the 902–928 MHz range. Designed for long-range, low-power communication such as outdoor sensors.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wi-Fi&lt;/strong&gt; – Operates in the 2.4 GHz and 5 GHz ranges (and now Wi-Fi 6/6E in 6 GHz). Used for almost everything, including smart home devices.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;the-problem-with-too-many-signals&#34;&gt;The Problem With Too Many Signals&lt;/h2&gt;
-&lt;p&gt;When you start adding more devices, these signals can &lt;strong&gt;become congested&lt;/strong&gt;. Even if they aren’t sending the same information, they may “talk over” each other. This causes interference, slows down communication, and can even cause devices to miss messages entirely.&lt;/p&gt;
-&lt;p&gt;For example:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A motion sensor trying to trigger a smart light might get delayed.&lt;/li&gt;
-&lt;li&gt;Your Wi-Fi speed might drop because your router is fighting with Bluetooth or Zigbee chatter.&lt;/li&gt;
-&lt;li&gt;Smart devices may become unreliable if too many protocols are competing.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;recommendations-for-a-smart-home&#34;&gt;Recommendations for a Smart Home&lt;/h2&gt;
-&lt;p&gt;To avoid interference, it’s best to &lt;strong&gt;limit the number of overlapping signals&lt;/strong&gt;. For most homes, a good setup is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Wi-Fi&lt;/strong&gt; for general devices (computers, phones, TVs).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Zigbee or Z-Wave&lt;/strong&gt; for smart home sensors and buttons.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This balance reduces congestion while still giving you the benefits of wireless automation.&lt;/p&gt;
-&lt;p&gt;If you overload your home with every protocol at once, you’ll run into problems. But by carefully choosing one or two systems, you can keep your smart home fast, reliable, and frustration-free.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Why you should handwrite your notes</title>
-      <link>http://localhost:1313/posts/2025/why-you-should-handwrite-your-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/2025/why-you-should-handwrite-your-notes/</guid>
-      <description>&lt;p&gt;In a digital environment, it is easy to go faster. In the age of AI, things go even faster. But that speed does you no good if you don’t know what you are doing, because you end up copying and pasting the information. You don’t know what you just said, and you will forget it in a few hours. I think people should write more and practice. According to Science Daily, workers were 25% faster on paper than on an electronic device (“Study Shows Stronger Brain Activity”). The article says that a notebook is not uniform in pen strokes, has limited space, and is a physical item to keep track of. Digital notes are infinite in spacing and easily closed, so when you close the app, it is out of sight, out of mind. This reminds me of a quote that I once heard: “ To go faster, you first need to slow down,” which means to step back and look at it objectively, but with the digital tool, you don’t step back and see it differently. I know the convenience of the available digital tools, and you have them anywhere via the cloud. A notebook is not easily searchable, and they are bulky to carry, especially if you go bigger than an A5-size notebook. In contrast, a notebook enables faster deep understanding than a digital app.&lt;/p&gt;</description>
-      <content>&lt;p&gt;In a digital environment, it is easy to go faster. In the age of AI, things go even faster. But that speed does you no good if you don’t know what you are doing, because you end up copying and pasting the information. You don’t know what you just said, and you will forget it in a few hours. I think people should write more and practice. According to Science Daily, workers were 25% faster on paper than on an electronic device (“Study Shows Stronger Brain Activity”). The article says that a notebook is not uniform in pen strokes, has limited space, and is a physical item to keep track of. Digital notes are infinite in spacing and easily closed, so when you close the app, it is out of sight, out of mind. This reminds me of a quote that I once heard: “ To go faster, you first need to slow down,” which means to step back and look at it objectively, but with the digital tool, you don’t step back and see it differently. I know the convenience of the available digital tools, and you have them anywhere via the cloud. A notebook is not easily searchable, and they are bulky to carry, especially if you go bigger than an A5-size notebook. In contrast, a notebook enables faster deep understanding than a digital app.&lt;/p&gt;
-&lt;p&gt;There are YouTube channels that are dedicated to notebooks and writing by hand, like Parknote, which give you good explanations and reasons to use a notebook. Some say writing in a notebook is a life changer because writing by hand triggers more of the brain and increases memory (Storey), compared to a human who can type around 40 words per minute, so a typist is just transcribing their thoughts, and not thinking deeply, if at all. &amp;ldquo;A typist often does not step back and view their writing objectively. So you do not see it in a different context. &lt;/p&gt;
-&lt;p&gt;It is why writers read out loud, then read it in their heads, because the brain will add and/or improve with their reading. I mention the speed benefits of digital, but handwriting is fast too, in its own way. You can think more clearly. While it is slower, it is less distracting. I know from experience that I pull out my phone to do something, and then get distracted by the notifications in the past. I always carried an idea journal because my ideas are around tech and sci-fi, so I would draw in it where I can’t easily do it with digital. When you open a specific notebook, you are locked into it during your work. By doing that, why should you handwrite your notes? You are getting the work done faster, and famous people use notebooks called commonplace books, where they capture their thoughts, similar to the ideas that come to you in the shower. Some people like Leonardo da Vinci, John Lennon, and Taylor Swift use their commonplace books for that exact reason. So they can implement their ideas and quotes back into their art.&lt;/p&gt;
-&lt;p&gt;I have talked about writing and the benefits of handwriting, but there is a form of handwriting that is faster than printing and makes both sides of the brain work, and that is cursive. For a neurotypical person, who has decent handwriting and no speed problems, writing in print is fine, but for a neurodivergent person, like one with dyslexia, writing in cursive helps them out big time. It helps them pick up words faster and will help them write words, triggering the drawing part of the brain. Since they have a hard time picking up words, their handwriting is often unreadable, so writing in cursive gives them more control and the image of the word to put with the sound of the word. And for the speed of it, when you get good at cursive, you become faster because you don’t leave the pen on the paper as much, so you are not wasting time on unnecessary motion.Why you should handwrite your notes&lt;/p&gt;
-&lt;p&gt; While one can get an iPad with one of their pencils and write on it, the iPad will also have text messages and notifications that will make it distracting, and it might not be exactly known as a tool for learning. I do use an iPad for notes without the notification apps to make it distraction-free.&lt;/p&gt;
-&lt;p&gt; A system called Building a Second Brain from Tiago Forte is where note apps are used, and it has a lot of benefits, as it is more portable and can store everything from health notes to movie quotes. So notes are put into long-term memory and easily recalled by searching them up. A notebook doesn’t have the portability and is not searchable like an app is, and the user doesn’t have to worry about the paper running out or spelling at all. People have paired it with the Zettelkasten system for idea generation. The ability to link articles and book highlights from Kindle and other places is handy for keeping the information together.&lt;/p&gt;
-&lt;p&gt;In my ideal world and system, I will use a notebook and write down my thoughts and ideals, then have it scanned afterward to put them into digital form, so I can search and keep it safe for any event that can come up that is similar to a different project. With AI that can look over my notes and search for a specific topic that I have looked up in the past. By doing it that way, it can work hand in hand with each other, having both. To learn on paper and get the memory of it, but afterward to have it in the cloud for backup and archiving, and the space-saving of digital.&lt;/p&gt;
-&lt;p&gt;**&lt;/p&gt;
-</content>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My New Hugo Site</title><link>https://caseyjrobinson.com/</link><description>Recent content on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://caseyjrobinson.com/index.xml" rel="self" type="application/rss+xml"/><item><title>an I Still Happy with my Big Monitor</title><link>https://caseyjrobinson.com/posts/2025/an-i-still-happy-with-my-big-monitor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/an-i-still-happy-with-my-big-monitor/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>Yes and no — I love the big monitor. I even took the smaller monitor off the side of my desk for it. But I don’t like it as much as I thought I would. It’s large, and while that’s great in some ways, many of its features would honestly work better if they were split into separate devices for a variety of reasons.&lt;/p>
+&lt;hr>
+&lt;h3 id="kvm">KVM&lt;/h3>
+&lt;p>To start with, the KVM (keyboard, video, mouse) switch setup is a bit of a hassle. It requires a USB and a display cable for each connected device, and there’s no easy way to manage those cables cleanly. Power is on one side of the monitor, while data and video inputs are on the other, making cable management awkward. Also, if one of your systems is powered off or sleeping, the USB ports on the monitor won’t stay active — so you can’t use them to wake the system up.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;p>Yes and no — I love the big monitor. I even took the smaller monitor off the side of my desk for it. But I don’t like it as much as I thought I would. It’s large, and while that’s great in some ways, many of its features would honestly work better if they were split into separate devices for a variety of reasons.&lt;/p>
+&lt;hr>
+&lt;h3 id="kvm">KVM&lt;/h3>
+&lt;p>To start with, the KVM (keyboard, video, mouse) switch setup is a bit of a hassle. It requires a USB and a display cable for each connected device, and there’s no easy way to manage those cables cleanly. Power is on one side of the monitor, while data and video inputs are on the other, making cable management awkward. Also, if one of your systems is powered off or sleeping, the USB ports on the monitor won’t stay active — so you can’t use them to wake the system up.&lt;/p>
+&lt;hr>
+&lt;h3 id="pbp--pip">PBP &amp;amp; PIP&lt;/h3>
+&lt;p>I haven’t really used the PIP (Picture-in-Picture) or PBP (Picture-by-Picture) modes because they’re not very practical. The screen is too big to use PIP in any meaningful way — it just takes up valuable space from the main source underneath. As for PBP, it splits the screen in half, basically turning the display into two 24-inch monitors sitting side by side. That might sound good, but in portrait mode, it feels awkward and disjointed. Plus, the KVM gets disabled in PBP mode, so you can’t just switch inputs easily. In everyday use, portrait mode isn’t all that useful — it’s mostly good for reading text documents or writing.&lt;/p>
+&lt;hr>
+&lt;h3 id="final-thoughts">Final Thoughts&lt;/h3>
+&lt;p>The monitor is great for editing videos, working with images, and multitasking — especially if you’re using a tiling window manager or similar setup. Honestly, though, two 24-inch monitors might be more practical for most people. That said, the large monitor &lt;em>is&lt;/em> excellent for gaming, video editing, and 3D work. I just don’t find it useful for &lt;em>everything&lt;/em>, all the time. so i can’t recommend it if it is your primary display for everyday life but i can if it is for a pacific prepose.&lt;/p>
+&lt;h1 id="links">links&lt;/h1>
+&lt;p>&lt;a href="https://www.youtube.com/watch?v=95V3vZH0HHU">unboxing video&lt;/a>&lt;/p></content></item><item><title>Building an Overkill Home NAS SAN</title><link>https://caseyjrobinson.com/posts/2025/building-an-overkill-home-nas-san/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/building-an-overkill-home-nas-san/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>Buying large storage for each machine is expensive and less secure. A centralized storage solution made much more sense.&lt;/p>
+&lt;hr>
+&lt;h2 id="nas-vs-san-the-basics">NAS vs. SAN: The Basics&lt;/h2>
+&lt;p>When you think of network storage, you’re probably thinking of a NAS, since that’s what most YouTubers show off. But there are actually two different types of network storage:&lt;/p>
+&lt;h3 id="nas-network-attached-storage">NAS (Network Attached Storage)&lt;/h3>
+&lt;ul>
+&lt;li>File-based storage.&lt;/li>
+&lt;li>Uses protocols like &lt;strong>SMB&lt;/strong> or &lt;strong>NFS&lt;/strong>.&lt;/li>
+&lt;li>Most people and companies rely on &lt;strong>SMB&lt;/strong> because it works across Windows, macOS, and Linux.&lt;/li>
+&lt;/ul>
+&lt;h3 id="san-storage-area-network">SAN (Storage Area Network)&lt;/h3>
+&lt;ul>
+&lt;li>Block-level storage for direct connections over the local network.&lt;/li>
+&lt;li>Typically uses &lt;strong>iSCSI&lt;/strong> over Ethernet or Fiber.&lt;/li>
+&lt;li>Not designed for multi-machine file sharing the way SMB is.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="my-requirements">My Requirements&lt;/h2>
+&lt;p>I wanted my system to be:&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;p>Buying large storage for each machine is expensive and less secure. A centralized storage solution made much more sense.&lt;/p>
+&lt;hr>
+&lt;h2 id="nas-vs-san-the-basics">NAS vs. SAN: The Basics&lt;/h2>
+&lt;p>When you think of network storage, you’re probably thinking of a NAS, since that’s what most YouTubers show off. But there are actually two different types of network storage:&lt;/p>
+&lt;h3 id="nas-network-attached-storage">NAS (Network Attached Storage)&lt;/h3>
+&lt;ul>
+&lt;li>File-based storage.&lt;/li>
+&lt;li>Uses protocols like &lt;strong>SMB&lt;/strong> or &lt;strong>NFS&lt;/strong>.&lt;/li>
+&lt;li>Most people and companies rely on &lt;strong>SMB&lt;/strong> because it works across Windows, macOS, and Linux.&lt;/li>
+&lt;/ul>
+&lt;h3 id="san-storage-area-network">SAN (Storage Area Network)&lt;/h3>
+&lt;ul>
+&lt;li>Block-level storage for direct connections over the local network.&lt;/li>
+&lt;li>Typically uses &lt;strong>iSCSI&lt;/strong> over Ethernet or Fiber.&lt;/li>
+&lt;li>Not designed for multi-machine file sharing the way SMB is.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="my-requirements">My Requirements&lt;/h2>
+&lt;p>I wanted my system to be:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Fast&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Energy-efficient&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Because of this, I decided to use &lt;strong>SSDs&lt;/strong>. While they aren’t ideal for bulk storage, they work well as supplemental storage for my Proxmox server, which hosts my media library. I also set up an iSCSI connection for VM storage.&lt;/p>
+&lt;hr>
+&lt;h2 id="my-hardware-setup">My Hardware Setup&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>CPU:&lt;/strong> Ryzen 5 3600 (stock cooler)&lt;/li>
+&lt;li>&lt;strong>RAM:&lt;/strong> 36GB Silicon Power Value Gaming&lt;/li>
+&lt;li>&lt;strong>Storage:&lt;/strong> 4 × 2TB TEAMGROUP SSDs&lt;/li>
+&lt;li>&lt;strong>Boot Disk:&lt;/strong> Crucial P3 Plus 500GB SSD&lt;/li>
+&lt;li>&lt;strong>Motherboard:&lt;/strong> ASRock B450M PRO4&lt;/li>
+&lt;li>&lt;strong>Storage Enclosure:&lt;/strong> ICY DOCK 6-Bay 2.5” SATA HDD/SSD&lt;/li>
+&lt;li>&lt;strong>Case:&lt;/strong> RackChoice 2U Micro ATX Compact Rackmount (2 × 5.25” bays)&lt;/li>
+&lt;/ul>
+&lt;p>The system runs &lt;strong>ZFS&lt;/strong>, a powerful, scalable file system with built-in redundancy.&lt;/p>
+&lt;hr>
+&lt;h2 id="raid-setup">RAID Setup&lt;/h2>
+&lt;p>ZFS uses RAID to stripe or mirror data across drives. A few RAID levels worth noting:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>RAID 0:&lt;/strong> Stripes data for maximum speed, but lose one drive and you lose everything.&lt;/li>
+&lt;li>&lt;strong>RAID 1:&lt;/strong> Mirrors data on two drives for redundancy.&lt;/li>
+&lt;li>&lt;strong>RAID 5:&lt;/strong> Uses one drive for parity; can survive one drive failure.&lt;/li>
+&lt;li>&lt;strong>RAID 6:&lt;/strong> Similar to RAID 5, but can survive two drive failures.&lt;/li>
+&lt;/ul>
+&lt;p>I actually bought five SSDs, but one is a &lt;strong>cold spare&lt;/strong>—ready to replace a failed drive immediately.&lt;/p>
+&lt;p>⚠️ Important reminder: &lt;strong>RAID is not a backup&lt;/strong>. It’s only redundancy until you can swap in a new drive and rebuild.&lt;/p>
+&lt;hr>
+&lt;h2 id="movie-myth-busting">Movie Myth Busting&lt;/h2>
+&lt;p>In movies, the bad guys often grab hard drives and throw them in a bag. In reality:&lt;/p>
+&lt;ol>
+&lt;li>Hard drive platters can be scratched easily, destroying the data.&lt;/li>
+&lt;li>If the drives are part of a RAID, they need to stay in the same group (and often the same order) to work.&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="future-plans">Future Plans&lt;/h2>
+&lt;p>For the future, I plan to:&lt;/p>
+&lt;ul>
+&lt;li>Add a &lt;strong>dual-port 10GbE NIC&lt;/strong> for faster speeds.&lt;/li>
+&lt;li>Install another SSD bay.&lt;/li>
+&lt;li>Expand with &lt;strong>4 × 8TB HDDs&lt;/strong> for bulk storage.&lt;/li>
+&lt;li>Enable &lt;strong>network booting&lt;/strong> for my PC.&lt;/li>
+&lt;li>Eventually move to &lt;strong>LTO tape&lt;/strong> for long-term archival storage.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="final-thoughts">Final Thoughts&lt;/h2>
+&lt;p>This NAS/SAN setup is my personal overkill solution for storage, virtualization, and media. It’s been a huge step toward making my lab more reliable and flexible.&lt;/p>
+&lt;p>If you’ve built your own NAS or SAN, I’d love to hear how you set yours up!&lt;/p></content></item><item><title>Captain America brave New world review</title><link>https://caseyjrobinson.com/posts/2025/captain-america-brave-new-world--review/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/captain-america-brave-new-world--review/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>&lt;strong>Rating:&lt;/strong> ⭐⭐⭐⭐⭐⭐⭐⭐☆☆ (8/10)&lt;/p>
+&lt;hr>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>&lt;em>Captain America: Brave New World&lt;/em> was exactly what I expected from a Marvel movie. It wasn’t overly flashy, but it still managed to push the story forward — and that’s exactly what I was hoping for. I’m not an MCU fanboy, but I thought it was very good, and I’d recommend it to others.&lt;/p>
+&lt;p>I wasn’t nitpicking the details of its quality. Instead, I just enjoyed it for what it was: a solid Marvel film that told its story well.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;p>&lt;strong>Rating:&lt;/strong> ⭐⭐⭐⭐⭐⭐⭐⭐☆☆ (8/10)&lt;/p>
+&lt;hr>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>&lt;em>Captain America: Brave New World&lt;/em> was exactly what I expected from a Marvel movie. It wasn’t overly flashy, but it still managed to push the story forward — and that’s exactly what I was hoping for. I’m not an MCU fanboy, but I thought it was very good, and I’d recommend it to others.&lt;/p>
+&lt;p>I wasn’t nitpicking the details of its quality. Instead, I just enjoyed it for what it was: a solid Marvel film that told its story well.&lt;/p>
+&lt;hr>
+&lt;h2 id="story-and-characters">Story and Characters&lt;/h2>
+&lt;p>What I liked most was that the story focused primarily on &lt;strong>one main character&lt;/strong> instead of splitting the spotlight across a team of two or three. Yes, there were other important characters, but the film didn’t feel like an ensemble piece. The focus stayed on Sam, and it made the story stronger.&lt;/p>
+&lt;p>Story-wise, it didn’t disappoint. Sam was portrayed in a thoughtful, respectful way. It wasn’t just the usual formula of “bad guy shows up, big fight, we win.” There was more care and depth behind the storytelling.&lt;/p>
+&lt;hr>
+&lt;h2 id="visual-effects">Visual Effects&lt;/h2>
+&lt;p>The VFX were present, but not overwhelming. They supported the story instead of dominating it. Unlike &lt;em>Ant-Man and the Wasp: Quantumania&lt;/em>—a film I skipped because the trailers made it look like it was drowning in effects—&lt;em>Brave New World&lt;/em> kept things grounded.&lt;/p>
+&lt;p>There were plenty of visual effects, but they blended naturally into the narrative rather than distracting from it.&lt;/p>
+&lt;hr>
+&lt;h2 id="final-verdict">Final Verdict&lt;/h2>
+&lt;p>Overall, &lt;em>Captain America: Brave New World&lt;/em> delivered exactly what I wanted: a good story, strong character focus, and visuals that enhanced rather than overshadowed.&lt;/p>
+&lt;p>&lt;strong>Final Rating: 8/10&lt;/strong>&lt;br>
+&lt;strong>Recommended for:&lt;/strong> Marvel fans who enjoy a grounded story with balanced action and character development.&lt;/p></content></item><item><title>Control Your Govee Devices with Govee2MQTT (As of 7-16-25)</title><link>https://caseyjrobinson.com/posts/2025/control-your-govee-devices-with-govee2mqtt-as-of-7-16-25/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/control-your-govee-devices-with-govee2mqtt-as-of-7-16-25/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;h3 id="steps-to-set-it-up">Steps to Set It Up&lt;/h3>
+&lt;p>Step 1: Install MQTT (if it’s not already installed).&lt;/p>
+&lt;p>Step 2: Install mactomqtt.&lt;/p>
+&lt;p>Step 3: Go to Settings in Home Assistant and enable Advanced Mode (you&amp;rsquo;ll find this under your user profile).&lt;/p>
+&lt;p>Step 4: Visit the Govee2MQTT GitHub page and copy the repository URL.&lt;/p>
+&lt;p>Step 5: In Home Assistant, go to Settings &amp;gt; Add-ons &amp;gt; Add-on Store, click the three-dot menu in the top right, and select Repositories. Paste in the Govee2MQTT URL.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;h3 id="steps-to-set-it-up">Steps to Set It Up&lt;/h3>
+&lt;p>Step 1: Install MQTT (if it’s not already installed).&lt;/p>
+&lt;p>Step 2: Install mactomqtt.&lt;/p>
+&lt;p>Step 3: Go to Settings in Home Assistant and enable Advanced Mode (you&amp;rsquo;ll find this under your user profile).&lt;/p>
+&lt;p>Step 4: Visit the Govee2MQTT GitHub page and copy the repository URL.&lt;/p>
+&lt;p>Step 5: In Home Assistant, go to Settings &amp;gt; Add-ons &amp;gt; Add-on Store, click the three-dot menu in the top right, and select Repositories. Paste in the Govee2MQTT URL.&lt;/p>
+&lt;p>Step 6: After adding the repository, install the Govee2MQTT add-on. You’ll need to enter your email, password, and API key.&lt;/p>
+&lt;p>💡 To get your API key: Open the Govee app, go to Account &amp;gt; Settings, then look for something like “API Key.” Tap it, give a reason (e.g., &amp;ldquo;Home Assistant&amp;rdquo;), and you’ll get your key.&lt;/p>
+&lt;p>Step 7: Press Start on the add-on. Wait a few minutes—it might take some time if you have a lot of Govee devices.&lt;/p>
+&lt;p>I know Matter is out, and if your device supports it you can add it to Home Assistant, but Matter is not out and mass and you might not be able to control the effects of your device. Matter might take me few more years to replace something like Home Assistant so here is your guide on how to install govee2mqtt.&lt;/p>
+&lt;p>**&lt;/p></content></item><item><title>cool tech in q3 of 2025 less than $50</title><link>https://caseyjrobinson.com/posts/2025/cool-tech-in-q3-of-2025-less-than-50/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/cool-tech-in-q3-of-2025-less-than-50/</guid><description>&lt;h1 id="cool-tech-in-q3-of-2025-less-than-50">cool tech in q3 of 2025 less than $50&lt;/h1>
+&lt;p>August 8, 2025 :: Casey Robinson&lt;/p>
+&lt;p>#tech&lt;/p>
+&lt;hr>
+&lt;!-- raw HTML omitted -->
+&lt;p>Sometimes it’s the little things that make life easier. Here are a few small purchases I’ve made recently that have been surprisingly useful in my day-to-day.&lt;/p>
+&lt;hr>
+&lt;h2 id="-esr-magsafe-car-mount--27">🚗 ESR MagSafe Car Mount – $27&lt;/h2>
+&lt;p>I’ve been looking for a simple, reliable way to keep my phone in place in my 2008 car, and this ESR MagSafe mount nails it. I’ve always loved the Apple MagSafe system—even though I use an Android phone with a MagSafe case. (No, it doesn’t mean I dislike Apple or the iPhone. I just stick with what I know.) The mount holds my phone securely and makes navigation so much more convenient.
+&lt;img src="https://m.media-amazon.com/images/I/71iTcfL9vWL._AC_SL1500_.jpg" alt="Image description">&lt;/p></description><content>&lt;h1 id="cool-tech-in-q3-of-2025-less-than-50">cool tech in q3 of 2025 less than $50&lt;/h1>
+&lt;p>August 8, 2025 :: Casey Robinson&lt;/p>
+&lt;p>#tech&lt;/p>
+&lt;hr>
+&lt;!-- raw HTML omitted -->
+&lt;p>Sometimes it’s the little things that make life easier. Here are a few small purchases I’ve made recently that have been surprisingly useful in my day-to-day.&lt;/p>
+&lt;hr>
+&lt;h2 id="-esr-magsafe-car-mount--27">🚗 ESR MagSafe Car Mount – $27&lt;/h2>
+&lt;p>I’ve been looking for a simple, reliable way to keep my phone in place in my 2008 car, and this ESR MagSafe mount nails it. I’ve always loved the Apple MagSafe system—even though I use an Android phone with a MagSafe case. (No, it doesn’t mean I dislike Apple or the iPhone. I just stick with what I know.) The mount holds my phone securely and makes navigation so much more convenient.
+&lt;img src="https://m.media-amazon.com/images/I/71iTcfL9vWL._AC_SL1500_.jpg" alt="Image description">&lt;/p>
+&lt;hr>
+&lt;h2 id="-simple-cooking-timer--14">⏱ Simple Cooking Timer – $14&lt;/h2>
+&lt;p>This little timer has become a productivity tool for me, not just a kitchen gadget. It’s perfect for the Pomodoro technique—work for a set time, then take a break. I’ve been using it for 5-minute breaks after rearranging my study cards or tabs to help me remember key points before an exam. Sometimes analog tools are still the best.
+&lt;img src="https://m.media-amazon.com/images/I/51ovBdqiPEL._AC_.jpg" alt="">&lt;/p>
+&lt;h2 id="-mini-blender-bottle--14">🥤 Mini Blender Bottle – $14&lt;/h2>
+&lt;p>I wanted something quick and easy for making protein shakes without dragging out my stick blender and a separate mixing cup. This small blender bottle does exactly that—shake, mix, and it’s ready. It’s a small upgrade, but it makes my daily routine smoother.&lt;/p>
+&lt;hr>
+&lt;p>These are all inexpensive items, but each one has made a noticeable difference for me—whether it’s keeping my phone handy in the car, staying focused while studying, or making my shakes without the extra mess.&lt;/p></content></item><item><title>High School DxD manga review</title><link>https://caseyjrobinson.com/posts/2025/high-school-dxd-manga-review/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/high-school-dxd-manga-review/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;hr>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>&lt;em>High School DxD&lt;/em> is a manga adaptation of the popular anime series. To my knowledge, it doesn’t fully complete the first season’s story arc, but it still makes for a pretty enjoyable read.&lt;/p>
+&lt;p>The series follows the anime closely in the beginning but tapers off slightly toward the end. Thankfully, the changes aren’t major, so it doesn’t feel jarring if you’re reading the manga after watching the anime.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;hr>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>&lt;em>High School DxD&lt;/em> is a manga adaptation of the popular anime series. To my knowledge, it doesn’t fully complete the first season’s story arc, but it still makes for a pretty enjoyable read.&lt;/p>
+&lt;p>The series follows the anime closely in the beginning but tapers off slightly toward the end. Thankfully, the changes aren’t major, so it doesn’t feel jarring if you’re reading the manga after watching the anime.&lt;/p>
+&lt;hr>
+&lt;h2 id="content-and-themes">Content and Themes&lt;/h2>
+&lt;p>This series is rated &lt;strong>TV-MA&lt;/strong> for its heavy use of fan service, ecchi elements, and mature humor. Alongside the comedy, it mixes in:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Action and Adventure&lt;/strong> – classic shōnen battles and supernatural fights.&lt;/li>
+&lt;li>&lt;strong>Fantasy and Sci-Fi&lt;/strong> – demons, angels, and otherworldly powers.&lt;/li>
+&lt;li>&lt;strong>Slice of Life &amp;amp; Comedy&lt;/strong> – lighthearted moments and school setting antics.&lt;/li>
+&lt;li>&lt;strong>Fan Service&lt;/strong> – a major part of the series’ identity.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="my-thoughts">My Thoughts&lt;/h2>
+&lt;p>I gave this manga a &lt;strong>7/10&lt;/strong>. It’s genuinely funny, with strong comedy elements and over-the-top scenarios. However, there were times I didn’t feel like reading it, which is why I gave it a lower score. That’s more about my personal taste in humor than the quality of the manga itself.&lt;/p>
+&lt;p>If you enjoy the anime, the manga is worth checking out. It expands on the story and characters while keeping the same mix of comedy, action, and fan service.&lt;/p>
+&lt;hr>
+&lt;h2 id="final-verdict">Final Verdict&lt;/h2>
+&lt;p>&lt;em>High School DxD&lt;/em> manga is an entertaining read, especially for fans of the anime or the ecchi-comedy genre. It’s not perfect, but it delivers what it promises: fun battles, outrageous comedy, and plenty of fan service.&lt;/p>
+&lt;p>&lt;strong>Recommended for:&lt;/strong> Fans of supernatural comedy with a mix of action and ecchi.&lt;/p></content></item><item><title>How to neurodivergent need to learn how to study</title><link>https://caseyjrobinson.com/posts/2025/how-to-neurodivergent-need-to-learn-how-to-study/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/how-to-neurodivergent-need-to-learn-how-to-study/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>This is not a one-size-fits-all guide. Instead, these are suggestions you can try, because everyone learns differently.&lt;/p>
+&lt;hr>
+&lt;h2 id="flashcards">Flashcards&lt;/h2>
+&lt;p>For tests, you often need to memorize information by heart. Flashcards are one of the best tools for this.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Spaced Repetition:&lt;/strong> Flashcards can be used with systems like Anki or Quizlet, which show you the cards you don’t know more often and the ones you do know less frequently. This way, you spend time where it matters most.&lt;/li>
+&lt;li>&lt;strong>Efficiency:&lt;/strong> Instead of trying to memorize a whole book, you break it into small, testable chunks.&lt;/li>
+&lt;li>&lt;strong>Visuals:&lt;/strong> Adding images to your flashcards can make the information easier to remember.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="note-taking">Note-Taking&lt;/h2>
+&lt;p>Taking notes is essential, but how you take them matters.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;p>This is not a one-size-fits-all guide. Instead, these are suggestions you can try, because everyone learns differently.&lt;/p>
+&lt;hr>
+&lt;h2 id="flashcards">Flashcards&lt;/h2>
+&lt;p>For tests, you often need to memorize information by heart. Flashcards are one of the best tools for this.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Spaced Repetition:&lt;/strong> Flashcards can be used with systems like Anki or Quizlet, which show you the cards you don’t know more often and the ones you do know less frequently. This way, you spend time where it matters most.&lt;/li>
+&lt;li>&lt;strong>Efficiency:&lt;/strong> Instead of trying to memorize a whole book, you break it into small, testable chunks.&lt;/li>
+&lt;li>&lt;strong>Visuals:&lt;/strong> Adding images to your flashcards can make the information easier to remember.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="note-taking">Note-Taking&lt;/h2>
+&lt;p>Taking notes is essential, but how you take them matters.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Handwrite First:&lt;/strong> Studies show handwriting notes can increase retention by about 25% compared to typing. When you write, you process the information more deeply.&lt;/li>
+&lt;li>&lt;strong>Type Later:&lt;/strong> After class, type your notes into a digital system. This second pass through the material reinforces it in your memory.&lt;/li>
+&lt;li>&lt;strong>Second Brain:&lt;/strong> Store your notes in a system (like Obsidian, Notion, or OneNote) so you can organize and reference them later for school, work, or personal life.&lt;/li>
+&lt;/ul>
+&lt;h3 id="different-note-taking-methods">Different Note-Taking Methods&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Mind Maps:&lt;/strong> Useful for visualizing concepts, brainstorming essays, or connecting story ideas.&lt;/li>
+&lt;li>&lt;strong>Cornell Method:&lt;/strong> Structured notes divided into cues, notes, and summaries.&lt;/li>
+&lt;li>&lt;strong>Outline Method:&lt;/strong> Organized hierarchically with bullet points.&lt;/li>
+&lt;li>&lt;strong>Learning Cards:&lt;/strong> Questions and answers written like mini flashcards based on lectures.&lt;/li>
+&lt;/ul>
+&lt;p>Experiment to see what works best for you. For example, mind maps might help in English or history, while outlines could be better for math or science.&lt;/p>
+&lt;hr>
+&lt;h2 id="using-ai-carefully">Using AI (Carefully)&lt;/h2>
+&lt;p>AI can be helpful, but don’t rely on it to do your work.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>What Not to Do:&lt;/strong> Copying full assignments from AI. You won’t learn anything and it can get you in trouble.&lt;/li>
+&lt;li>&lt;strong>What to Try:&lt;/strong> Have AI reword difficult concepts, explain ideas in simpler language, or make connections you didn’t think of yourself.&lt;/li>
+&lt;/ul>
+&lt;p>AI should be a tool to &lt;em>support&lt;/em> your learning, not replace it.&lt;/p>
+&lt;hr>
+&lt;h2 id="staying-on-task">Staying on Task&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Make a Schedule:&lt;/strong> Use time-blocking or the Pomodoro method (25 minutes of study, 5 minutes break).&lt;/li>
+&lt;li>&lt;strong>Set Goals:&lt;/strong> Be specific—say “learn 10 flashcards on World War II causes” instead of just “study history.”&lt;/li>
+&lt;li>&lt;strong>Be Flexible:&lt;/strong> If a method isn’t working, switch it up. Everyone’s brain works differently.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>✅ &lt;strong>Key Point:&lt;/strong> There’s no single “right” way to study. The best method is the one that keeps you engaged, helps you remember, and works with how &lt;em>your&lt;/em> brain learns.&lt;br>
+``&lt;/p></content></item><item><title>Manga Show Case: Eighty-Six – Operation High School</title><link>https://caseyjrobinson.com/posts/2025/manga-show-case-eighty-six---operation-high-school/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/manga-show-case-eighty-six---operation-high-school/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>&lt;strong>Author:&lt;/strong> Asato Asato&lt;br>
+&lt;strong>Artist:&lt;/strong> Suzume Somemiya&lt;br>
+&lt;strong>Genres:&lt;/strong> Romance, Slice of Life&lt;br>
+&lt;strong>TV Rating:&lt;/strong> PG&lt;/p>
+&lt;hr>
+&lt;h2 id="-story--pacing">🧭 Story &amp;amp; Pacing&lt;/h2>
+&lt;p>This is a fun alternate take on the &lt;em>86&lt;/em> characters, placing them in a typical Japanese high school setting. It doesn’t connect to the main series canon, but all the character quirks and charm are still present. It&amp;rsquo;s a standalone volume, self-contained with 16 chapters and a character list at the end. The pace is light and easy, with a comfortable slice-of-life flow.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;p>&lt;strong>Author:&lt;/strong> Asato Asato&lt;br>
+&lt;strong>Artist:&lt;/strong> Suzume Somemiya&lt;br>
+&lt;strong>Genres:&lt;/strong> Romance, Slice of Life&lt;br>
+&lt;strong>TV Rating:&lt;/strong> PG&lt;/p>
+&lt;hr>
+&lt;h2 id="-story--pacing">🧭 Story &amp;amp; Pacing&lt;/h2>
+&lt;p>This is a fun alternate take on the &lt;em>86&lt;/em> characters, placing them in a typical Japanese high school setting. It doesn’t connect to the main series canon, but all the character quirks and charm are still present. It&amp;rsquo;s a standalone volume, self-contained with 16 chapters and a character list at the end. The pace is light and easy, with a comfortable slice-of-life flow.&lt;/p>
+&lt;hr>
+&lt;h2 id="-characters">👥 Characters&lt;/h2>
+&lt;p>The main focus is on:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Lena&lt;/strong> – Student Council President&lt;/li>
+&lt;li>&lt;strong>Shin&lt;/strong> – Quiet but reliable&lt;/li>
+&lt;/ul>
+&lt;p>The story builds on the developing bond between Lena and Shin, leaning into sweet and subtle romantic moments. Other familiar characters make appearances too.&lt;/p>
+&lt;hr>
+&lt;h2 id="-art--paneling">🎨 Art &amp;amp; Paneling&lt;/h2>
+&lt;p>The art follows a clean, standard manga style. It’s easy to follow with good panel flow and expressive characters, sticking to classic shoujo/slice-of-life visuals.&lt;/p>
+&lt;hr>
+&lt;h2 id="-themes--tone">🎭 Themes &amp;amp; Tone&lt;/h2>
+&lt;p>The manga reimagines the core &lt;em>86&lt;/em> cast in a lighthearted school setting. The tone is playful and romantic, with no war or politics—just uniforms, student council meetings, and teenage awkwardness.&lt;/p>
+&lt;hr>
+&lt;h2 id="-personal-thoughts">💭 Personal Thoughts&lt;/h2>
+&lt;p>It’s an easy, enjoyable read with no complex plotlines. I’d love to see more volumes like this in the future—it’s a great &amp;ldquo;what if&amp;rdquo; side story.&lt;/p>
+&lt;hr>
+&lt;h2 id="-final-rating">⭐️ Final Rating&lt;/h2>
+&lt;p>&lt;strong>Rating:&lt;/strong> ★★★★☆ (7/10)&lt;br>
+&lt;strong>Recommended for:&lt;/strong> ★★★★★★★★☆☆ (8/10)&lt;br>
+&lt;strong>Similar To:&lt;/strong> &lt;em>I Had That Same Dream Again&lt;/em>&lt;/p></content></item><item><title>Manga Showcase: Our Last Crusade or the Rise of the New World</title><link>https://caseyjrobinson.com/posts/2025/manga-showcase-our-last-crusade-or-the-rise-of-the-new-world/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/manga-showcase-our-last-crusade-or-the-rise-of-the-new-world/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>This manga takes place in a fantasy, sci-fi world where magic exists. The protagonist, Iska, is a soldier from the Empire, which has been at war with the Sovereignty, a nation ruled by mages, for over a century. Iska dreams of a future where humans and mages can coexist in peace instead of being enemies.&lt;/p>
+&lt;h3 id="plot-summary">Plot Summary&lt;/h3>
+&lt;p>Iska is imprisoned after freeing a mage (who later returns in the story). Upon his release, he is given a new mission: defeat the Ice Calamity Witch, a powerful mage from the opposing side. Along the way, he reunites with his old squad and faces numerous challenges.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;p>This manga takes place in a fantasy, sci-fi world where magic exists. The protagonist, Iska, is a soldier from the Empire, which has been at war with the Sovereignty, a nation ruled by mages, for over a century. Iska dreams of a future where humans and mages can coexist in peace instead of being enemies.&lt;/p>
+&lt;h3 id="plot-summary">Plot Summary&lt;/h3>
+&lt;p>Iska is imprisoned after freeing a mage (who later returns in the story). Upon his release, he is given a new mission: defeat the Ice Calamity Witch, a powerful mage from the opposing side. Along the way, he reunites with his old squad and faces numerous challenges.&lt;/p>
+&lt;p>During his journey, Iska falls in love with Aliceliese, the Ice Calamity Witch. Their battles always end in a draw, yet they continue to encounter each other by chance. Over time, they realize they share an appreciation for art and food and, more importantly, the same dream of peace between humans and mages.&lt;/p>
+&lt;p>Later in the story, it is revealed that the mage Iska saved was Sisbell, the third princess of the Sovereignty. Due to her astral power, which allows her to see into the past, members of her own homeland want her dead. Iska and his team meet her in a neutral city, where she asks him to become her knight, as she no longer trusts the mages in the palace.&lt;/p>
+&lt;p>As events unfold, Iska&amp;rsquo;s commander turns into a mage, forcing the squad to find bandages that suppress magic energy. Eventually, Iska meets Elletear, the eldest princess, who enjoys playing mind games with him and his team. She invites them to the summer palace, where instead of battles, awkward romantic moments unfold.&lt;/p>
+&lt;p>At one point, Aliceliese walks in on Iska holding her underwear, as Sisbell was teasing him. In his defense, he was simply holding a pile of clothes, trying to return them. Later, Elletear invites him to her room, seeking his attention just like her sisters. Somehow, Iska ends up sharing a bed with the princesses.&lt;/p>
+&lt;h3 id="final-thoughts">Final Thoughts&lt;/h3>
+&lt;p>This is just an overview of the story. If you want to experience more, you can watch the anime, although it doesn’t cover the last two volumes. You can also read the manga for the full story. Speaking of the anime, it remains incomplete, and I hope they continue it in the future.&lt;/p>
+&lt;p>Genre: Action, Adventure, Romance, Sci-Fi, Fantasy
+Rating: PG-13&lt;/p></content></item><item><title>Manga showcases tales of beresria</title><link>https://caseyjrobinson.com/posts/2025/manga-showcases-tales-of-beresria/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/manga-showcases-tales-of-beresria/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>The manga came out from October 22, 2016, to September 27, 2018, and there are 3 volumes to the manga series.&lt;/p>
+&lt;p>Velvet, the main protagonist, was in a village with her sick younger brother and one day her friend took her brother to make a sacrifice, and in the process of strength. She became a demon to get her revenge on her brother&amp;rsquo;s killer. The manga takes you through her journey to get strength so she can kill her brother&amp;rsquo;s murderer. On her journey, she finds fellow demons and people who will help her on her crusade. This story has a sad ending to it.**&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;p>The manga came out from October 22, 2016, to September 27, 2018, and there are 3 volumes to the manga series.&lt;/p>
+&lt;p>Velvet, the main protagonist, was in a village with her sick younger brother and one day her friend took her brother to make a sacrifice, and in the process of strength. She became a demon to get her revenge on her brother&amp;rsquo;s killer. The manga takes you through her journey to get strength so she can kill her brother&amp;rsquo;s murderer. On her journey, she finds fellow demons and people who will help her on her crusade. This story has a sad ending to it.**&lt;/p></content></item><item><title>Movie Showcase Belle</title><link>https://caseyjrobinson.com/posts/2025/movie-showcase-belle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/movie-showcase-belle/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;hr>
+&lt;h2 id="story-overview">Story Overview&lt;/h2>
+&lt;p>The main character is &lt;strong>Sophie&lt;/strong>. When she was young, her mother tragically died in a raging river while saving another girl. Although the girl was rescued, Sophie was left with the trauma of losing her mother. After the accident, she closed herself off from her family and lost the will to sing in front of people.&lt;/p>
+&lt;p>Later, Sophie discovers a &lt;strong>VR world called “U.”&lt;/strong> After creating her avatar, she joins the game, and one of the first things she does is sing. Her voice immediately captures attention, and she quickly rises to become one of the top idols within the virtual world.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;hr>
+&lt;h2 id="story-overview">Story Overview&lt;/h2>
+&lt;p>The main character is &lt;strong>Sophie&lt;/strong>. When she was young, her mother tragically died in a raging river while saving another girl. Although the girl was rescued, Sophie was left with the trauma of losing her mother. After the accident, she closed herself off from her family and lost the will to sing in front of people.&lt;/p>
+&lt;p>Later, Sophie discovers a &lt;strong>VR world called “U.”&lt;/strong> After creating her avatar, she joins the game, and one of the first things she does is sing. Her voice immediately captures attention, and she quickly rises to become one of the top idols within the virtual world.&lt;/p>
+&lt;p>During one of her concerts, a &lt;strong>mysterious Beast&lt;/strong> crashes the stage, pursued by players dressed like superheroes. He fights them off and flees. Curious about him, Sophie and her friends begin searching for the Beast’s true identity, hoping to uncover who he really is.&lt;/p>
+&lt;hr>
+&lt;h2 id="my-opinion">My Opinion&lt;/h2>
+&lt;p>To me, the story feels like a &lt;strong>modern retelling of &lt;em>Beauty and the Beast&lt;/em>&lt;/strong>, but with a VR twist. This was my second time watching it, and it still holds up well.&lt;/p>
+&lt;p>The world of &lt;em>U&lt;/em> reminded me a lot of &lt;strong>VRChat&lt;/strong>, with its mix of avatars, virtual performance, and community. The narrative is refreshing — it doesn’t wrap up like a typical Disney movie, and that makes it more memorable.&lt;/p>
+&lt;p>The animation is beautiful, the music is powerful, and the emotional weight of Sophie’s journey gives the story depth.&lt;/p>
+&lt;p>&lt;strong>Rating:&lt;/strong> ⭐⭐⭐⭐☆ (4/5)&lt;/p>
+&lt;hr>
+&lt;h2 id="final-thoughts">Final Thoughts&lt;/h2>
+&lt;p>If you enjoy stories that mix technology, music, and heartfelt drama, &lt;em>Belle&lt;/em> is worth watching. It captures both the magic of fairy tales and the challenges of modern digital life.&lt;/p></content></item><item><title>my review of the game called Transistor</title><link>https://caseyjrobinson.com/posts/2025/my-review-of-the-game-called-transistor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/my-review-of-the-game-called-transistor/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>It takes you through a famous singer who lost her voice from the Evil group. The Eagle groups unleash monsters on the city and the only way is to use the sword the transistor. So you fight the monsters that took over the city and defeat them, finding out that there are clauses throwing terminals around the city. &lt;/p>
+&lt;p>The game is dubbed with a voice that entranced you into the story with voice diaries and the sword has a will of its own. The game is sad with a sad ending that made me want to cry. All so the music is sad as well&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;p>It takes you through a famous singer who lost her voice from the Evil group. The Eagle groups unleash monsters on the city and the only way is to use the sword the transistor. So you fight the monsters that took over the city and defeat them, finding out that there are clauses throwing terminals around the city. &lt;/p>
+&lt;p>The game is dubbed with a voice that entranced you into the story with voice diaries and the sword has a will of its own. The game is sad with a sad ending that made me want to cry. All so the music is sad as well&lt;/p>
+&lt;p>The game is on the Epic Game Store, Steam, Nintendo Switch, and for PS4.&lt;/p>
+&lt;h3 id="source-site">Source site&lt;/h3>
+&lt;p>&lt;a href="https://store.steampowered.com/app/237930/Transistor/">steam&lt;/a>&lt;/p></content></item><item><title>people are building smart homes wrong</title><link>https://caseyjrobinson.com/posts/2025/people-are-building-smart-homes-wrong/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/people-are-building-smart-homes-wrong/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;h1 id="people-are-building-smart-homes-wrong">people are building smart homes wrong&lt;/h1>
+&lt;p>August 17, 2025 :: Casey Robinson&lt;/p>
+&lt;p>#Productivity&lt;/p>
+&lt;hr>
+&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>people are making there smart home wrong because we gave them the wrong ideas. why i say that it is because we have marked it as a smart speaker that dose it all. that we will have a JARVIS that will make it all work like what we see in iron man. that idea is not bad but we are doing something that is not going to work for the long jevery but fast and not a hastel. but i shoud be clear that i am not a expert in a smart home but i do know that we see it as wee speak to a google home or a Alexa. with that is not the ancer becasuse of 2 reations.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;h1 id="people-are-building-smart-homes-wrong">people are building smart homes wrong&lt;/h1>
+&lt;p>August 17, 2025 :: Casey Robinson&lt;/p>
+&lt;p>#Productivity&lt;/p>
+&lt;hr>
+&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>people are making there smart home wrong because we gave them the wrong ideas. why i say that it is because we have marked it as a smart speaker that dose it all. that we will have a JARVIS that will make it all work like what we see in iron man. that idea is not bad but we are doing something that is not going to work for the long jevery but fast and not a hastel. but i shoud be clear that i am not a expert in a smart home but i do know that we see it as wee speak to a google home or a Alexa. with that is not the ancer becasuse of 2 reations.&lt;/p>
+&lt;h1 id="reson-one-we-are-to-lazy-and-or-cant-talk">reson one we are to lazy and/ or can&amp;rsquo;t talk&lt;/h1>
+&lt;p>the reson is that we don&amp;rsquo;t like saying &amp;ldquo;hay voice thing trun on lights &amp;quot; all the time like trying to say something to a baby that will anoy it. it is a repetdevme take that will get turing to do every single time you do it.&lt;/p>
+&lt;p>the ather reason is that there is a time and place to use your voice and when it is at the meddle of the knight with your partner right beside you is proble not one of them. to you want it to be able to do athing with your voice it should for one off idem that will be hard to asing a button or some ather sencer to it but it is not worth trying to figer it out.&lt;/p>
+&lt;h1 id="the-secont-reason-is-that-it-is-akword">the secont reason is that it is akword&lt;/h1>
+&lt;p>to speak out loud is akword to people then to add it to a voice assistant that people are going to look at you weard for. yes i do see what i can do with my voice assistant but it still make it weard where a peoson is looking at you case you wanted to change the lights in your houce.&lt;/p>
+&lt;h2 id="dont-get-me-started-on-the-apps-that-you-need-to-use">dont get me started on the apps that you need to use&lt;/h2>
+&lt;p>the apps that you need to install a light bulb or a another device is ovsern so and thet there is no sorce of turth to the. so where are the automations going to be. non of them talk to each athure and mater is a joke it is not yet a voible product that a device that talks to the network and set up a ;ocal conmication. it is a fance local api that we had in some smart home produts like the shellys. yes it is sopoce to use the same comands but they don&amp;rsquo;t haft to. or beable to usdthem aquase plat form to begen with.&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>that is why we dare building are smart homes wrong and i am not the all seeing peorson. so i cant give the ancer to it but this is my insted from my experance of buildimy my smart home.&lt;/p>
+&lt;hr></content></item><item><title>Troubleshooting Steps That Gave Me an Idea on How to Solve Problems</title><link>https://caseyjrobinson.com/posts/2025/troubleshooting-steps-that-gave-me-an-idea-on-how-to-solve-problems/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/troubleshooting-steps-that-gave-me-an-idea-on-how-to-solve-problems/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>Here are the seven troubleshooting steps:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Identify the problem&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Come up with a theory&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Test the theory&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Come up with a plan&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Implement the plan&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Test for functionality&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Document the process&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>Depending on the problem, these steps don’t always happen in strict order — sometimes they overlap, or you combine them together. But the structure is powerful.&lt;/p>
+&lt;hr>
+&lt;h2 id="applying-troubleshooting-outside-of-it">Applying Troubleshooting Outside of IT&lt;/h2>
+&lt;p>To show how flexible this process is, let me walk through an example: &lt;strong>learning how to draw&lt;/strong>.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;p>Here are the seven troubleshooting steps:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Identify the problem&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Come up with a theory&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Test the theory&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Come up with a plan&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Implement the plan&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Test for functionality&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Document the process&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>Depending on the problem, these steps don’t always happen in strict order — sometimes they overlap, or you combine them together. But the structure is powerful.&lt;/p>
+&lt;hr>
+&lt;h2 id="applying-troubleshooting-outside-of-it">Applying Troubleshooting Outside of IT&lt;/h2>
+&lt;p>To show how flexible this process is, let me walk through an example: &lt;strong>learning how to draw&lt;/strong>.&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Identify the problem&lt;/strong>&lt;br>
+→ &lt;em>“I can’t draw well.”&lt;/em>&lt;/li>
+&lt;li>&lt;strong>Come up with a theory&lt;/strong>&lt;br>
+→ &lt;em>“Maybe I don’t actually know the fundamentals of drawing.”&lt;/em>&lt;/li>
+&lt;li>&lt;strong>Test the theory&lt;/strong>&lt;br>
+→ Try doodling something simple. (This could also be part of step 5.)&lt;/li>
+&lt;li>&lt;strong>Come up with a plan&lt;/strong>&lt;br>
+→ &lt;em>“I’ll practice drawing for 1 hour a day for 30 days while using art books or online tutorials.”&lt;/em>&lt;/li>
+&lt;li>&lt;strong>Implement the plan&lt;/strong>&lt;br>
+→ Begin the 30-day drawing challenge.&lt;/li>
+&lt;li>&lt;strong>Test for functionality&lt;/strong>&lt;br>
+→ Compare your first doodle to your 30th-day drawing. Look for improvement.&lt;/li>
+&lt;li>&lt;strong>Document the process&lt;/strong>&lt;br>
+→ Save your drawings and write down how you felt, what you learned, and where you still want to grow.&lt;/li>
+&lt;/ol>
+&lt;p>By documenting, you keep your ideas and progress in a “second brain.” You can look back at them for encouragement and even use the same process to tackle other challenges.&lt;/p>
+&lt;hr>
+&lt;h2 id="beyond-it-and-art">Beyond IT and Art&lt;/h2>
+&lt;p>This troubleshooting mindset can apply to:&lt;/p>
+&lt;ul>
+&lt;li>Relationships&lt;/li>
+&lt;li>Car maintenance&lt;/li>
+&lt;li>Workplace challenges&lt;/li>
+&lt;li>Management decisions&lt;/li>
+&lt;li>Even government or large-scale problems&lt;/li>
+&lt;/ul>
+&lt;p>It’s not just for fixing servers or Linux systems — it’s a universal way of approaching challenges.&lt;/p>
+&lt;hr>
+&lt;h2 id="final-thoughts">Final Thoughts&lt;/h2>
+&lt;p>Coming across this framework was an eye-opener for me. I haven’t implemented it fully outside of IT yet, but I see its potential everywhere.&lt;/p>
+&lt;p>The next time you hit a roadblock — whether in technology, life, or creativity — try applying the troubleshooting steps. You might be surprised how effective they are.&lt;/p></content></item><item><title>What is a tech pouch?</title><link>https://caseyjrobinson.com/posts/2025/what-is-a-tech-pouch/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/what-is-a-tech-pouch/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>Why have a tech pouch The first reason is organizing and cleanness it is because you know what you have and where it is, and it is in one place. The cables and briks are in one organized place where you don’t have to spend time finding stuff. For traveling, it is small and compact and when you get to the TSA security check, you can take out the pouch for the X-ray to see it easly then have cables just shoved in the bag, and they think it is a bome.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;p>Why have a tech pouch The first reason is organizing and cleanness it is because you know what you have and where it is, and it is in one place. The cables and briks are in one organized place where you don’t have to spend time finding stuff. For traveling, it is small and compact and when you get to the TSA security check, you can take out the pouch for the X-ray to see it easly then have cables just shoved in the bag, and they think it is a bome.&lt;/p>
+&lt;p>So why do I have two tech pouches?&lt;/p>
+&lt;p>I have a full-size one for out of town, where I don’t have all the cables to charge my iPad and phone at the same time, also with my watch and earbuds too. But why is the second one in a pencil pouch? I carry my pens with a calculator, a 65W charging brick, and a c to c cable. I only have the one 65W charger for my laptop. My other tech pouch only has a 15W charger.&lt;/p>
+&lt;p>What Is a Tech Pouch (And Why You Probably Need One)&lt;/p>
+&lt;p>A tech pouch is basically a makeup bag for your electronics. It holds all your essential gadgets and accessories—cables, earbuds, charging bricks, and adapters like a USB-C to 3.5mm jack. Whether you’re traveling, working in IT, or just want to stay organized in everyday life, a tech pouch helps you keep your gear in one place and easy to grab when you need it.&lt;/p>
+&lt;p>Why I Use a Tech Pouch&lt;/p>
+&lt;p>The main reason? Organization. Instead of digging through your bag looking for a charger or cable, everything is packed neatly in one spot. No mess, no stress.&lt;/p>
+&lt;p>And if you travel, a tech pouch is a game-changer. It’s compact, easy to carry, and super handy during airport security. When you get to TSA, you can just pull out your pouch and toss it in the bin—way better than having a nest of wires scattered in your bag. Loose cables can look suspicious on the X-ray (sometimes even like a bomb), so having everything visible and tidy saves time and avoids weird looks.&lt;/p>
+&lt;p>Why I Have Two Tech Pouches&lt;/p>
+&lt;p>Yep, I carry two tech pouches—because one just doesn’t cover everything.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Full-Size Tech Pouch (for travel): This one’s for when I’m out of town. It holds all the essentials: enough cables and chargers to power my iPad, phone, watch, and earbuds—sometimes all at once. It’s the &amp;ldquo;everything&amp;rdquo; kit.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Everyday Tech Pouch (in a pencil case): This is my daily carry. I use a simple pencil pouch that holds a few pens, a calculator, a powerful 65W USB-C charging brick, and a USB-C to USB-C cable. It&amp;rsquo;s all I need for my laptop or quick charges throughout the day. My larger pouch only has a 15W charger, so this smaller one fills the gap when I need more power.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="final-thoughts">Final Thoughts&lt;/h3>
+&lt;p>If you’ve ever wasted time untangling cables or forgotten an adapter at home, a tech pouch might just be your new best friend. It keeps your gear clean, compact, and ready to go—whether you&amp;rsquo;re commuting, flying, or just heading to class. Start with one, and like me, you might find yourself building a system that fits your tech lifestyle perfectly.&lt;/p>
+&lt;p>**&lt;/p></content></item><item><title>Why I Don’t Recommend the Sanpyl Numeric Keypad with TrackpadUntitled</title><link>https://caseyjrobinson.com/posts/2025/why-i-dont-recommend-the-sanpyl-numeric-keypad-with-trackpaduntitled/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/why-i-dont-recommend-the-sanpyl-numeric-keypad-with-trackpaduntitled/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>Unfortunately, it was a major disappointment.&lt;/p>
+&lt;hr>
+&lt;h2 id="what-i-wanted">What I Wanted&lt;/h2>
+&lt;p>My goal was simple:&lt;/p>
+&lt;ul>
+&lt;li>A number pad for occasional numeric input&lt;/li>
+&lt;li>A trackpad to swipe between virtual desktops (as I do on macOS)&lt;/li>
+&lt;li>Something compact to sit on the left side of my keyboard&lt;/li>
+&lt;/ul>
+&lt;p>I originally had my eye on another product, but it was no longer being sold. So I settled on the Sanpyl. Here&amp;rsquo;s how that turned out.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;p>Unfortunately, it was a major disappointment.&lt;/p>
+&lt;hr>
+&lt;h2 id="what-i-wanted">What I Wanted&lt;/h2>
+&lt;p>My goal was simple:&lt;/p>
+&lt;ul>
+&lt;li>A number pad for occasional numeric input&lt;/li>
+&lt;li>A trackpad to swipe between virtual desktops (as I do on macOS)&lt;/li>
+&lt;li>Something compact to sit on the left side of my keyboard&lt;/li>
+&lt;/ul>
+&lt;p>I originally had my eye on another product, but it was no longer being sold. So I settled on the Sanpyl. Here&amp;rsquo;s how that turned out.&lt;/p>
+&lt;hr>
+&lt;h2 id="what-went-wrong">What Went Wrong&lt;/h2>
+&lt;h3 id="1-tiny-mushy-keys">1. Tiny, Mushy Keys&lt;/h3>
+&lt;p>The keys are much too small and soft. Typing on them feels imprecise and sluggish—definitely not something you&amp;rsquo;d want to use regularly.&lt;/p>
+&lt;h3 id="2-frustrating-trackpad-experience">2. Frustrating Trackpad Experience&lt;/h3>
+&lt;p>The trackpad is the biggest letdown:&lt;/p>
+&lt;ul>
+&lt;li>It’s far too small, especially if you’re using a large display (mine is 42 inches).&lt;/li>
+&lt;li>It doesn’t support switching between desktops in Windows.&lt;/li>
+&lt;li>Gesture recognition is inconsistent—you can switch between applications, but it’s unreliable and uncomfortable due to the size.&lt;/li>
+&lt;li>Windows trackpad settings have no effect on its behavior.&lt;/li>
+&lt;li>It goes to sleep frequently, and waking it takes a few seconds of swiping and button pressing.&lt;/li>
+&lt;li>It often loses finger tracking mid-swipe, forcing you to lift your finger and start over.&lt;/li>
+&lt;/ul>
+&lt;h3 id="3-build-quality-isnt-enough">3. Build Quality Isn’t Enough&lt;/h3>
+&lt;p>Yes, it has an aluminum body and uses USB-C for charging. But what’s the point of good materials if the user experience is frustrating?&lt;/p>
+&lt;hr>
+&lt;h2 id="final-verdict">Final Verdict&lt;/h2>
+&lt;p>At &lt;strong>$52.66&lt;/strong>, the Sanpyl Numeric Keypad just isn’t worth the price. It’s slow, unresponsive, and clunky to use. I’ve ended up ignoring it completely—even though it sits right next to my keyboard.&lt;/p>
+&lt;p>If all you need is a number pad, I strongly suggest picking up a dedicated one instead. And if you&amp;rsquo;re looking for a trackpad, you&amp;rsquo;re better off saving up for a high-quality standalone model. Don’t expect this 2-in-1 to do either job well.&lt;/p></content></item><item><title>Why I Got Into Blogging</title><link>https://caseyjrobinson.com/posts/2025/why-i-got-into-blogging/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/why-i-got-into-blogging/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;h2 id="1-a-living-résumé-and-cv">1. A Living Résumé and CV&lt;/h2>
+&lt;p>Blogging gives me a way to showcase my personality, creativity, and technical skills in a format that’s always available. Instead of just handing someone a résumé, I can point them to my website where they see my projects, writing style, and interests. It’s proof of what I can do, not just a list of jobs.&lt;/p>
+&lt;h2 id="2-inspiration-from-others">2. Inspiration From Others&lt;/h2>
+&lt;p>I was influenced by creators like &lt;a href="https://www.youtube.com/watch?v=gwUz3E9AW0w">NetworkChuck&lt;/a> and &lt;a href="https://www.youtube.com/watch?v=EXfFBEuCAr0">Ali Abdaal&lt;/a>, who both recommend starting a blog or personal website right now. Some of their videos that helped push me are:&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;h2 id="1-a-living-résumé-and-cv">1. A Living Résumé and CV&lt;/h2>
+&lt;p>Blogging gives me a way to showcase my personality, creativity, and technical skills in a format that’s always available. Instead of just handing someone a résumé, I can point them to my website where they see my projects, writing style, and interests. It’s proof of what I can do, not just a list of jobs.&lt;/p>
+&lt;h2 id="2-inspiration-from-others">2. Inspiration From Others&lt;/h2>
+&lt;p>I was influenced by creators like &lt;a href="https://www.youtube.com/watch?v=gwUz3E9AW0w">NetworkChuck&lt;/a> and &lt;a href="https://www.youtube.com/watch?v=EXfFBEuCAr0">Ali Abdaal&lt;/a>, who both recommend starting a blog or personal website right now. Some of their videos that helped push me are:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=gwUz3E9AW0w">You need a website RIGHT NOW!! (create a website for FREE)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=EXfFBEuCAr0">You STILL need a website RIGHT NOW!! (yes, even in 2025)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=dnE7c0ELEH8">I started a blog&amp;hellip;..in 2024 (why you should too)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=NWfIrmIgaCU">Why Everyone Needs a Personal Website&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>On top of that, I stumbled across another blogger while searching for manga reviews that ChatGPT couldn’t help me find. His site, &lt;a href="https://countzeroor.com/">Count Zero Or&lt;/a>, quickly became one of my favorites—I even added it to my RSS feed. He writes about movies, books, TV shows, manga, and anime, going into deeper dives than I usually do. He never really explained why he started his blog (at least that I’ve seen), but I respect his approach and recommend checking him out if you enjoy thoughtful reviews.&lt;/p></content></item><item><title>Why I Got Into Building Gunpla</title><link>https://caseyjrobinson.com/posts/2025/why-i-got-into-building-gunpla/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/why-i-got-into-building-gunpla/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>My very first kit was the &lt;strong>Barbatos Lupus Rex&lt;/strong>, followed by the &lt;strong>Kimarus Vidar&lt;/strong>. Since then, I’ve built over ten kits—and I even have a backlog (though nothing compared to my friend’s backlog of over 40 kits!). For me, Gunpla is a creative outlet. I build, paint, and even add LEDs whenever I can.&lt;/p>
+&lt;hr>
+&lt;h2 id="my-first-painted-kit">My First Painted Kit&lt;/h2>
+&lt;p>The first kit I painted was the &lt;strong>Landman Rodi&lt;/strong>, which is basically the Rodi with an add-on kit to turn it into the Landman version. Before painting it, I spent a few days learning how to paint and practicing techniques to get a decent finish. I used a lot of scrap plastic spoons as practice pieces (and still do). That practice gave me confidence before painting my kit for real.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;p>My very first kit was the &lt;strong>Barbatos Lupus Rex&lt;/strong>, followed by the &lt;strong>Kimarus Vidar&lt;/strong>. Since then, I’ve built over ten kits—and I even have a backlog (though nothing compared to my friend’s backlog of over 40 kits!). For me, Gunpla is a creative outlet. I build, paint, and even add LEDs whenever I can.&lt;/p>
+&lt;hr>
+&lt;h2 id="my-first-painted-kit">My First Painted Kit&lt;/h2>
+&lt;p>The first kit I painted was the &lt;strong>Landman Rodi&lt;/strong>, which is basically the Rodi with an add-on kit to turn it into the Landman version. Before painting it, I spent a few days learning how to paint and practicing techniques to get a decent finish. I used a lot of scrap plastic spoons as practice pieces (and still do). That practice gave me confidence before painting my kit for real.&lt;/p>
+&lt;hr>
+&lt;h2 id="adding-leds">Adding LEDs&lt;/h2>
+&lt;p>Adding LEDs to my builds is a more recent hobby. I started with two SD kits, then moved on to a High Grade where I installed LEDs but haven’t fully wired them together yet. Instead of using batteries, I install &lt;strong>DC barrel jacks&lt;/strong> so I can power the kits directly. This way, I don’t have to constantly change batteries, and I can turn the lights off when I go to bed.&lt;/p>
+&lt;p>I tried wireless LEDs once, and while they work well for Master Grades, I prefer running small wired LEDs through my kits. It gives me more control and reliability.&lt;/p>
+&lt;hr>
+&lt;h2 id="other-builds">Other Builds&lt;/h2>
+&lt;p>Not all of my builds are about LEDs or paint. For example, I once built a &lt;strong>bug-themed kit&lt;/strong> without any LEDs or fancy paint. Even though it was simpler, it was still a fun project. Parts have started falling off over time, so I’d like to rebuild it one day. At the end of the day, I’m a Gunpla builder first—not a car modeler or anything else. Gunpla gives me both the challenge and the creativity I enjoy.&lt;/p></content></item><item><title>Why i have a smart home</title><link>https://caseyjrobinson.com/posts/2025/why-i-have-a-smart-home/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/why-i-have-a-smart-home/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>I have a smart home for a few reasons, but they mainly come down to &lt;strong>creativity&lt;/strong> and &lt;strong>being hands-off&lt;/strong>.&lt;/p>
+&lt;p>To be honest, I don’t see someone owning an Alexa or another smart speaker as truly having a smart home—that’s just a fancy light switch. And apps aren’t the full answer either.&lt;/p>
+&lt;hr>
+&lt;h2 id="being-creative">Being Creative&lt;/h2>
+&lt;ul>
+&lt;li>I enjoy building &lt;strong>cool automation&lt;/strong>, like having my lights change to random colors or using a web-hook from my notes app to start my kettle.&lt;/li>
+&lt;li>It’s fun for me as a consumer to buy interesting gadgets that give me new possibilities for automation.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="being-hands-off">Being Hands-Off&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Improving efficiency&lt;/strong> so the human element doesn’t forget: for example, my AC automatically switches from 64°F at night to 72°F when I open the door in the morning.&lt;/li>
+&lt;li>Eliminating unnecessary &lt;strong>context switching&lt;/strong>—I don’t have to stop what I’m doing to handle small tasks.&lt;/li>
+&lt;li>&lt;strong>Improving family living&lt;/strong> by having lights turn on automatically so people can see where they’re going and avoid touching light switches, which also reduces germ spread.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>Do I &lt;em>need&lt;/em> a smart home? No—plenty of people live without one.&lt;br>
+But as a nerd who values productivity and the ease of walking into a room without doing anything, I’m a power user. I self-host my own system with &lt;strong>Home Assistant&lt;/strong>, which makes my setup both hands-off in daily use and hands-on when it comes to building and maintaining it.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;p>I have a smart home for a few reasons, but they mainly come down to &lt;strong>creativity&lt;/strong> and &lt;strong>being hands-off&lt;/strong>.&lt;/p>
+&lt;p>To be honest, I don’t see someone owning an Alexa or another smart speaker as truly having a smart home—that’s just a fancy light switch. And apps aren’t the full answer either.&lt;/p>
+&lt;hr>
+&lt;h2 id="being-creative">Being Creative&lt;/h2>
+&lt;ul>
+&lt;li>I enjoy building &lt;strong>cool automation&lt;/strong>, like having my lights change to random colors or using a web-hook from my notes app to start my kettle.&lt;/li>
+&lt;li>It’s fun for me as a consumer to buy interesting gadgets that give me new possibilities for automation.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="being-hands-off">Being Hands-Off&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Improving efficiency&lt;/strong> so the human element doesn’t forget: for example, my AC automatically switches from 64°F at night to 72°F when I open the door in the morning.&lt;/li>
+&lt;li>Eliminating unnecessary &lt;strong>context switching&lt;/strong>—I don’t have to stop what I’m doing to handle small tasks.&lt;/li>
+&lt;li>&lt;strong>Improving family living&lt;/strong> by having lights turn on automatically so people can see where they’re going and avoid touching light switches, which also reduces germ spread.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>Do I &lt;em>need&lt;/em> a smart home? No—plenty of people live without one.&lt;br>
+But as a nerd who values productivity and the ease of walking into a room without doing anything, I’m a power user. I self-host my own system with &lt;strong>Home Assistant&lt;/strong>, which makes my setup both hands-off in daily use and hands-on when it comes to building and maintaining it.&lt;/p></content></item><item><title>Why I’m Stepping Away from NixOS (For Now)</title><link>https://caseyjrobinson.com/posts/2025/why-im-stepping-away-from-nixos-for-now/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/why-im-stepping-away-from-nixos-for-now/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>But ironically, the same thing I love about NixOS is also why I’m stepping away from it—for now.&lt;/p>
+&lt;h2 id="the-struggle-programming-with-nixos">The Struggle: Programming with NixOS&lt;/h2>
+&lt;p>When I sit down to write or run a script, I often hit a wall: missing dependencies.&lt;/p>
+&lt;p>Since NixOS doesn’t rely on a global package manager in the traditional sense, I need to explicitly declare everything I need in a nix-shell, a flake, or in the system configuration. This becomes a friction point, especially when I’m trying to experiment, learn, or prototype.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;p>But ironically, the same thing I love about NixOS is also why I’m stepping away from it—for now.&lt;/p>
+&lt;h2 id="the-struggle-programming-with-nixos">The Struggle: Programming with NixOS&lt;/h2>
+&lt;p>When I sit down to write or run a script, I often hit a wall: missing dependencies.&lt;/p>
+&lt;p>Since NixOS doesn’t rely on a global package manager in the traditional sense, I need to explicitly declare everything I need in a nix-shell, a flake, or in the system configuration. This becomes a friction point, especially when I’m trying to experiment, learn, or prototype.&lt;/p>
+&lt;p>I’m not a professional developer at the time of this writing. I’m still learning and growing in my coding journey. But I find myself spending more time configuring the environment than actually writing code. I forget which packages I need, I have to dig through documentation, and sometimes even rebuild the whole system just to get a program running.&lt;/p>
+&lt;p>It’s not NixOS’s fault. That’s the tradeoff you make for a reproducible, clean system. But for someone like me, it’s frustrating when I just want to get in and code.&lt;/p>
+&lt;h2 id="what-im-switching-to">What I&amp;rsquo;m Switching To&lt;/h2>
+&lt;p>For my next Linux desktop, I’m probably going with something more traditional—most likely Debian or Arch. Both offer simpler, more familiar workflows for development. If I need a library or tool, I can install it instantly with apt or pacman. No rebuilding the whole system, no worrying about nix expressions or shell environments.&lt;/p>
+&lt;p>Right now, I want something that gets out of my way so I can focus on learning and building. I’ll likely come back to NixOS down the road, but for now, I need to reduce friction.&lt;/p>
+&lt;h2 id="where-nixos-still-wins-servers-and-family-systems">Where NixOS Still Wins: Servers and Family Systems&lt;/h2>
+&lt;p>That said, I still love NixOS for servers. It’s perfect for creating repeatable environments, which makes it ideal for infrastructure. I plan to continue using it for my home servers—especially when combined with tools like Ansible, SNMP, webhooks, and auto-deploy scripts. Once I have my configs dialed in, I can push the same setup across multiple machines and know they’ll behave exactly the same.&lt;/p>
+&lt;p>I also plan to use NixOS for computers I manage for family members. As the designated “IT person” in my immediate family, I want their systems to be stable and predictable. NixOS lets me lock down everything, easily redeploy configurations, and keep things running smoothly with minimal support needs.&lt;/p>
+&lt;h2 id="final-thoughts">Final Thoughts&lt;/h2>
+&lt;p>NixOS is a brilliant system. It’s ideal for:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Sysadmins&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Infrastructure engineers&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>People who love full control over their systems&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Developers who want reproducible, sandboxed environments&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>But for new or intermediate programmers—especially those who just want to open a terminal and start building—it can feel like a wall. The need to manage environments explicitly and the learning curve around the Nix language can get in the way of momentum.&lt;/p>
+&lt;p>I’m not saying goodbye forever. NixOS is still part of my long-term toolset. But for right now, I need a desktop experience that supports my creative flow rather than interrupts it.&lt;/p>
+&lt;p>And when I’m ready to come back, NixOS will be right there waiting—reproducible as ever.&lt;/p>
+&lt;p>**&lt;/p></content></item><item><title>why people are building smart homes wrong</title><link>https://caseyjrobinson.com/posts/2025/why-people-are-building-smart-homes-wrong/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/why-people-are-building-smart-homes-wrong/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>From my perspective, there are &lt;strong>three big problems&lt;/strong> holding smart homes back—and unless these are fixed, the term “smart home” will remain misleading.&lt;/p>
+&lt;hr>
+&lt;h3 id="1-the-hub-madness">1. The Hub Madness&lt;/h3>
+&lt;p>Walk into a typical smart home setup, and you’ll probably find a shelf full of hubs: a Philips Hue hub, a SmartThings hub, maybe a Lutron hub, a Zigbee stick, and so on.&lt;/p>
+&lt;p>The problem? None of these hubs speak the same “language.” That means:&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;p>From my perspective, there are &lt;strong>three big problems&lt;/strong> holding smart homes back—and unless these are fixed, the term “smart home” will remain misleading.&lt;/p>
+&lt;hr>
+&lt;h3 id="1-the-hub-madness">1. The Hub Madness&lt;/h3>
+&lt;p>Walk into a typical smart home setup, and you’ll probably find a shelf full of hubs: a Philips Hue hub, a SmartThings hub, maybe a Lutron hub, a Zigbee stick, and so on.&lt;/p>
+&lt;p>The problem? None of these hubs speak the same “language.” That means:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Sensor A can’t trigger bulb B&lt;/strong> if they’re on different platforms.&lt;/li>
+&lt;li>Devices often live on separate networks (Zigbee, Z-Wave, Wi-Fi, Thread), which don’t always talk to each other.&lt;/li>
+&lt;li>You get &lt;strong>signal duplication and interference&lt;/strong> from too many protocols running in parallel.&lt;/li>
+&lt;/ul>
+&lt;p>A true smart home shouldn’t require juggling five different hubs just to make a motion sensor turn on a light.&lt;/p>
+&lt;hr>
+&lt;h3 id="2-voice-assistants-arent-real-hubs">2. Voice Assistants Aren’t Real Hubs&lt;/h3>
+&lt;p>Voice assistants like Alexa, Google Assistant, or Siri have been marketed as the “brain” of the smart home. But in reality, they’re just &lt;strong>fancy voice-operated switches&lt;/strong>.&lt;/p>
+&lt;p>Here’s why:&lt;/p>
+&lt;ul>
+&lt;li>Most automations depend on the &lt;strong>cloud&lt;/strong>, which introduces delays.&lt;/li>
+&lt;li>Some assistants can do limited local automations (like “motion turns on light ”), but they’re often inconsistent.&lt;/li>
+&lt;li>Relying on your voice to control everything isn’t “smart”—it’s just manual control with extra steps.&lt;/li>
+&lt;/ul>
+&lt;p>A truly smart home should &lt;strong>anticipate your needs&lt;/strong> and act automatically. For example: lights that turn on when you walk in, HVAC that adjusts when a window opens, or routines that adapt based on your schedule. That’s real intelligence—not just voice commands.&lt;/p>
+&lt;hr>
+&lt;h3 id="3-matter-the-promise-and-the-mess">3. Matter: The Promise and the Mess&lt;/h3>
+&lt;p>Matter was supposed to fix everything. Marketed as the “universal smart home standard,” it promised to:&lt;/p>
+&lt;ul>
+&lt;li>Allow devices from different brands to work seamlessly.&lt;/li>
+&lt;li>Run locally, without cloud dependence.&lt;/li>
+&lt;li>Let a simple action—like pressing Button A—toggle Bulb B, regardless of brand.&lt;/li>
+&lt;/ul>
+&lt;p>But in practice, Matter has stumbled:&lt;/p>
+&lt;ul>
+&lt;li>Not all Matter devices support the same features.&lt;/li>
+&lt;li>Some manufacturers implement only partial functionality.&lt;/li>
+&lt;li>Ecosystem support is inconsistenbetween sunset and sunriset, so consumers are still stuck with compatibility headaches.&lt;/li>
+&lt;/ul>
+&lt;p>Matter could still deliver on its promise, but only if manufacturers &lt;strong>take it seriously and implement it fully&lt;/strong>. Right now, it feels like another layer of fragmentation.&lt;/p>
+&lt;hr>
+&lt;h3 id="what-a-smart-home-should-look-like">What a Smart Home &lt;em>Should&lt;/em> Look Like&lt;/h3>
+&lt;p>If we step back, a smart home should follow three principles:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Unified Control&lt;/strong> – one central platform (local-first) that works across all devices.&lt;/li>
+&lt;li>&lt;strong>True Automation&lt;/strong> – events happen automatically, not only by voice command.&lt;/li>
+&lt;li>&lt;strong>Interoperability First&lt;/strong> – every device should be able to communicate, no matter who made it.&lt;/li>
+&lt;/ol>
+&lt;p>Projects like &lt;strong>Home Assistant&lt;/strong>, &lt;strong>openHAB&lt;/strong>, or &lt;strong>Hubitat&lt;/strong> get closer to this vision than most consumer-grade systems because they prioritize &lt;strong>local control&lt;/strong> and &lt;strong>cross-brand interoperability&lt;/strong>.&lt;/p>
+&lt;hr>
+&lt;h3 id="final-thought">Final Thought&lt;/h3>
+&lt;p>Right now, consumer smart homes are mostly “connected” homes—not truly “smart.” Until hubs are unified, voice assistants move beyond being glorified remotes, and Matter delivers on its promise, we’ll still be living in a fragmented, unreliable future.&lt;/p>
+&lt;p>A truly smart home shouldn’t just listen to you—it should think with you.&lt;/p></content></item><item><title>Why Productivity Is Snake Oil</title><link>https://caseyjrobinson.com/posts/2025/why-productivity-is-snake-oil/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/why-productivity-is-snake-oil/</guid><description>&lt;p>The definition of productivity (such as time, labor, or materials) is to produce a desired outcome, output, or result. But why do I say it&amp;rsquo;s snake oil?&lt;/p>
+&lt;p>It’s unmeasured and undefined. What most people call productivity is really just busywork. We measure it in quantity before quality—and there’s a big difference.&lt;/p>
+&lt;p>There’s a quote: &lt;strong>&amp;ldquo;Bite off more than you can chew.&amp;rdquo;&lt;/strong> That’s what people are doing in the pursuit of productivity. So we end up turning in half-hearted work, which we sometimes have to redo, just to say we got more done. It&amp;rsquo;s not attainable—there&amp;rsquo;s always more to do. So we rush, repeat, and burn out.&lt;/p></description><content>&lt;p>The definition of productivity (such as time, labor, or materials) is to produce a desired outcome, output, or result. But why do I say it&amp;rsquo;s snake oil?&lt;/p>
+&lt;p>It’s unmeasured and undefined. What most people call productivity is really just busywork. We measure it in quantity before quality—and there’s a big difference.&lt;/p>
+&lt;p>There’s a quote: &lt;strong>&amp;ldquo;Bite off more than you can chew.&amp;rdquo;&lt;/strong> That’s what people are doing in the pursuit of productivity. So we end up turning in half-hearted work, which we sometimes have to redo, just to say we got more done. It&amp;rsquo;s not attainable—there&amp;rsquo;s always more to do. So we rush, repeat, and burn out.&lt;/p>
+&lt;p>It’s not your fault. It’s the system you were pushed into. And that same system burns out people in similar professions—like software engineers—over and over again.&lt;/p>
+&lt;hr>
+&lt;h2 id="lets-talk-about-ai">Let’s Talk About AI&lt;/h2>
+&lt;p>Now we’re in the age of AI, and yeah, maybe I’m being a little dramatic, but it’s true: AI is going to change the way we work. It might not take your job outright, but it will make you feel more detached from your work—and maybe even from your passion.&lt;/p>
+&lt;p>We won’t grow as a society if we let AI do everything for us. If you use AI just to get more work done faster, you’ll be expected to do even &lt;em>more&lt;/em>, and then burnout will hit even harder.&lt;/p>
+&lt;hr>
+&lt;h2 id="im-not-against-self-help-or-tools">I&amp;rsquo;m Not Against Self-Help or Tools&lt;/h2>
+&lt;p>Yes, I like reading self-help books. I’m currently reading &lt;em>How to Build a Second Brain&lt;/em> by Tiago Forte. The intention behind it is to get better at my craft—to capture and reference things like my coffee setup, water temp, grind size, and not forget them.&lt;/p>
+&lt;p>So I’m not against productivity tools.&lt;/p>
+&lt;p>But I’m also not for being so obsessed with work that I lose all passion for it.&lt;/p>
+&lt;hr></content></item><item><title>Why You Don’t Want Too Many Wireless Signals in Your Home</title><link>https://caseyjrobinson.com/posts/2025/why-you-dont-want-too-many-wireless-signals-in-your-home/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/why-you-dont-want-too-many-wireless-signals-in-your-home/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>Even the Wi-Fi from your neighbors can interfere with your own. And if you have a smart home, you’ve probably heard of protocols like &lt;strong>Thread&lt;/strong> or &lt;strong>Zigbee&lt;/strong>, which add even more signals into the mix.&lt;/p>
+&lt;hr>
+&lt;h2 id="common-wireless-protocols-in-a-smart-home">Common Wireless Protocols in a Smart Home&lt;/h2>
+&lt;p>Here are some of the most common wireless protocols you’ll find in smart homes:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Zigbee&lt;/strong> – Operates in the 2.4 GHz range. Used for buttons, door sensors, motion sensors, and other small smart gadgets.&lt;/li>
+&lt;li>&lt;strong>Z-Wave&lt;/strong> – Operates in the 800–900 MHz range. Often used in smart homes and businesses, with built-in encryption for secure communication.&lt;/li>
+&lt;li>&lt;strong>Bluetooth&lt;/strong> – Operates in the 2.4 GHz range. Commonly used for speakers, headphones, and short-range connections.&lt;/li>
+&lt;li>&lt;strong>Thread&lt;/strong> – Also uses the 2.4 GHz range. Similar to Zigbee, often used in new smart home devices for low-power, reliable connections.&lt;/li>
+&lt;li>&lt;strong>LoRa&lt;/strong> – Operates in the 902–928 MHz range. Designed for long-range, low-power communication such as outdoor sensors.&lt;/li>
+&lt;li>&lt;strong>Wi-Fi&lt;/strong> – Operates in the 2.4 GHz and 5 GHz ranges (and now Wi-Fi 6/6E in 6 GHz). Used for almost everything, including smart home devices.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="the-problem-with-too-many-signals">The Problem With Too Many Signals&lt;/h2>
+&lt;p>When you start adding more devices, these signals can &lt;strong>become congested&lt;/strong>. Even if they aren’t sending the same information, they may “talk over” each other. This causes interference, slows down communication, and can even cause devices to miss messages entirely.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;p>Even the Wi-Fi from your neighbors can interfere with your own. And if you have a smart home, you’ve probably heard of protocols like &lt;strong>Thread&lt;/strong> or &lt;strong>Zigbee&lt;/strong>, which add even more signals into the mix.&lt;/p>
+&lt;hr>
+&lt;h2 id="common-wireless-protocols-in-a-smart-home">Common Wireless Protocols in a Smart Home&lt;/h2>
+&lt;p>Here are some of the most common wireless protocols you’ll find in smart homes:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Zigbee&lt;/strong> – Operates in the 2.4 GHz range. Used for buttons, door sensors, motion sensors, and other small smart gadgets.&lt;/li>
+&lt;li>&lt;strong>Z-Wave&lt;/strong> – Operates in the 800–900 MHz range. Often used in smart homes and businesses, with built-in encryption for secure communication.&lt;/li>
+&lt;li>&lt;strong>Bluetooth&lt;/strong> – Operates in the 2.4 GHz range. Commonly used for speakers, headphones, and short-range connections.&lt;/li>
+&lt;li>&lt;strong>Thread&lt;/strong> – Also uses the 2.4 GHz range. Similar to Zigbee, often used in new smart home devices for low-power, reliable connections.&lt;/li>
+&lt;li>&lt;strong>LoRa&lt;/strong> – Operates in the 902–928 MHz range. Designed for long-range, low-power communication such as outdoor sensors.&lt;/li>
+&lt;li>&lt;strong>Wi-Fi&lt;/strong> – Operates in the 2.4 GHz and 5 GHz ranges (and now Wi-Fi 6/6E in 6 GHz). Used for almost everything, including smart home devices.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="the-problem-with-too-many-signals">The Problem With Too Many Signals&lt;/h2>
+&lt;p>When you start adding more devices, these signals can &lt;strong>become congested&lt;/strong>. Even if they aren’t sending the same information, they may “talk over” each other. This causes interference, slows down communication, and can even cause devices to miss messages entirely.&lt;/p>
+&lt;p>For example:&lt;/p>
+&lt;ul>
+&lt;li>A motion sensor trying to trigger a smart light might get delayed.&lt;/li>
+&lt;li>Your Wi-Fi speed might drop because your router is fighting with Bluetooth or Zigbee chatter.&lt;/li>
+&lt;li>Smart devices may become unreliable if too many protocols are competing.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="recommendations-for-a-smart-home">Recommendations for a Smart Home&lt;/h2>
+&lt;p>To avoid interference, it’s best to &lt;strong>limit the number of overlapping signals&lt;/strong>. For most homes, a good setup is:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Wi-Fi&lt;/strong> for general devices (computers, phones, TVs).&lt;/li>
+&lt;li>&lt;strong>Zigbee or Z-Wave&lt;/strong> for smart home sensors and buttons.&lt;/li>
+&lt;/ul>
+&lt;p>This balance reduces congestion while still giving you the benefits of wireless automation.&lt;/p>
+&lt;p>If you overload your home with every protocol at once, you’ll run into problems. But by carefully choosing one or two systems, you can keep your smart home fast, reliable, and frustration-free.&lt;/p></content></item><item><title>Why you should handwrite your notes</title><link>https://caseyjrobinson.com/posts/2025/why-you-should-handwrite-your-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caseyjrobinson.com/posts/2025/why-you-should-handwrite-your-notes/</guid><description>&lt;p>In a digital environment, it is easy to go faster. In the age of AI, things go even faster. But that speed does you no good if you don’t know what you are doing, because you end up copying and pasting the information. You don’t know what you just said, and you will forget it in a few hours. I think people should write more and practice. According to Science Daily, workers were 25% faster on paper than on an electronic device (“Study Shows Stronger Brain Activity”). The article says that a notebook is not uniform in pen strokes, has limited space, and is a physical item to keep track of. Digital notes are infinite in spacing and easily closed, so when you close the app, it is out of sight, out of mind. This reminds me of a quote that I once heard: “ To go faster, you first need to slow down,” which means to step back and look at it objectively, but with the digital tool, you don’t step back and see it differently. I know the convenience of the available digital tools, and you have them anywhere via the cloud. A notebook is not easily searchable, and they are bulky to carry, especially if you go bigger than an A5-size notebook. In contrast, a notebook enables faster deep understanding than a digital app.&lt;/p></description><content>&lt;p>In a digital environment, it is easy to go faster. In the age of AI, things go even faster. But that speed does you no good if you don’t know what you are doing, because you end up copying and pasting the information. You don’t know what you just said, and you will forget it in a few hours. I think people should write more and practice. According to Science Daily, workers were 25% faster on paper than on an electronic device (“Study Shows Stronger Brain Activity”). The article says that a notebook is not uniform in pen strokes, has limited space, and is a physical item to keep track of. Digital notes are infinite in spacing and easily closed, so when you close the app, it is out of sight, out of mind. This reminds me of a quote that I once heard: “ To go faster, you first need to slow down,” which means to step back and look at it objectively, but with the digital tool, you don’t step back and see it differently. I know the convenience of the available digital tools, and you have them anywhere via the cloud. A notebook is not easily searchable, and they are bulky to carry, especially if you go bigger than an A5-size notebook. In contrast, a notebook enables faster deep understanding than a digital app.&lt;/p>
+&lt;p>There are YouTube channels that are dedicated to notebooks and writing by hand, like Parknote, which give you good explanations and reasons to use a notebook. Some say writing in a notebook is a life changer because writing by hand triggers more of the brain and increases memory (Storey), compared to a human who can type around 40 words per minute, so a typist is just transcribing their thoughts, and not thinking deeply, if at all. &amp;ldquo;A typist often does not step back and view their writing objectively. So you do not see it in a different context. &lt;/p>
+&lt;p>It is why writers read out loud, then read it in their heads, because the brain will add and/or improve with their reading. I mention the speed benefits of digital, but handwriting is fast too, in its own way. You can think more clearly. While it is slower, it is less distracting. I know from experience that I pull out my phone to do something, and then get distracted by the notifications in the past. I always carried an idea journal because my ideas are around tech and sci-fi, so I would draw in it where I can’t easily do it with digital. When you open a specific notebook, you are locked into it during your work. By doing that, why should you handwrite your notes? You are getting the work done faster, and famous people use notebooks called commonplace books, where they capture their thoughts, similar to the ideas that come to you in the shower. Some people like Leonardo da Vinci, John Lennon, and Taylor Swift use their commonplace books for that exact reason. So they can implement their ideas and quotes back into their art.&lt;/p>
+&lt;p>I have talked about writing and the benefits of handwriting, but there is a form of handwriting that is faster than printing and makes both sides of the brain work, and that is cursive. For a neurotypical person, who has decent handwriting and no speed problems, writing in print is fine, but for a neurodivergent person, like one with dyslexia, writing in cursive helps them out big time. It helps them pick up words faster and will help them write words, triggering the drawing part of the brain. Since they have a hard time picking up words, their handwriting is often unreadable, so writing in cursive gives them more control and the image of the word to put with the sound of the word. And for the speed of it, when you get good at cursive, you become faster because you don’t leave the pen on the paper as much, so you are not wasting time on unnecessary motion.Why you should handwrite your notes&lt;/p>
+&lt;p> While one can get an iPad with one of their pencils and write on it, the iPad will also have text messages and notifications that will make it distracting, and it might not be exactly known as a tool for learning. I do use an iPad for notes without the notification apps to make it distraction-free.&lt;/p>
+&lt;p> A system called Building a Second Brain from Tiago Forte is where note apps are used, and it has a lot of benefits, as it is more portable and can store everything from health notes to movie quotes. So notes are put into long-term memory and easily recalled by searching them up. A notebook doesn’t have the portability and is not searchable like an app is, and the user doesn’t have to worry about the paper running out or spelling at all. People have paired it with the Zettelkasten system for idea generation. The ability to link articles and book highlights from Kindle and other places is handy for keeping the information together.&lt;/p>
+&lt;p>In my ideal world and system, I will use a notebook and write down my thoughts and ideals, then have it scanned afterward to put them into digital form, so I can search and keep it safe for any event that can come up that is similar to a different project. With AI that can look over my notes and search for a specific topic that I have looked up in the past. By doing it that way, it can work hand in hand with each other, having both. To learn on paper and get the memory of it, but afterward to have it in the cloud for backup and archiving, and the space-saving of digital.&lt;/p>
+&lt;p>**&lt;/p></content></item></channel></rss>
