@@ -5,6 +5,297 @@
     <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Productivity</title>
+      <link>http://localhost:1313/tags/productivity/</link>
+      <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/productivity/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Tag1</title>
+      <link>http://localhost:1313/tags/tag1/</link>
+      <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/tag1/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Tag2</title>
+      <link>http://localhost:1313/tags/tag2/</link>
+      <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/tag2/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Anime</title>
+      <link>http://localhost:1313/tags/anime/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/anime/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Automation</title>
+      <link>http://localhost:1313/tags/automation/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/automation/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Eighty-Six</title>
+      <link>http://localhost:1313/tags/eighty-six/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/eighty-six/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Fantasy</title>
+      <link>http://localhost:1313/tags/fantasy/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/fantasy/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Govee</title>
+      <link>http://localhost:1313/tags/govee/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/govee/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Homelab</title>
+      <link>http://localhost:1313/tags/homelab/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/homelab/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Learning</title>
+      <link>http://localhost:1313/tags/learning/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/learning/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Manga</title>
+      <link>http://localhost:1313/tags/manga/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/manga/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Marvel</title>
+      <link>http://localhost:1313/tags/marvel/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/marvel/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Movie</title>
+      <link>http://localhost:1313/tags/movie/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/movie/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Mqtt</title>
+      <link>http://localhost:1313/tags/mqtt/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/mqtt/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Nas</title>
+      <link>http://localhost:1313/tags/nas/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/nas/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Neurodiversity</title>
+      <link>http://localhost:1313/tags/neurodiversity/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/neurodiversity/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Nixos</title>
+      <link>http://localhost:1313/tags/nixos/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/nixos/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Review</title>
+      <link>http://localhost:1313/tags/review/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/review/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Rpg</title>
+      <link>http://localhost:1313/tags/rpg/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/rpg/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>San</title>
+      <link>http://localhost:1313/tags/san/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/san/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Self-Improvement</title>
+      <link>http://localhost:1313/tags/self-improvement/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/self-improvement/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Smart Home</title>
+      <link>http://localhost:1313/tags/smart-home/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/smart-home/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Storage</title>
+      <link>http://localhost:1313/tags/storage/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/storage/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Study</title>
+      <link>http://localhost:1313/tags/study/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/study/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Tales-of-Series</title>
+      <link>http://localhost:1313/tags/tales-of-series/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/tales-of-series/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Workflow</title>
+      <link>http://localhost:1313/tags/workflow/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/workflow/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>http://localhost:1313/tags/tech/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/tech/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Tech_over_coffee</title>
+      <link>http://localhost:1313/tags/tech_over_coffee/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/tech_over_coffee/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
   </channel>
 </rss>

@@ -1,16 +1,11 @@
 ---
-title: The Neurodiverse Playbook need to learn how to study
+title: "The Neurodiverse Playbook: How to Learn How to Study"
+date: 2025-07-16
+tags: ["learning", "neurodiversity", "study", "self-improvement"]
+categories: ["self-improvement"]
 draft: false
-athur: Casey Robinson
-date: 2025-7-8
-tage: The Neurodiverse Playbook
 ---
-<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID"
-      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-      allowfullscreen>
-  </iframe>
-</div>
+
 If you’re in high school or college, you need to know how to study. Studying effectively helps you learn faster and more efficiently. As a neurodivergent person, you may find traditional study methods challenging, but there are strategies that can make learning easier.  
 
 This is not a one-size-fits-all guide. Instead, these are suggestions you can try, because everyone learns differently.  

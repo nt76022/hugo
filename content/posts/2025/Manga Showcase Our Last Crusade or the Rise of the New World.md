@@ -1,10 +1,11 @@
 ---
 title: "Manga Showcase: Our Last Crusade or the Rise of the New World"
+date: 2025-07-16
+tags: ["manga", "anime", "fantasy", "review"]
+categories: ["entertainment"]
 draft: false
-tags: manga
-athur: Casey Robinson
-date: 2025-3-15
 ---
+
 <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
   <iframe src="https://www.youtube.com/embed/VIDEO_ID"
       style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"

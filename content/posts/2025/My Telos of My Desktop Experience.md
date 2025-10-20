@@ -1,12 +1,11 @@
 ---
-title: My Telos of My Desktop Experience
-date: 2025-9-9
+title: "My Telos of My Desktop Experience"
+date: 2025-07-16
+tags: ["linux", "nixos", "productivity", "workflow"]
+categories: ["tech"]
 draft: false
-tags:
-  - tech
-  - linux
-athur: Casey Robinson
 ---
+
 <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
   <iframe src="https://www.youtube.com/embed/VIDEO_ID"
       style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"

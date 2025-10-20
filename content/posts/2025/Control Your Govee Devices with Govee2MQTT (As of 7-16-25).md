@@ -1,16 +1,11 @@
 ---
-title: Control Your Govee Devices with Govee2MQTT (As of 7-16-25)
+title: "Control Your Govee Devices with Govee2MQTT (As of 7-16-25)"
+date: 2025-07-16
+tags: ["smart home", "mqtt", "govee", "automation"]
+categories: ["tech"]
 draft: false
-athur: Casey Robinson
-date: 2025-7-16
 ---
-<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID"
-      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-      allowfullscreen>
-  </iframe>
-</div>
-****
+
 Govee2MQTT is currently the best way to control your Govee devices. You’ll need an MQTT server for it to work. In this blog, I’ll be focusing on integration with Home Assistant. One awesome feature is that Govee2MQTT even controls my smart kettle, so I can have my coffee ready to go—how cool is that?
 
 ### Steps to Set It Up

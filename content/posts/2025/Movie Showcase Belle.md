@@ -1,16 +1,11 @@
 ---
-title: Movie Showcase Belle
+title: "Movie Showcase: Belle"
+date: 2025-07-16
+tags: ["movie", "anime", "review"]
+categories: ["entertainment"]
 draft: false
-athur: Casey Robinson
-date: 2025-4-12
 ---
-<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID"
-      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-      allowfullscreen>
-  </iframe>
-</div>
----
+
 *Belle* is an anime film released in 2021. It feels like a modern Studio Ghibli-style movie, though it was directed by Mamoru Hosoda. The story blends classic fairy-tale themes with modern technology and virtual reality.  
 
 ---

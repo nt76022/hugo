@@ -1,16 +1,10 @@
 ---
-title: Captain America brave New world  review
+title: "Captain America: Brave New World Review"
+date: 2025-07-16
+tags: ["movie", "review", "marvel"]
+categories: ["entertainment"]
 draft: false
-athur: Casey Robinson
-date: 2025-7-19
 ---
-<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID"
-      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-      allowfullscreen>
-  </iframe>
-</div>
-****
 
 **Rating:** ⭐⭐⭐⭐⭐⭐⭐⭐☆☆ (8/10)  
 

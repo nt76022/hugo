@@ -1,11 +1,11 @@
 ---
-title: "Manga Show Case: Eighty-Six – Operation High School"
+title: "Manga Showcase: Eighty-Six – Operation High School"
+date: 2025-07-16
+tags: ["manga", "anime", "eighty-six", "review"]
+categories: ["entertainment"]
 draft: false
-tags:
-  - manga
-athur: Casey Robinson
-date: 2025-8-6
 ---
+
 <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
   <iframe src="https://www.youtube.com/embed/VIDEO_ID"
       style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"

@@ -1,9 +1,11 @@
 ---
-title: Building an Overkill Home NAS SAN
+title: "Building an Overkill Home NAS/SAN"
+date: 2025-07-16
+tags: ["homelab", "storage", "nas", "san"]
+categories: ["tech"]
 draft: false
-athur: Casey Robinson
-date: 2025-3-19
 ---
+
 <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
   <iframe src="https://www.youtube.com/embed/VIDEO_ID"
       style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
