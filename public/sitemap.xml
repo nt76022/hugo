@@ -2,14 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/helloworld/</loc>
+    <loc>http://localhost:1313/posts/2025/i-am-lost/</loc>
+    <lastmod>2025-09-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-09-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/productivity/</loc>
+    <lastmod>2025-09-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-09-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tag1/</loc>
+    <lastmod>2025-09-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tag2/</loc>
+    <lastmod>2025-09-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/the-act-of-going-to-a-more-analog-sytem-is-better-than-keep-up-with-this-past-of-keeping-up-with-technology/</loc>
+    <lastmod>2025-09-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/an-i-still-happy-with-my-big-monitor/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/building-an-overkill-home-nas-san/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/captain-america-brave-new-world--review/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/control-your-govee-devices-with-govee2mqtt-as-of-7-16-25/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/cool-tech-in-q3-of-2025-less-than-50/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/high-school-dxd-manga-review/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/manga/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/manga-show-case-eighty-six---operation-high-school/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/manga-showcase-our-last-crusade-or-the-rise-of-the-new-world/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/manga-showcases-tales-of-beresria/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/movie-showcase-belle/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/my-review-of-the-candy-cacin-controler/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/my-review-of-the-game-called-transistor/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/my-telos-of-my-desktop-experience/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/people-are-building-smart-homes-wrong/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/tech/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/tech_over_coffee/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/how-to-neurodivergent-need-to-learn-how-to-study/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/troubleshooting-steps-that-gave-me-an-idea-on-how-to-solve-problems/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/what-happened-to-cortana/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/what-is-a-tech-pouch/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/why-i-dont-recommend-the-sanpyl-numeric-keypad-with-trackpaduntitled/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/why-i-got-into-blogging/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/why-i-got-into-building-gunpla/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/why-i-have-a-smart-home/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/why-im-stepping-away-from-nixos-for-now/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/why-people-are-building-smart-homes-wrong/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/why-productivity-is-snake-oil/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/why-you-dont-want-too-many-wireless-signals-in-your-home/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/why-you-should-handwrite-your-notes/</loc>
   </url>
 </urlset>
