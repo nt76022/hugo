@@ -1,18 +1,11 @@
 ---
-title: What is a tech pouch?
+title: "What Is a Tech Pouch?"
+date: 2025-07-16
+tags: ["everyday carry", "organization", "tech gear"]
+categories: ["lifestyle"]
 draft: false
-tags:
-  - tech
-athur: Casey Robinson
-date: 2025-4-3
 ---
-<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID"
-      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-      allowfullscreen>
-  </iframe>
-</div>
-****
+
  It is a pouch that holds tech stuff like a makeup pouch. A tech pouch contains cables, earbuds, a charging brick, and adaptors like 3.5 mm headphones to USB-C for the phone. It is essential for travel and IT work or just for everyday life to. Make it easy to pack and unpack.
 
   

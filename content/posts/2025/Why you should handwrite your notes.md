@@ -1,9 +1,11 @@
 ---
-title: Why you should handwrite your notes
+title: "Why You Should Handwrite Your Notes"
+date: 2025-07-16
+tags: ["handwriting", "study", "reflection"]
+categories: ["self-improvement"]
 draft: false
-athur: Casey Robinson
-date: 2025-5-16
 ---
+
 In a digital environment, it is easy to go faster. In the age of AI, things go even faster. But that speed does you no good if you don’t know what you are doing, because you end up copying and pasting the information. You don’t know what you just said, and you will forget it in a few hours. I think people should write more and practice. According to Science Daily, workers were 25% faster on paper than on an electronic device (“Study Shows Stronger Brain Activity”). The article says that a notebook is not uniform in pen strokes, has limited space, and is a physical item to keep track of. Digital notes are infinite in spacing and easily closed, so when you close the app, it is out of sight, out of mind. This reminds me of a quote that I once heard: “ To go faster, you first need to slow down,” which means to step back and look at it objectively, but with the digital tool, you don’t step back and see it differently. I know the convenience of the available digital tools, and you have them anywhere via the cloud. A notebook is not easily searchable, and they are bulky to carry, especially if you go bigger than an A5-size notebook. In contrast, a notebook enables faster deep understanding than a digital app.
 
   

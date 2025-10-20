@@ -1,16 +1,11 @@
 ---
-title: Why I Don’t Recommend the Sanpyl Numeric Keypad with TrackpadUntitled
+title: "Why I Don’t Recommend the Sanpyl Numeric Keypad with Trackpad"
+date: 2025-07-16
+tags: ["hardware", "review", "accessories"]
+categories: ["tech"]
 draft: false
-athur: Casey Robinson
-date: 2025-5-9
 ---
-<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID"
-      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-      allowfullscreen>
-  </iframe>
-</div>
-****
+
 As someone who uses a 75% keyboard for ergonomic reasons, I’ve been searching for a compact, wireless number pad that could also double as a trackpad—something similar to Apple's Magic Trackpad but for Windows. When I came across the Sanpyl Numeric Keypad, it seemed like the perfect 2-in-1 solution.  
 
 Unfortunately, it was a major disappointment.  

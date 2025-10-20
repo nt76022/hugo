@@ -1,18 +1,11 @@
 ---
-title: Why You Don’t Want Too Many Wireless Signals in Your Home
+title: "Why You Don’t Want Too Many Wireless Signals in Your Home"
+date: 2025-07-16
+tags: ["wifi", "networking", "home automation"]
+categories: ["tech"]
 draft: false
-tags:
-  - tech
-athur: Casey Robinson
-date: 2025-6-22
 ---
-<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID"
-      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-      allowfullscreen>
-  </iframe>
-</div>
-****
+
 Wi-Fi is one of the best inventions of the modern era. It connects almost everything in our lives today. But Wi-Fi isn’t the only wireless signal in your home. There are many different wireless protocols, and when too many are active, they can interfere with each other. This can slow your network down — sometimes even to a snail’s pace.  
 
 Even the Wi-Fi from your neighbors can interfere with your own. And if you have a smart home, you’ve probably heard of protocols like **Thread** or **Zigbee**, which add even more signals into the mix.  

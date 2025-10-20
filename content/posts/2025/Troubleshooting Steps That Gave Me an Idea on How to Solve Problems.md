@@ -1,9 +1,11 @@
 ---
-title: Troubleshooting Steps That Gave Me an Ideal on How to Solve Problems
+title: "Troubleshooting Steps That Gave Me an Idea on How to Solve Problems"
+date: 2025-07-16
+tags: ["problem-solving", "tech", "learning"]
+categories: ["reflection"]
 draft: false
-athur: Casey Robinson
-date: 2025-4-12
 ---
+
 While studying for the **Linux+ certification**, I came across the standard troubleshooting process used in IT. At first, I thought it was just another framework to memorize, but then I realized: these steps can apply to *many* areas of life beyond technology.  
 
 Here are the seven troubleshooting steps:

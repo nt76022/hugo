@@ -1,16 +1,11 @@
 ---
-title: Why I’m Stepping Away from NixOS (For Now)
+title: "Why I’m Stepping Away from NixOS (For Now)"
+date: 2025-07-16
+tags: ["nixos", "linux", "reflection"]
+categories: ["tech"]
 draft: false
-athur: Casey Robinson
-date: 2025-6-6
 ---
-<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID"
-      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-      allowfullscreen>
-  </iframe>
-</div>
-****
+
 I love NixOS. It’s one of the most unique and powerful Linux distributions out there. The idea of a fully declarative system—where everything is managed in a single configuration file—is amazing. It gives me confidence and clarity. I always know what’s on my machine, where things are configured, and how to recreate it exactly on another system.
 
 But ironically, the same thing I love about NixOS is also why I’m stepping away from it—for now.

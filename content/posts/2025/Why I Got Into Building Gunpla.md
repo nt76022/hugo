@@ -1,16 +1,11 @@
 ---
-title: Why I Got Into Building Gunpla
+title: "Why I Got Into Building Gunpla"
+date: 2025-07-16
+tags: ["gunpla", "model kits", "hobby"]
+categories: ["crafts"]
 draft: false
-athur: Casey Robinson
-date: 2025-7-23
 ---
-<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID"
-      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-      allowfullscreen>
-  </iframe>
-</div>
-****
+
 I got into building Gunpla after watching *Gundam* and following some Gunpla YouTubers. My favorite Gundam show is *Iron-Blooded Orphans* (IBO for short). I love it for the message it carries and the brutal honesty of its story. It’s a dark anime about child soldiers, and it really stuck with me.  
 
 My very first kit was the **Barbatos Lupus Rex**, followed by the **Kimarus Vidar**. Since then, I’ve built over ten kits—and I even have a backlog (though nothing compared to my friend’s backlog of over 40 kits!). For me, Gunpla is a creative outlet. I build, paint, and even add LEDs whenever I can.

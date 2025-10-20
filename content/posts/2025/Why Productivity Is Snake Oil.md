@@ -1,8 +1,11 @@
 ---
-title : Why Productivity Is Snake Oil
-athur: Casey Robinson
-date: 2025-8-4
+title: "Why Productivity Is Snake Oil"
+date: 2025-07-16
+tags: ["productivity", "reflection", "writing"]
+categories: ["self-improvement"]
+draft: false
 ---
+
 The definition of productivity (such as time, labor, or materials) is to produce a desired outcome, output, or result. But why do I say it's snake oil?
 
 It’s unmeasured and undefined. What most people call productivity is really just busywork. We measure it in quantity before quality—and there’s a big difference.
