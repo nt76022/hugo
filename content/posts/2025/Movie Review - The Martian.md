@@ -3,9 +3,12 @@ title: Movie Review - The Martian
 date: 2025-10-31
 draft: false
 tags:
+  - movie review
   - sci-fi
   - survival
+  - the martian
 author: Casey Robinson
+cover: https://m.media-amazon.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_.jpg
 ---
 
 ## Movie Review - *The Martian*
@@ -14,7 +17,6 @@ author: Casey Robinson
 Released in 2015 and directed by Ridley Scott, *The Martian* follows astronaut Mark Watney (played by Matt Damon) as he’s stranded on Mars after a violent storm. Presumed dead by his crew, Watney must use his knowledge, creativity, and science to survive until rescue. The film blends humor, realism, and human perseverance into one of the most memorable space survival stories ever told.
 
 ---
-
 ### 🎬 Main Review
 *The Martian* was an amazing sci-fi drama that didn’t need constant action to tell a compelling story. The plot never got old, and it showed great determination and perseverance in the face of survival on Mars. Almost every scene in the movie was based on real science — with the only exception being the storm at the beginning. I’ll give that one a pass, though, because it helped set up the story perfectly.
 
