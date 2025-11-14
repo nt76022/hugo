@@ -1,7 +1,7 @@
 ---
 title: The act of going to a more analog sytem is better than keep up with this past of keeping up with technology
 date: 2025-09-23
-draft: false
+draft: true
 tags:
   - tag1
   - tag2
