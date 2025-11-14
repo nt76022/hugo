@@ -1,6 +1,6 @@
-baseURL = 'https://gentle-pothos-b33816.netlify.app/'
+baseURL = 'https:caseyjrobinson.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'casey j robinson'
 
 theme = 're-terminal'
 
