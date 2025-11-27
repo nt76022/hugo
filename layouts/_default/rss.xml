@@ -1,0 +1,32 @@
+{{- $pctx := . -}}
+{{- if .IsHome -}}
+  {{- $pctx = .Site -}}
+{{- end -}}
+{{- $pages := $pctx.RegularPages -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>" | safeHTML }}
+
+<rss version="2.0">
+  <channel>
+    <title>{{ .Site.Title }}</title>
+    <link>{{ .Site.BaseURL }}</link>
+    <description>{{ .Site.Params.description | default "RSS Feed" }}</description>
+    <language>{{ .Site.Language.Lang }}</language>
+
+    {{- range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <guid>{{ .Permalink }}</guid>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+
+      <!-- FULL CONTENT HERE -->
+      <content:encoded><![CDATA[
+        {{ .Content | safeHTML }}
+      ]]></content:encoded>
+
+    </item>
+    {{- end }}
+
+  </channel>
+</rss>
+
