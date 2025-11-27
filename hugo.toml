@@ -8,3 +8,9 @@ theme = 're-terminal'
   themeColor = "red"
   contentTypeName = "posts"
 
+[outputs]
+  home    = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML", "RSS"]
+
