@@ -1,12 +1,12 @@
 ---
 title: Starting My Digital Minimalism Journey
 date: 2025-11-27T09:00:44-06:00
-draft: false
+draft: true
 author: Casey Robinson
 tags:
   - digital-minimalism
   - productivity
-description: "Beginning my journey into digital minimalism by cutting distractions, reclaiming focus, and rebuilding my creative life."
+description: Beginning my journey into digital minimalism by cutting distractions, reclaiming focus, and rebuilding my creative life.
 cover: https://m.media-amazon.com/images/I/71PB7ieLx7L._AC_UF1000,1000_QL80_.jpg
 ---
 
