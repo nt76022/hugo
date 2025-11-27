@@ -1,165 +1,194 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-
-<rss version="2.0">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>casey j robinson</title>
-    <link>http://localhost:1313/</link>
-    <description>RSS Feed</description>
-    <language>en</language>
+    <title>Productivity on casey j robinson</title>
+    <link>http://localhost:1313/tags/productivity/</link>
+    <description>Recent content in Productivity on casey j robinson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/productivity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>I am lost</title>
       <link>http://localhost:1313/posts/2025/i-am-lost/</link>
-      <guid>http://localhost:1313/posts/2025/i-am-lost/</guid>
-      <pubDate>Fri, 26 Sep 2025 00:00:00 &#43;0000</pubDate>
-
+      <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
       
-      <content:encoded>&lt;![CDATA[
-        <h1 id="from-my-ideals-journal-to-productivity-reset">From My Ideals Journal to Productivity Reset</h1>
-<p>Since 5th grade, I’ve carried a notebook I called my <em>Ideals Journal</em>. It was my personal place to write down ideas, thoughts, and sparks of inspiration. Over the years, I filled four of these notebooks. But the last one is barely touched.</p>
-<p>Why? Because I’ve had fewer raw “big ideas” recently, and because I’ve been trying to go digital. The problem is, I haven’t figured out a smooth way to bring my drawings and handwritten notes into a digital note-taking app. I’ve tried in the past, but I never knew what I was doing, and I gave up.</p>
-<p>That’s not even the real reason I feel lost. The bigger problem is that I’m caught between <em>three different physical notebooks</em> and a <em>digital system</em>. I don’t know where to put my information anymore.</p>
-<p>Some things, like my diary, are probably best left in a physical notebook. The ritual and privacy of handwriting fit better there. But my ideas and book notes would definitely benefit from being digital. Digital notes are searchable, easier to organize, and more useful in the long run.</p>
-<p>I also carry a traveler-sized notebook with two pens for tasks and as a commonplace book. But honestly? I haven’t been using it. Meanwhile, I can’t seem to capture the constant stream of thoughts and ideas in my head, and life is demanding more of me than ever.</p>
-<p>This led me back to experimenting with task apps. I tried Habitica, but it didn’t click for me. Right now, I’m back to Todoist for managing tasks. My simple goal is this: <strong>to get my life back on track.</strong></p>
-<p>I came across <a href="https://www.youtube.com/watch?v=5qDnx-fcWqo"><em>Rescuing Myself from Digital Hell</em></a> from EposVox, and it reflects something I’ve been chasing: simplicity in productivity.</p>
-<p>Where I feel lost is that I don’t know what I need to do. I don’t know what to plan. And honestly, I don’t know what my future holds at all.</p>
-<hr>
-<h2 id="my-goals">My Goals</h2>
-<ul>
-<li><strong>Return to my traveler’s notebook.</strong> Use it for tasks and as a commonplace book. Be less delicate with it—let it actually hold my messy ideas, not just the “perfect” ones.</li>
-<li><strong>Capture ideas freely.</strong> Write down thoughts, even if they feel small or not worth it in the moment.</li>
-<li><strong>Transfer important notes to digital.</strong> Anything that matters should be moved into my note app so it can be searchable and accessible.</li>
-<li><strong>Decommission the Ideals Journal.</strong> Transition it fully to digital. It’s better to have it searchable than locked away in paper form.</li>
-</ul>
-<hr>
-<p>This is where I am: standing between paper and digital, between old habits and new systems. But I’m ready to stop chasing the perfect productivity state and start using the tools I already have—both notebook and digital—to actually move forward.</p>
-
-      ]]></content:encoded>
-
+      <guid>http://localhost:1313/posts/2025/i-am-lost/</guid>
+      <description>&lt;h1 id=&#34;from-my-ideals-journal-to-productivity-reset&#34;&gt;From My Ideals Journal to Productivity Reset&lt;/h1&gt;
+&lt;p&gt;Since 5th grade, I’ve carried a notebook I called my &lt;em&gt;Ideals Journal&lt;/em&gt;. It was my personal place to write down ideas, thoughts, and sparks of inspiration. Over the years, I filled four of these notebooks. But the last one is barely touched.&lt;/p&gt;
+&lt;p&gt;Why? Because I’ve had fewer raw “big ideas” recently, and because I’ve been trying to go digital. The problem is, I haven’t figured out a smooth way to bring my drawings and handwritten notes into a digital note-taking app. I’ve tried in the past, but I never knew what I was doing, and I gave up.&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;from-my-ideals-journal-to-productivity-reset&#34;&gt;From My Ideals Journal to Productivity Reset&lt;/h1&gt;
+&lt;p&gt;Since 5th grade, I’ve carried a notebook I called my &lt;em&gt;Ideals Journal&lt;/em&gt;. It was my personal place to write down ideas, thoughts, and sparks of inspiration. Over the years, I filled four of these notebooks. But the last one is barely touched.&lt;/p&gt;
+&lt;p&gt;Why? Because I’ve had fewer raw “big ideas” recently, and because I’ve been trying to go digital. The problem is, I haven’t figured out a smooth way to bring my drawings and handwritten notes into a digital note-taking app. I’ve tried in the past, but I never knew what I was doing, and I gave up.&lt;/p&gt;
+&lt;p&gt;That’s not even the real reason I feel lost. The bigger problem is that I’m caught between &lt;em&gt;three different physical notebooks&lt;/em&gt; and a &lt;em&gt;digital system&lt;/em&gt;. I don’t know where to put my information anymore.&lt;/p&gt;
+&lt;p&gt;Some things, like my diary, are probably best left in a physical notebook. The ritual and privacy of handwriting fit better there. But my ideas and book notes would definitely benefit from being digital. Digital notes are searchable, easier to organize, and more useful in the long run.&lt;/p&gt;
+&lt;p&gt;I also carry a traveler-sized notebook with two pens for tasks and as a commonplace book. But honestly? I haven’t been using it. Meanwhile, I can’t seem to capture the constant stream of thoughts and ideas in my head, and life is demanding more of me than ever.&lt;/p&gt;
+&lt;p&gt;This led me back to experimenting with task apps. I tried Habitica, but it didn’t click for me. Right now, I’m back to Todoist for managing tasks. My simple goal is this: &lt;strong&gt;to get my life back on track.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I came across &lt;a href=&#34;https://www.youtube.com/watch?v=5qDnx-fcWqo&#34;&gt;&lt;em&gt;Rescuing Myself from Digital Hell&lt;/em&gt;&lt;/a&gt; from EposVox, and it reflects something I’ve been chasing: simplicity in productivity.&lt;/p&gt;
+&lt;p&gt;Where I feel lost is that I don’t know what I need to do. I don’t know what to plan. And honestly, I don’t know what my future holds at all.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;my-goals&#34;&gt;My Goals&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Return to my traveler’s notebook.&lt;/strong&gt; Use it for tasks and as a commonplace book. Be less delicate with it—let it actually hold my messy ideas, not just the “perfect” ones.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Capture ideas freely.&lt;/strong&gt; Write down thoughts, even if they feel small or not worth it in the moment.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Transfer important notes to digital.&lt;/strong&gt; Anything that matters should be moved into my note app so it can be searchable and accessible.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Decommission the Ideals Journal.&lt;/strong&gt; Transition it fully to digital. It’s better to have it searchable than locked away in paper form.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;This is where I am: standing between paper and digital, between old habits and new systems. But I’m ready to stop chasing the perfect productivity state and start using the tools I already have—both notebook and digital—to actually move forward.&lt;/p&gt;
+</content>
     </item>
+    
     <item>
       <title>My Telos of My Desktop Experience</title>
       <link>http://localhost:1313/posts/2025/my-telos-of-my-desktop-experience/</link>
-      <guid>http://localhost:1313/posts/2025/my-telos-of-my-desktop-experience/</guid>
-      <pubDate>Wed, 16 Jul 2025 00:00:00 &#43;0000</pubDate>
-
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
       
-      <content:encoded>&lt;![CDATA[
-        <!-- raw HTML omitted -->
-<hr>
-<h2 id="core-principles">Core Principles</h2>
-<h3 id="1-never-search-for-anything">1. Never Search For Anything</h3>
-<ul>
-<li>Every app has a home.</li>
-<li>I keep at least three essentials open at all times:
-<ol>
-<li><strong>Terminal</strong> → to destroy and rebuild my system as needed.</li>
-<li><strong>Web Browser</strong> → to consume, test, and overload my memory.</li>
-<li><strong>Notes App</strong> → to capture thoughts, configs, and system insights.</li>
-</ol>
-</li>
-<li>These live in <strong>workspaces 1–3</strong> in Hyprland. No digging. No hunting. Always there.</li>
-</ul>
-<p><strong>Philosophy:</strong> If it’s important, it already has a place. I’m not “finding” — I’m <em>jumping</em>.</p>
-<hr>
-<h3 id="2-ease-of-flow">2. Ease of Flow</h3>
-<p>I design layers of access that remove thought from the process:</p>
-<ul>
-<li><strong>Level 1 (Instant)</strong> → Hotkeys bound to my most used apps:
-<ul>
-<li>Web Browser, File Explorer, Terminal, Notes.</li>
-<li>No wasted hand movement. No menus.</li>
-</ul>
-</li>
-<li><strong>Level 2 (Quick Access)</strong> → Macropad for weekly-use tools:
-<ul>
-<li>OBS for recording.</li>
-<li>Other utilities I don’t need daily but don’t want to search for.</li>
-</ul>
-</li>
-<li><strong>Level 3 (Rare)</strong> → Search only when needed:
-<ul>
-<li>Wallpaper setter, edge-case apps.</li>
-<li>One quick <code>rofi/wofi</code> or finder query, then done.</li>
-</ul>
-</li>
-</ul>
-<p><strong>Philosophy:</strong> Flow is sacred. If I can cut steps, I cut them. If I can bind it, I bind it.</p>
-<hr>
-<h2 id="tools-that-shape-my-telos">Tools That Shape My Telos</h2>
-<ul>
-<li>Chris Titus Tech <a href="https://www.youtube.com/watch?v=ZgHX8jPuHjE">The Perfect System</a></li>
-<li>Chris Titus Tech <a href="https://www.youtube.com/watch?v=wNL6eIoksd8">My New Desktop</a></li>
-<li>The Primeagen <a href="https://www.youtube.com/watch?v=bdumjiHabhQ&amp;t=340s">My Developer Workflow - How I use i3, tmux, and vim</a></li>
-<li>The Primeagen <a href="https://www.youtube.com/watch?v=ZH3iKbEiks0&amp;t=2s">I was wrong btw</a></li>
-</ul>
-<hr>
-<h2 id="telos-statement">Telos Statement</h2>
-<p>My desktop is my environment of <strong>control, flow, and confidence</strong>.<br>
-Every app, keybind, and workspace serves the singular purpose: to never waste time searching, never waste energy on the PC — but to be creative and effective in my work.</p>
-
-      ]]></content:encoded>
-
+      <guid>http://localhost:1313/posts/2025/my-telos-of-my-desktop-experience/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;core-principles&#34;&gt;Core Principles&lt;/h2&gt;
+&lt;h3 id=&#34;1-never-search-for-anything&#34;&gt;1. Never Search For Anything&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Every app has a home.&lt;/li&gt;
+&lt;li&gt;I keep at least three essentials open at all times:
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Terminal&lt;/strong&gt; → to destroy and rebuild my system as needed.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Web Browser&lt;/strong&gt; → to consume, test, and overload my memory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Notes App&lt;/strong&gt; → to capture thoughts, configs, and system insights.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;These live in &lt;strong&gt;workspaces 1–3&lt;/strong&gt; in Hyprland. No digging. No hunting. Always there.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Philosophy:&lt;/strong&gt; If it’s important, it already has a place. I’m not “finding” — I’m &lt;em&gt;jumping&lt;/em&gt;.&lt;/p&gt;</description>
+      <content>&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;core-principles&#34;&gt;Core Principles&lt;/h2&gt;
+&lt;h3 id=&#34;1-never-search-for-anything&#34;&gt;1. Never Search For Anything&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Every app has a home.&lt;/li&gt;
+&lt;li&gt;I keep at least three essentials open at all times:
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Terminal&lt;/strong&gt; → to destroy and rebuild my system as needed.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Web Browser&lt;/strong&gt; → to consume, test, and overload my memory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Notes App&lt;/strong&gt; → to capture thoughts, configs, and system insights.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;These live in &lt;strong&gt;workspaces 1–3&lt;/strong&gt; in Hyprland. No digging. No hunting. Always there.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Philosophy:&lt;/strong&gt; If it’s important, it already has a place. I’m not “finding” — I’m &lt;em&gt;jumping&lt;/em&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-ease-of-flow&#34;&gt;2. Ease of Flow&lt;/h3&gt;
+&lt;p&gt;I design layers of access that remove thought from the process:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Level 1 (Instant)&lt;/strong&gt; → Hotkeys bound to my most used apps:
+&lt;ul&gt;
+&lt;li&gt;Web Browser, File Explorer, Terminal, Notes.&lt;/li&gt;
+&lt;li&gt;No wasted hand movement. No menus.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Level 2 (Quick Access)&lt;/strong&gt; → Macropad for weekly-use tools:
+&lt;ul&gt;
+&lt;li&gt;OBS for recording.&lt;/li&gt;
+&lt;li&gt;Other utilities I don’t need daily but don’t want to search for.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Level 3 (Rare)&lt;/strong&gt; → Search only when needed:
+&lt;ul&gt;
+&lt;li&gt;Wallpaper setter, edge-case apps.&lt;/li&gt;
+&lt;li&gt;One quick &lt;code&gt;rofi/wofi&lt;/code&gt; or finder query, then done.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Philosophy:&lt;/strong&gt; Flow is sacred. If I can cut steps, I cut them. If I can bind it, I bind it.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;tools-that-shape-my-telos&#34;&gt;Tools That Shape My Telos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Chris Titus Tech &lt;a href=&#34;https://www.youtube.com/watch?v=ZgHX8jPuHjE&#34;&gt;The Perfect System&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Chris Titus Tech &lt;a href=&#34;https://www.youtube.com/watch?v=wNL6eIoksd8&#34;&gt;My New Desktop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The Primeagen &lt;a href=&#34;https://www.youtube.com/watch?v=bdumjiHabhQ&amp;amp;t=340s&#34;&gt;My Developer Workflow - How I use i3, tmux, and vim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The Primeagen &lt;a href=&#34;https://www.youtube.com/watch?v=ZH3iKbEiks0&amp;amp;t=2s&#34;&gt;I was wrong btw&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;telos-statement&#34;&gt;Telos Statement&lt;/h2&gt;
+&lt;p&gt;My desktop is my environment of &lt;strong&gt;control, flow, and confidence&lt;/strong&gt;.&lt;br&gt;
+Every app, keybind, and workspace serves the singular purpose: to never waste time searching, never waste energy on the PC — but to be creative and effective in my work.&lt;/p&gt;
+</content>
     </item>
+    
     <item>
       <title>Why Productivity Is Snake Oil</title>
       <link>http://localhost:1313/posts/2025/why-productivity-is-snake-oil/</link>
-      <guid>http://localhost:1313/posts/2025/why-productivity-is-snake-oil/</guid>
-      <pubDate>Wed, 16 Jul 2025 00:00:00 &#43;0000</pubDate>
-
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
       
-      <content:encoded>&lt;![CDATA[
-        <p>The definition of productivity (such as time, labor, or materials) is to produce a desired outcome, output, or result. But why do I say it&rsquo;s snake oil?</p>
-<p>It’s unmeasured and undefined. What most people call productivity is really just busywork. We measure it in quantity before quality—and there’s a big difference.</p>
-<p>There’s a quote: <strong>&ldquo;Bite off more than you can chew.&rdquo;</strong> That’s what people are doing in the pursuit of productivity. So we end up turning in half-hearted work, which we sometimes have to redo, just to say we got more done. It&rsquo;s not attainable—there&rsquo;s always more to do. So we rush, repeat, and burn out.</p>
-<p>It’s not your fault. It’s the system you were pushed into. And that same system burns out people in similar professions—like software engineers—over and over again.</p>
-<hr>
-<h2 id="lets-talk-about-ai">Let’s Talk About AI</h2>
-<p>Now we’re in the age of AI, and yeah, maybe I’m being a little dramatic, but it’s true: AI is going to change the way we work. It might not take your job outright, but it will make you feel more detached from your work—and maybe even from your passion.</p>
-<p>We won’t grow as a society if we let AI do everything for us. If you use AI just to get more work done faster, you’ll be expected to do even <em>more</em>, and then burnout will hit even harder.</p>
-<hr>
-<h2 id="im-not-against-self-help-or-tools">I&rsquo;m Not Against Self-Help or Tools</h2>
-<p>Yes, I like reading self-help books. I’m currently reading <em>How to Build a Second Brain</em> by Tiago Forte. The intention behind it is to get better at my craft—to capture and reference things like my coffee setup, water temp, grind size, and not forget them.</p>
-<p>So I’m not against productivity tools.</p>
-<p>But I’m also not for being so obsessed with work that I lose all passion for it.</p>
-<hr>
-
-      ]]></content:encoded>
-
+      <guid>http://localhost:1313/posts/2025/why-productivity-is-snake-oil/</guid>
+      <description>&lt;p&gt;The definition of productivity (such as time, labor, or materials) is to produce a desired outcome, output, or result. But why do I say it&amp;rsquo;s snake oil?&lt;/p&gt;
+&lt;p&gt;It’s unmeasured and undefined. What most people call productivity is really just busywork. We measure it in quantity before quality—and there’s a big difference.&lt;/p&gt;
+&lt;p&gt;There’s a quote: &lt;strong&gt;&amp;ldquo;Bite off more than you can chew.&amp;rdquo;&lt;/strong&gt; That’s what people are doing in the pursuit of productivity. So we end up turning in half-hearted work, which we sometimes have to redo, just to say we got more done. It&amp;rsquo;s not attainable—there&amp;rsquo;s always more to do. So we rush, repeat, and burn out.&lt;/p&gt;</description>
+      <content>&lt;p&gt;The definition of productivity (such as time, labor, or materials) is to produce a desired outcome, output, or result. But why do I say it&amp;rsquo;s snake oil?&lt;/p&gt;
+&lt;p&gt;It’s unmeasured and undefined. What most people call productivity is really just busywork. We measure it in quantity before quality—and there’s a big difference.&lt;/p&gt;
+&lt;p&gt;There’s a quote: &lt;strong&gt;&amp;ldquo;Bite off more than you can chew.&amp;rdquo;&lt;/strong&gt; That’s what people are doing in the pursuit of productivity. So we end up turning in half-hearted work, which we sometimes have to redo, just to say we got more done. It&amp;rsquo;s not attainable—there&amp;rsquo;s always more to do. So we rush, repeat, and burn out.&lt;/p&gt;
+&lt;p&gt;It’s not your fault. It’s the system you were pushed into. And that same system burns out people in similar professions—like software engineers—over and over again.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;lets-talk-about-ai&#34;&gt;Let’s Talk About AI&lt;/h2&gt;
+&lt;p&gt;Now we’re in the age of AI, and yeah, maybe I’m being a little dramatic, but it’s true: AI is going to change the way we work. It might not take your job outright, but it will make you feel more detached from your work—and maybe even from your passion.&lt;/p&gt;
+&lt;p&gt;We won’t grow as a society if we let AI do everything for us. If you use AI just to get more work done faster, you’ll be expected to do even &lt;em&gt;more&lt;/em&gt;, and then burnout will hit even harder.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;im-not-against-self-help-or-tools&#34;&gt;I&amp;rsquo;m Not Against Self-Help or Tools&lt;/h2&gt;
+&lt;p&gt;Yes, I like reading self-help books. I’m currently reading &lt;em&gt;How to Build a Second Brain&lt;/em&gt; by Tiago Forte. The intention behind it is to get better at my craft—to capture and reference things like my coffee setup, water temp, grind size, and not forget them.&lt;/p&gt;
+&lt;p&gt;So I’m not against productivity tools.&lt;/p&gt;
+&lt;p&gt;But I’m also not for being so obsessed with work that I lose all passion for it.&lt;/p&gt;
+&lt;hr&gt;
+</content>
     </item>
+    
     <item>
       <title>Why i have a smart home</title>
       <link>http://localhost:1313/posts/2025/why-i-have-a-smart-home/</link>
-      <guid>http://localhost:1313/posts/2025/why-i-have-a-smart-home/</guid>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
-
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <content:encoded>&lt;![CDATA[
-        <!-- raw HTML omitted -->
-<p>I have a smart home for a few reasons, but they mainly come down to <strong>creativity</strong> and <strong>being hands-off</strong>.</p>
-<p>To be honest, I don’t see someone owning an Alexa or another smart speaker as truly having a smart home—that’s just a fancy light switch. And apps aren’t the full answer either.</p>
-<hr>
-<h2 id="being-creative">Being Creative</h2>
-<ul>
-<li>I enjoy building <strong>cool automation</strong>, like having my lights change to random colors or using a web-hook from my notes app to start my kettle.</li>
-<li>It’s fun for me as a consumer to buy interesting gadgets that give me new possibilities for automation.</li>
-</ul>
-<hr>
-<h2 id="being-hands-off">Being Hands-Off</h2>
-<ul>
-<li><strong>Improving efficiency</strong> so the human element doesn’t forget: for example, my AC automatically switches from 64°F at night to 72°F when I open the door in the morning.</li>
-<li>Eliminating unnecessary <strong>context switching</strong>—I don’t have to stop what I’m doing to handle small tasks.</li>
-<li><strong>Improving family living</strong> by having lights turn on automatically so people can see where they’re going and avoid touching light switches, which also reduces germ spread.</li>
-</ul>
-<hr>
-<h2 id="conclusion">Conclusion</h2>
-<p>Do I <em>need</em> a smart home? No—plenty of people live without one.<br>
-But as a nerd who values productivity and the ease of walking into a room without doing anything, I’m a power user. I self-host my own system with <strong>Home Assistant</strong>, which makes my setup both hands-off in daily use and hands-on when it comes to building and maintaining it.</p>
-
-      ]]></content:encoded>
-
+      <guid>http://localhost:1313/posts/2025/why-i-have-a-smart-home/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;I have a smart home for a few reasons, but they mainly come down to &lt;strong&gt;creativity&lt;/strong&gt; and &lt;strong&gt;being hands-off&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;To be honest, I don’t see someone owning an Alexa or another smart speaker as truly having a smart home—that’s just a fancy light switch. And apps aren’t the full answer either.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;being-creative&#34;&gt;Being Creative&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I enjoy building &lt;strong&gt;cool automation&lt;/strong&gt;, like having my lights change to random colors or using a web-hook from my notes app to start my kettle.&lt;/li&gt;
+&lt;li&gt;It’s fun for me as a consumer to buy interesting gadgets that give me new possibilities for automation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;being-hands-off&#34;&gt;Being Hands-Off&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Improving efficiency&lt;/strong&gt; so the human element doesn’t forget: for example, my AC automatically switches from 64°F at night to 72°F when I open the door in the morning.&lt;/li&gt;
+&lt;li&gt;Eliminating unnecessary &lt;strong&gt;context switching&lt;/strong&gt;—I don’t have to stop what I’m doing to handle small tasks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Improving family living&lt;/strong&gt; by having lights turn on automatically so people can see where they’re going and avoid touching light switches, which also reduces germ spread.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Do I &lt;em&gt;need&lt;/em&gt; a smart home? No—plenty of people live without one.&lt;br&gt;
+But as a nerd who values productivity and the ease of walking into a room without doing anything, I’m a power user. I self-host my own system with &lt;strong&gt;Home Assistant&lt;/strong&gt;, which makes my setup both hands-off in daily use and hands-on when it comes to building and maintaining it.&lt;/p&gt;</description>
+      <content>&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;I have a smart home for a few reasons, but they mainly come down to &lt;strong&gt;creativity&lt;/strong&gt; and &lt;strong&gt;being hands-off&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;To be honest, I don’t see someone owning an Alexa or another smart speaker as truly having a smart home—that’s just a fancy light switch. And apps aren’t the full answer either.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;being-creative&#34;&gt;Being Creative&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I enjoy building &lt;strong&gt;cool automation&lt;/strong&gt;, like having my lights change to random colors or using a web-hook from my notes app to start my kettle.&lt;/li&gt;
+&lt;li&gt;It’s fun for me as a consumer to buy interesting gadgets that give me new possibilities for automation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;being-hands-off&#34;&gt;Being Hands-Off&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Improving efficiency&lt;/strong&gt; so the human element doesn’t forget: for example, my AC automatically switches from 64°F at night to 72°F when I open the door in the morning.&lt;/li&gt;
+&lt;li&gt;Eliminating unnecessary &lt;strong&gt;context switching&lt;/strong&gt;—I don’t have to stop what I’m doing to handle small tasks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Improving family living&lt;/strong&gt; by having lights turn on automatically so people can see where they’re going and avoid touching light switches, which also reduces germ spread.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Do I &lt;em&gt;need&lt;/em&gt; a smart home? No—plenty of people live without one.&lt;br&gt;
+But as a nerd who values productivity and the ease of walking into a room without doing anything, I’m a power user. I self-host my own system with &lt;strong&gt;Home Assistant&lt;/strong&gt;, which makes my setup both hands-off in daily use and hands-on when it comes to building and maintaining it.&lt;/p&gt;
+</content>
     </item>
-
+    
   </channel>
 </rss>
-
