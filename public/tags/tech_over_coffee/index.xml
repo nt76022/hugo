@@ -1,59 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<rss version="2.0">
   <channel>
-    <title>Tech_over_coffee on My New Hugo Site</title>
-    <link>http://localhost:1313/tags/tech_over_coffee/</link>
-    <description>Recent content in Tech_over_coffee on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://localhost:1313/tags/tech_over_coffee/index.xml" rel="self" type="application/rss+xml" />
+    <title>casey j robinson</title>
+    <link>http://localhost:1313/</link>
+    <description>RSS Feed</description>
+    <language>en</language>
     <item>
       <title>Why i have a smart home</title>
       <link>http://localhost:1313/posts/2025/why-i-have-a-smart-home/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>http://localhost:1313/posts/2025/why-i-have-a-smart-home/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;I have a smart home for a few reasons, but they mainly come down to &lt;strong&gt;creativity&lt;/strong&gt; and &lt;strong&gt;being hands-off&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;To be honest, I don’t see someone owning an Alexa or another smart speaker as truly having a smart home—that’s just a fancy light switch. And apps aren’t the full answer either.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;being-creative&#34;&gt;Being Creative&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;I enjoy building &lt;strong&gt;cool automation&lt;/strong&gt;, like having my lights change to random colors or using a web-hook from my notes app to start my kettle.&lt;/li&gt;
-&lt;li&gt;It’s fun for me as a consumer to buy interesting gadgets that give me new possibilities for automation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;being-hands-off&#34;&gt;Being Hands-Off&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Improving efficiency&lt;/strong&gt; so the human element doesn’t forget: for example, my AC automatically switches from 64°F at night to 72°F when I open the door in the morning.&lt;/li&gt;
-&lt;li&gt;Eliminating unnecessary &lt;strong&gt;context switching&lt;/strong&gt;—I don’t have to stop what I’m doing to handle small tasks.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Improving family living&lt;/strong&gt; by having lights turn on automatically so people can see where they’re going and avoid touching light switches, which also reduces germ spread.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Do I &lt;em&gt;need&lt;/em&gt; a smart home? No—plenty of people live without one.&lt;br&gt;
-But as a nerd who values productivity and the ease of walking into a room without doing anything, I’m a power user. I self-host my own system with &lt;strong&gt;Home Assistant&lt;/strong&gt;, which makes my setup both hands-off in daily use and hands-on when it comes to building and maintaining it.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;I have a smart home for a few reasons, but they mainly come down to &lt;strong&gt;creativity&lt;/strong&gt; and &lt;strong&gt;being hands-off&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;To be honest, I don’t see someone owning an Alexa or another smart speaker as truly having a smart home—that’s just a fancy light switch. And apps aren’t the full answer either.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;being-creative&#34;&gt;Being Creative&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;I enjoy building &lt;strong&gt;cool automation&lt;/strong&gt;, like having my lights change to random colors or using a web-hook from my notes app to start my kettle.&lt;/li&gt;
-&lt;li&gt;It’s fun for me as a consumer to buy interesting gadgets that give me new possibilities for automation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;being-hands-off&#34;&gt;Being Hands-Off&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Improving efficiency&lt;/strong&gt; so the human element doesn’t forget: for example, my AC automatically switches from 64°F at night to 72°F when I open the door in the morning.&lt;/li&gt;
-&lt;li&gt;Eliminating unnecessary &lt;strong&gt;context switching&lt;/strong&gt;—I don’t have to stop what I’m doing to handle small tasks.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Improving family living&lt;/strong&gt; by having lights turn on automatically so people can see where they’re going and avoid touching light switches, which also reduces germ spread.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Do I &lt;em&gt;need&lt;/em&gt; a smart home? No—plenty of people live without one.&lt;br&gt;
-But as a nerd who values productivity and the ease of walking into a room without doing anything, I’m a power user. I self-host my own system with &lt;strong&gt;Home Assistant&lt;/strong&gt;, which makes my setup both hands-off in daily use and hands-on when it comes to building and maintaining it.&lt;/p&gt;
-</content>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+
+      
+      <content:encoded>&lt;![CDATA[
+        <!-- raw HTML omitted -->
+<p>I have a smart home for a few reasons, but they mainly come down to <strong>creativity</strong> and <strong>being hands-off</strong>.</p>
+<p>To be honest, I don’t see someone owning an Alexa or another smart speaker as truly having a smart home—that’s just a fancy light switch. And apps aren’t the full answer either.</p>
+<hr>
+<h2 id="being-creative">Being Creative</h2>
+<ul>
+<li>I enjoy building <strong>cool automation</strong>, like having my lights change to random colors or using a web-hook from my notes app to start my kettle.</li>
+<li>It’s fun for me as a consumer to buy interesting gadgets that give me new possibilities for automation.</li>
+</ul>
+<hr>
+<h2 id="being-hands-off">Being Hands-Off</h2>
+<ul>
+<li><strong>Improving efficiency</strong> so the human element doesn’t forget: for example, my AC automatically switches from 64°F at night to 72°F when I open the door in the morning.</li>
+<li>Eliminating unnecessary <strong>context switching</strong>—I don’t have to stop what I’m doing to handle small tasks.</li>
+<li><strong>Improving family living</strong> by having lights turn on automatically so people can see where they’re going and avoid touching light switches, which also reduces germ spread.</li>
+</ul>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>Do I <em>need</em> a smart home? No—plenty of people live without one.<br>
+But as a nerd who values productivity and the ease of walking into a room without doing anything, I’m a power user. I self-host my own system with <strong>Home Assistant</strong>, which makes my setup both hands-off in daily use and hands-on when it comes to building and maintaining it.</p>
+
+      ]]></content:encoded>
+
     </item>
-    
+
   </channel>
 </rss>
+
