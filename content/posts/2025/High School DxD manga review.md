@@ -3,13 +3,6 @@ title: High School DxD manga review
 draft: false
 athur: Casey Robinson
 ---
-<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID"
-      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-      allowfullscreen>
-  </iframe>
-</div>
-****
 **Rating:** ⭐⭐⭐⭐⭐⭐⭐☆☆☆ (7/10)  
 **Tags:** TV-MA, Sci-Fi, Fantasy, Action, Adventure, Slice of Life, Fan Service, Comedy  
 

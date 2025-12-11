@@ -1,9 +1,13 @@
 ---
-title: "My Review of the Candy Cacin Controller"
+title: My Review of the Candy Cacin Controller
 date: 2025-07-16
-tags: ["hardware", "controller", "review"]
-categories: ["tech"]
-draft: false
+tags:
+  - hardware
+  - controller
+  - review
+categories:
+  - tech
+draft: true
 ---
 
 the controlor is from gamestop and i don't like it at all. when i was playing pallworld it kept on switching on my so it will stop controlling the game and when. it get anoying when you are geting atacked. there is no softwar apps to acomplement to the controler. 

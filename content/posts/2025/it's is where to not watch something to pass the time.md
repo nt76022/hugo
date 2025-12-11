@@ -1,12 +1,12 @@
 ---
-title: "It's Weird Not Watching Something to Pass the Time"
+title: It's Weird Not Watching Something to Pass the Time
 date: 2025-11-28T14:17:39-06:00
-draft: false
-author: "Casey Robinson"
+draft: true
+author: Casey Robinson
 tags:
   - digital-minimalism
   - personal-challenge
-description: "Day 2 of my 30–day no–social–media challenge and what it feels like to break the habit of constant background content."
+description: Day 2 of my 30–day no–social–media challenge and what it feels like to break the habit of constant background content.
 cover: ""
 ---
 
