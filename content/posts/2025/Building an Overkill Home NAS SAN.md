@@ -7,7 +7,7 @@ draft: false
 ---
 
 <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+  <iframe src="https://www.youtube.com/embed/QT3CBOlDz0s"
       style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
       allowfullscreen>
   </iframe>
@@ -46,7 +46,7 @@ Because of this, I decided to use **SSDs**. While they aren’t ideal for bulk s
 
 ## My Hardware Setup
 - **CPU:** Ryzen 5 3600 (stock cooler)  
-- **RAM:** 36GB Silicon Power Value Gaming  
+- **RAM:** 32GB Silicon Power Value Gaming  
 - **Storage:** 4 × 2TB TEAMGROUP SSDs  
 - **Boot Disk:** Crucial P3 Plus 500GB SSD  
 - **Motherboard:** ASRock B450M PRO4  

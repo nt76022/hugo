@@ -3,7 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-11-23T22:54:56-06:00</lastmod>
+    <lastmod>2025-11-28T14:17:39-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/digital-minimalism/</loc>
+    <lastmod>2025-11-28T14:17:39-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/its-is-where-to-not-watch-something-to-pass-the-time/</loc>
+    <lastmod>2025-11-28T14:17:39-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/personal-challenge/</loc>
+    <lastmod>2025-11-28T14:17:39-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-11-28T14:17:39-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-11-28T14:17:39-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/lifewtr/</loc>
     <lastmod>2025-11-23T22:54:56-06:00</lastmod>
@@ -11,13 +26,7 @@
     <loc>http://localhost:1313/posts/2025/my-review-life-water-ps-it-is-not-wroth-it/</loc>
     <lastmod>2025-11-23T22:54:56-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-11-23T22:54:56-06:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/review/</loc>
-    <lastmod>2025-11-23T22:54:56-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-11-23T22:54:56-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/water/</loc>
