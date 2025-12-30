@@ -1,17 +1,14 @@
 ---
-title: "My Goals for 2026"
+title: My Goals for 2026
 date: 2025-12-18T17:11:12-06:00
-draft: false
+draft: true
 author: Casey Robinson
 tags:
   - yearly-goals
   - planning
   - personal-development
-description: "A breakdown of my personal, educational, and creative goals for 2026—organized by quarter and aligned with my academic calendar."
+description: A breakdown of my personal, educational, and creative goals for 2026—organized by quarter and aligned with my academic calendar.
 cover: ""
-# If your theme supports it, you can also add:
-# categories:
-#   - goals
 ---
 
 ## Setting My 2026 Goals
@@ -41,7 +38,6 @@ These are my main goals for 2026. Each quarterly goal will help move me toward t
 
 ### Quarter 2 (Summer)
 - Complete the **B1 level of German**.
-- Upload **4+ videos** to YouTube (either channel).
 - Start tracking **monthly savings** and set a budget goal.
 - Upload **6 videos** to [Tech_Addiction](https://www.youtube.com/@tech-addiction404).
 ### Quarter 3 (Fall)

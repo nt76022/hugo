@@ -1,7 +1,7 @@
 ---
 title: how to build a tech puch
 date: 2025-09-25
-draft: true
+draft: false
 athur: Casey Robinson
 ---
 # How to Build a Tech Pouch  
